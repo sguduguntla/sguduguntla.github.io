@@ -42,7 +42,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    /*font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
 }
 
 p {
@@ -52,7 +54,10 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    /*background-color: #f05f40;*/
+    background-color: #d3f5ff;
+    /*background-color: #ff9f2b;*/
+    /*background-color: #ffefe0;*/
 }
 
 .bg-dark {
@@ -178,7 +183,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url("../img/bgpic.jpeg");
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -241,6 +246,8 @@ header .header-content .header-content-inner p {
 
 .section-heading {
     margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
 }
 
 .service-box {
@@ -339,6 +346,10 @@ header .header-content .header-content-inner p {
     -moz-transition: all .35s;
     transition: all .35s;
 }
+
+/*.skill {
+    color: #ffc021;
+}*/
 
 .btn-default:hover,
 .btn-default:focus,
