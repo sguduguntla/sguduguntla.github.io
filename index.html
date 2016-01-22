@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,11 +41,11 @@
     <meta property="og:title" content="Sriharsha Guduguntla's Home Page" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/saitouchicons/apple-touch-icon-180x180.png" />
-    <meta property="og:url" content="http://www.tinyurl.com/sriharshaguduguntla" />
+    <meta property="og:url" content="http://www.tinyurl.com/sguduguntla" />
     <meta property="og:description" content="Sriharsha Guduguntla's Home page and portfolio" />
     <!--Twitter Card Data-->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="http://www.tinyurl.com/sriharshaguduguntla">
+    <meta name="twitter:url" content="http://www.tinyurl.com/sguduguntla">
     <meta name="twitter:title" content="Sriharsha Guduguntla's Home Page">
     <meta name="twitter:description" content="Sriharsha Guduguntla's Home page and portfolio">
     <meta name="twitter:image" content="img/saitouchicons/apple-touch-icon-180x180.png">
@@ -75,8 +74,7 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,800' rel='stylesheet' type='text/css'>
-    <!--Add to Homescreen snippet-->
-    <script src="js/addtohomescreen/src/addtohomescreen.js"></script>
+    
     <script>
     addToHomescreen({
         skipFirstVisit: true,
@@ -89,51 +87,54 @@
     <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
     <!--MaterializeCSS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif" id="page-top">
-    <nav style="position: fixed; z-index: 2000; opacity: 0.9; background-color: white; color: black; box-shadow: 5px 5px 10px">
+    <nav style="position: fixed; z-index: 2000; opacity: 1; background-color: white; color: black; box-shadow: 5px 5px 10px">
         <div class="nav-wrapper">
-            <a href="#" data-activates="mobile-demo" class="button-collapse right"><span class="glyphicon glyphicon-menu-hamburger" style="color: black; font-size: 1.7em; position: relative; top: 5px; right: 20px"></span></a>
-            <a href="#!" data-activates="mobile-demo" style="font-size: 1.5em; color: black" class="brand-logo center">Sriharsha Guduguntla</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="fa fa-bars fa-lg"
+ style="color: black; font-size: 1.7em; position: relative; top: 5px; right: 20px"></i></a>
+            <a href="#!" data-activates="mobile-demo" style="text-decoration: none;font-size: 2.5em; color: black" class="brand-logo center">Welcome</a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="#!" style="font-size: 1.5em; color: black" class="brand-logo center">Sriharsha Guduguntla</a>
+                    <a href="#!" style="text-decoration: none; font-size: 2.5em; color: black" class="brand-logo center">Welcome</a>
                 </li>
                 <li>
-                    <a style="color: black" class="waves-effect waves-dark page-scroll" href="#home">Home</a>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black; border-right: 1px solid gray; border-left: 1px solid gray" class="tooltipped waves-effect waves-dark page-scroll" href="#home"><i class="fa fa-home"></i></a>
                 </li>
                 <li>
-                    <a style="color: black" class="waves-effect waves-dark page-scroll" href="#about">About Me</a>
+                    <a data-position="bottom" data-delay="50" data-tooltip="About Me" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray" class="tooltipped waves-effect waves-dark page-scroll" href="#about"><i class="fa fa-info-circle"></i>
+</a>
                 </li>
                 <li>
-                    <a style="color: black" class="waves-effect waves-dark page-scroll" href="#services">Skills</a>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray" class="tooltipped waves-effect waves-dark page-scroll" href="#services"><i class="fa fa-code"></i>
+</a>
                 </li>
                 <li>
-                    <a style="color: black" class="waves-effect waves-dark page-scroll" href="#portfolio">Projects</a>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray" class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio"><i class="fa fa-suitcase"></i></a>
                 </li>
                 <li>
-                    <a style="color: black" class="waves-effect waves-dark page-scroll" href="#contact">Contact Me</a>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray" class="tooltipped waves-effect waves-dark page-scroll" href="#contact"><i class="fa fa-phone"></i></a>
                 </li>
             </ul>
-            <ul class="side-nav" id="mobile-demo">
+            <ul class="side-nav right" id="mobile-demo">
                 <li>
-                    Sriharsha Guduguntla
+                    <a data-position="left" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;" class="tooltipped waves-effect waves-dark page-scroll" href="#home"><i class="fa fa-home"></i></a>
                 </li>
                 <li>
-                    <a class="waves-effect waves-dark page-scroll" href="#home">Home</a>
+                    <a data-position="left" data-delay="50" data-tooltip="About Me" style="text-decoration: none; font-size: 1.2em;color: black; " class="tooltipped waves-effect waves-dark page-scroll" href="#about"><i class="fa fa-info-circle"></i>
+</a>
                 </li>
                 <li>
-                    <a class="waves-effect waves-dark page-scroll" href="#about">About Me</a>
+                    <a data-position="left" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black; " class="tooltipped waves-effect waves-dark page-scroll" href="#services"><i class="fa fa-code"></i>
+</a>
                 </li>
                 <li>
-                    <a class="waves-effect waves-dark page-scroll" href="#services">Skills</a>
+                    <a data-position="left" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black; " class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio"><i class="fa fa-suitcase"></i></a>
                 </li>
                 <li>
-                    <a class="waves-effect waves-dark page-scroll" href="#portfolio">Projects</a>
-                </li>
-                <li>
-                    <a class="waves-effect waves-dark page-scroll" href="#contact">Contact Me</a>
+                    <a data-position="left" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; " class="tooltipped waves-effect waves-dark page-scroll" href="#contact"><i class="fa fa-phone"></i></a>
                 </li>
             </ul>
         </div>
@@ -156,22 +157,30 @@
             // error is a Parse.Error with an error code and message.
         }
     });
+    $(document).ready(function() {
+        $('.tooltipped').tooltip({
+            delay: 50
+        });
+        //$('.scrollspy').scrollSpy();
+    });
     </script>
-    <header style="font-family: 'Open Sans', sans-serif" id="home">
+    <div id="home" style="width: 100%; height: 100%; margin:0; top:0;" data-vide-bg="176.32.230.17/sriharshaguduguntla.com/Type/MP4/type" data-vide-options="loop: true, muted: true, position: 0% 0%" class="scrollspy">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 class="animated tada" style="font-family: 'Open Sans', sans-serif; font-weight: 100">Welcome!</h1>
+                <h1 class="animated tada" style="font-family: 'Open Sans', sans-serif; font-weight: 100">Sriharsha Guduguntla</h1>
                 <hr style="border-color: gray">
                 <p style="color: white">I am Sriharsha Guduguntla and I am currently a Sophomore in Cupertino High School. I am involved in many extracurricular activities outside of school including chess, singing, app development, programming, math modeling, etc. Often, I strive to learn new things and explore the world ahead of me. I am most motivated by my favorite quote by Nikos Kazantzakis, "In order to succeed, we must first believe we can."
                 </p>
-                <a style="color: black" href="#about" class="waves-effect waves-dark btn white page-scroll animated pulse">MORE ABOUT ME</a>
+                <a style="color: black" href="#about" class="waves-effect waves-dark btn white page-scroll animated pulse"><i class="fa fa-chevron-circle-down"></i></a>
                 <br>
                 <br>
                 <br>
                 <p class="lead label label-success" style="color: white; font-size: 1.5em"><span id="numViews"></span> Views</p>
             </div>
         </div>
-    </header>
+    </div>
+    <!--<header style="font-family: 'Open Sans', sans-serif" id="home">
+    </header>-->
     <!--<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -208,7 +217,7 @@
     <!--</div>
     <!-- /.container-fluid -->
     <!--</nav>-->
-    <section class="bg-primary" id="about">
+    <section class="bg-primary scrollspy" id="about">
         <div style="color: black" class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -218,13 +227,13 @@
                         As mentioned earlier, one of my interests includes programming and developing apps for both ios, web, and java. Being more experienced with web and java, most of my projects are geared towards them. I've only recently developed an interest in ios app development and I hope to continue learning it.
                         </p>
                         <a style="color: black" href="#services" class="waves-effect waves-dark btn white page-scroll">
-                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                            <i class="fa fa-chevron-circle-down"></i></span>
                         </a>
                     </div>
                 </div>
             </div>
     </section>
-    <section id="services">
+    <section class="scrollspy" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -266,7 +275,8 @@
             </div>
         </div>
     </section>
-    <section class="no-padding" id="portfolio">
+    </div>
+    <section class="no-padding scrollspy" id="portfolio">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -464,12 +474,12 @@
                             <img class="activator" src="img/projectpics/octagonlogo.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Tino Octagon Website<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="http://tinyurl.com/tinooctagon" target="_blank">Go to Website</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Tino Octagon Website<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://tinyurl.com/chsoctagon" target="_blank">Website <i class="fa fa-edge"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Tino Octagon Website<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
-                            <p>A website that was made for Cupertino High School's Octagon Club. Visit <a href="http://tinyurl.com/tinooctagon" target="_blank">here</a>.</p>
+                            <span class="card-title grey-text text-darken-2">Tino Octagon Website<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>A website that was made for Cupertino High School's Octagon Club. Visit <a href="http://tinyurl.com/chsoctagon" target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -479,12 +489,12 @@
                             <img class="activator" src="img/projectpics/postcodepic.jpg" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Sai Postcode Finder<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="http://tinyurl.com/saipostcodefinder" target="_blank">Go to Website</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Sai Postcode Finder<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://tinyurl.com/saipostcodefind" target="_blank">Website <i class="fa fa-edge"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Sai Postcode Finder<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
-                            <p>Enter any address in the world and receive the postcode in return. A great app that quickly finds the information that you need. Visit <a href="http://tinyurl.com/saipostcodefinder" target="_blank">here</a>.</p>
+                            <span class="card-title grey-text text-darken-2">Sai Postcode Finder<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>Enter any address in the world and receive the postcode in return. A great app that quickly finds the information that you need. Visit <a href="http://tinyurl.com/saipostcodefind" target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -494,12 +504,12 @@
                             <img class="activator" src="img/projectpics/alphabetizerpic.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Alphabetizer<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="http://tinyurl.com/saialphabetizer" target="_blank">Go to Website</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Alphabetizer<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://tinyurl.com/saialphabetize" target="_blank">Website <i class="fa fa-edge"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Alphabetizer<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
-                            <p>Enter all the words you want to alphabetize and it will alphabetize them for you. A great app if you have too many words to alphabetize on your own! Visit <a href="http://tinyurl.com/saialphabetizer" target="_blank">here</a>.</p>
+                            <span class="card-title grey-text text-darken-2">Alphabetizer<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>Enter all the words you want to alphabetize and it will alphabetize them for you. A great app if you have too many words to alphabetize on your own! Visit <a href="http://tinyurl.com/saialphabetize" target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -509,12 +519,12 @@
                             <img class="activator" src="img/projectpics/codeplayerpic.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Sai Code Player<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="http://tinyurl.com/saicodeplayer" target="_blank">Go to Website</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Sai Code Player<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://176.32.230.17/sriharshaguduguntla.com/saicodeplayer/codeplayer.html" target="_blank">Website <i class="fa fa-edge"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Sai Code Player<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
-                            <p>A html, css, and js editor with a simple UI and easy UX! Visit <a href="http://tinyurl.com/saicodeplayer" target="_blank">here</a>.</p>
+                            <span class="card-title grey-text text-darken-2">Sai Code Player<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>A html, css, and js editor with a simple UI and easy UX! Visit <a href="http://176.32.230.17/sriharshaguduguntla.com/saicodeplayer/codeplayer.html" target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -524,11 +534,11 @@
                             <img class="activator" src="img/projectpics/molarmasscalcpic.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Molar Mass Calculator<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">Go to Website</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Molar Mass Calculator<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">Website <i class="fa fa-edge"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Molar Mass Calculator<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
+                            <span class="card-title grey-text text-darken-2">Molar Mass Calculator<i class="right fa fa-arrow-circle-down"></i></span>
                             <p>The simple java program provides a GUI of the periodic table of elements. Use the periodic table provided, to build compounds. Press enter to calculate the molar mass. Download <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">here</a>. Built at Teen Hackathon with the help of Jai Sankar, Chinmay Gharpure, and Rishi Sawhney</p>
                         </div>
                     </div>
@@ -539,41 +549,41 @@
                             <img class="activator" src="img/projectpics/scientificcalcpic.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Java Scientific Calculator<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">Visit Github</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Java Scientific Calculator<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">Github <i class="fa fa-github"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Java Scientific Calculator<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
+                            <span class="card-title grey-text text-darken-2">Java Scientific Calculator<i class="right fa fa-arrow-circle-down"></i></span>
                             <p>The Java program provides an interactive scientific calculator that requires a login. Very useful if you want to use a scientific calculator on the computer. For more info, click <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m4">
+                <!--<div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/projectpics/finalscalcpic.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Finals Grade Calculator App<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="https://github.com/sguduguntla/Android-Finals-Grade-Calculator" target="_blank">Visit Github</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Finals Grade Calculator App<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="https://github.com/sguduguntla/Android-Finals-Grade-Calculator" target="_blank">Github <i class="fa fa-github"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Finals Grade Calculator App<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
+                            <span class="card-title grey-text text-darken-2">Finals Grade Calculator App<i class="right fa fa-arrow-circle-down"></i></span>
                             <p>An android app used to calculate your grade for finals. The app is mainly targeted towards high schoolers as they near their finals. For more info, click <a href="https://github.com/sguduguntla/Android-Finals-Grade-Calculator" target="_blank">here</a>.</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/projectpics/concursumlogo.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Concursum App<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="https://github.com/sguduguntla/Android-Concursum-App" target="_blank">Visit Github</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Concursum App<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="https://github.com/sguduguntla/Android-Concursum-App" target="_blank">Github <i class="fa fa-github"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Concursum App<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
+                            <span class="card-title grey-text text-darken-2">Concursum App<i class="right fa fa-arrow-circle-down"></i></span>
                             <p>An unfinished app that involves a social network where people can form threads and talk about their common interests. Currently unreleased. For more info, click <a href="https://github.com/sguduguntla/Android-Concursum-App" target="_blank">here</a>.</p>
                         </div>
                     </div>
@@ -584,12 +594,12 @@
                             <img class="activator" src="img/projectpics/finalscalcpic.png" width='1000' height='400'>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Finals Grade Calculator App<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator" target="_blank">Visit Github</a>
+                            <span class="card-title activator grey-text text-darken-4">Finals Grade Calculator App<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator" target="_blank">Github <i class="fa fa-github"></i></a>
                             </p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Finals Grade Calculator App<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
+                            <span class="card-title grey-text text-darken-2">Finals Grade Calculator App<i class="right fa fa-arrow-circle-down"></i></span>
                             <p>An iPhone app use to calculate your grade for finals. The app is mainly targeted towards high schoolers as they near their finals. For more info, click <a href="https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator" target="_blank">here</a>.</p>
                         </div>
                     </div>
@@ -600,11 +610,11 @@
                             <img class="activator" src="img/projectpics/stopwatchpic.png" width="1000" height="400">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">iPhone Stopwatch App<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="https://github.com/sguduguntla/iOS-Stopwatch" target="_blank">Visit Github</a></p>
+                            <span class="card-title activator grey-text text-darken-4">iPhone Stopwatch App<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="https://github.com/sguduguntla/iOS-Stopwatch" target="_blank">Github <i class="fa fa-github"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">iPhone Stopwatch App<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
+                            <span class="card-title grey-text text-darken-2">iPhone Stopwatch App<i class="right fa fa-arrow-circle-down"></i></span>
                             <p>A simple iPhone app with an interactive stopwatch. For more info, click <a href="https://github.com/sguduguntla/iOS-Stopwatch" target="_blank">here</a>.</p>
                         </div>
                     </div>
@@ -615,12 +625,89 @@
                             <img class="activator" src="img/projectpics/durimlogo.png" width="1000" height="400">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Durim<i style="font-size: 0.7em" class="material-icons right">More info</i></span>
-                            <p><a href="http://www.tinyurl.com/durimapp" target="_blank">Visit Website</a></p>
+                            <span class="card-title activator grey-text text-darken-4">Durim<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://www.tinyurl.com/durimfitness" target="_blank">Website <i class="fa fa-edge"></i>|</a>
+                                <a href="https://github.com/sguduguntla/Durim-Fitness-App" target="_blank">Github <i class="fa fa-github"></i>|</a>
+                                <a href="http://devpost.com/software/durim" target="_blank">Devpost <i class="fa fa-globe"></i></a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Durim Fitness App<i style="font-size: 0.7em" class="material-icons right">Back</i></span>
-                            <p>We have built a simple Pebble and Web app that allows users to track their fitness data over time. Users with a Pebble watch will enter their data into their watch which will be displayed on our website as stats and graphs. We display our data in a variety of ways to ensure that the user has the best visual representation possible! Durim is mainly geared towards schools that are interested in modernizing their physical fitness classes. Students can easily track their data throughout the school year and share their data with their teacher straight through the website. It is a much more flexible way to track your data instead of trying to keep loose papers safe. Instead, everything you do will be stored on our secure cloud to ensure the perfect user experience! You can visit the website <a href="http://www.tinyurl.com/durimapp" target="_blank">here</a>. Built at HackingEDU by me and Rishan Girish</p>
+                            <span class="card-title grey-text text-darken-2">Durim Fitness App<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>We have built a simple Pebble and Web app that allows users to track their fitness data over time. Users with a Pebble watch will enter their data into their watch which will be displayed on our website as stats and graphs. We display our data in a variety of ways to ensure that the user has the best visual representation possible! Durim is mainly geared towards schools that are interested in modernizing their physical fitness classes. Students can easily track their data throughout the school year and share their data with their teacher straight through the website. It is a much more flexible way to track your data instead of trying to keep loose papers safe. Instead, everything you do will be stored on our secure cloud to ensure the perfect user experience! You can visit the website <a href="http://www.tinyurl.com/durimfitness" target="_blank">here</a>. Built at HackingEDU by me and Rishan Girish</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow zoomIn">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/projectpics/quikbuxpic.png" width="1000" height="400">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">QuikBux<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="http://quikbux.github.io" target="_blank">Website <i class="fa fa-edge"></i>|</a>
+                                <a href="https://github.com/QuikBux" target="_blank">Github <i class="fa fa-github"></i>|</a>
+                                <a href="http://devpost.com/software/quikbux-github-io" target="_blank">Devpost <i class="fa fa-globe"></i></a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-2">QuikBux<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>We made a simple Web and iOS app called QuikBux that allows people to hire others for small jobs to earn quick cash. Workers have an online profile that others can see and follow. Clients can leave reviews of the workers. Clients can also post new jobs for workers to find and contact them. Everyone can see other's public profiles and contact them for a job. We have also included an interactive map powered by Google Maps that updates the location of all users in realtime. It is a very significant app because many people struggle to find credible people that they can trust to do their jobs. For example, it would be nice to hire movers to help move furniture out of the house. You can simply go to our app, and post a job which will then be seen by other workers that are interested in earning some money. The app was built by Ayush Jain, Kiran KV, Rishan Girish, and I during MakeHacks Fall 2015 in 24 hours. The web development was done by Ayush and I while the iOS Development was done by Kiran and Rishan. The app won first prize for the Dailymotion Social Media Hack and 5th overall out of about 45-50 other teams. You can visit the website <a href="http://quikbux.github.io" target="_blank">here</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 wow zoomIn">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/projectpics/Easy.jpg" width="1000" height="400">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Easy Loop<i class="right fa fa-info-circle"></i></span>
+                            <p><a href="https://chrome.google.com/webstore/detail/school-loop-easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj" target="_blank">Website <i class="fa fa-edge"></i>|</a>
+                                <a href="https://github.com/sguduguntla/Easy-Loop-Extension" target="_blank">Github <i class="fa fa-github"></i></a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-2">Easy Loop<i class="right fa fa-arrow-circle-down"></i></span>
+                            <p>Easy Loop is a simple Schoolloop Chrome extension that adds the ability to calculate grades with realtime grade updates and a beautiful user interface. Before enabling this extension, please make sure that any similar schoolloop extensions are disabled since they may interfere with Easy Loop.
+                                <br/> How to Disable Extensions Temporarily:
+                                <br/>
+                                <ol>
+                                    <li> On your browser, click menu or the three bars that look like a hamburger</li>
+                                    <li> Select More tools > Extensions. </li>
+                                    <li> To turn off an extension, uncheck the Enabled box. Check the box to turn it on. </li>
+                                </ol>
+                                <br/> Easy Loop Features:
+                                <br/>
+                                <ol>
+                                    <li> Add and delete assignments</li>
+                                    <li> Add new weightage categories</li>
+                                    <li> Calculate final and category grades within seconds, etc.</li>
+                                    <li> Finals Grade Calculator</li>
+                                    <li> Enhance the visual appearance of their Schoolloop </li>
+                                </ol>
+                                <br/> Easy Loop will provide you the features that only your teachers are essentially permitted. Therefore, be your teacher today and calculate your grade within seconds!
+                                <br/> Please await further updates including:
+                                <br/>
+                                <ol>
+                                    <li> Reset, undo, more precision</li>
+                                    <li> Bug fixes</li>
+                                    <li> Smoother UI</li>
+                                    <li> Ability to delete existing categories, etc. </li>
+                                    <li> Further appearance customization</li>
+                                </ol>
+                                <br/> Email me at sguduguntla11@gmail.com for any questions, concerns, or comments. Leave suggestions or report any issues at:
+                                <br/>
+                                <br/> https://github.com/sguduguntla/Easy-Loop-Extension/issues
+                                <br/>
+                                <br/> Visit me at my personal website:
+                                <br/>
+                                <br/> http://tinyurl.com/sguduguntla
+                                <br/>
+                                <br/> Check out my Github Page:
+                                <br/>
+                                <br/> https://github.com/sguduguntla.
+                                <br/>
+                                <br/> If your browser asks to "Load an unsafe script", don't hesitate to load the script as it is 100% safe and secured by Google servers. It will simply activate some realtime features that may not work if the script isn't loaded.
+                                <br/>
+                                <br/> Privacy Policy: Please note that Easy Loop is 100% safe as it does not store any data and it ensures that all extracted info is deleted after the particular session. Login details, grades, etc. are not stored or accessible by Easy Loop thanks to the Google Chrome extension policies. This extension has no affiliation with the Schoolloop company. Please feel free to leave reviews <a href="https://github.com/sguduguntla/Easy-Loop-Extension/issues" target="_blank">here</a> and visit the website <a href="https://chrome.google.com/webstore/detail/school-loop-easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj" target="_blank">here</a></p>
                         </div>
                     </div>
                 </div>
@@ -636,7 +723,7 @@
             </div>
         </div>
     </aside>
-    <section id="contact">
+    <section class="scrollspy" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -653,16 +740,19 @@
                     <p><a href="mailto:sguduguntla11@gmail.com">sguduguntla11@gmail.com</a></p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a class="btn waves-effect waves-dark page-scroll" href="#home">Back to Top</a>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Back to Top" class="tooltipped btn waves-effect waves-dark page-scroll" href="#home"><i class="fa fa-arrow-circle-up"></i></a>
                 </div>
             </div>
         </div>
     </section>
     <script>
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({
+        edge: 'right'
+    });
     </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="Vide/dist/jquery.vide.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
@@ -671,6 +761,8 @@
     <script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <!--Add to Homescreen snippet-->
+    <script src="js/addtohomescreen/src/addtohomescreen.js"></script>
 </body>
 
 </html>
