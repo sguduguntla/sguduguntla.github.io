@@ -68,30 +68,20 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,800' rel='stylesheet' type='text/css'>
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,800' rel='stylesheet' type='text/css'>
-    
-    <script>
-    addToHomescreen({
-        skipFirstVisit: true,
-        maxDisplayCount: 1
-    });
-    </script>
-    <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!--Parse-->
-    <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
     <!--MaterializeCSS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif" id="page-top">
-    <nav style="position: fixed; z-index: 2000; opacity: 1; background-color: white; color: black; box-shadow: 5px 5px 10px">
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Navbar Section-->
+    <nav style="position: fixed; z-index: 2000; opacity: 1; background-color: white; color: black;">
         <div class="nav-wrapper">
             <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="fa fa-bars fa-lg"
  style="color: black; font-size: 1.7em; position: relative; top: 5px; right: 20px"></i></a>
@@ -118,6 +108,7 @@
                     <a data-position="bottom" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray" class="tooltipped waves-effect waves-dark page-scroll" href="#contact"><i class="fa fa-phone"></i></a>
                 </li>
             </ul>
+            <!--Mobile Navbar-->
             <ul class="side-nav right" id="mobile-demo">
                 <li>
                     <a data-position="left" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;" class="tooltipped waves-effect waves-dark page-scroll" href="#home"><i class="fa fa-home"></i></a>
@@ -139,92 +130,35 @@
             </ul>
         </div>
     </nav>
-    <script>
-    Parse.initialize("icPAynJKSSLmT5PkhAdfSZrjgFBEQFJUZv1LL704", "KA0zMWkCbGtbQ8gYts67mGg9TVnuTVfS0c25SNGM");
-    var Hit = Parse.Object.extend("Hit");
-    var query = new Parse.Query(Hit);
-    //Gets the number of hits
-    query.get("HEtgoKixIQ", {
-        success: function(hit) {
-            // The object was retrieved successfully.
-            hit.increment("numHits");
-            hit.save();
-            $("#numViews").html(hit.get("numHits"));
-            $("#numViews").addClass("animated zoomIn");
-        },
-        error: function(object, error) {
-            // The object was not retrieved successfully.
-            // error is a Parse.Error with an error code and message.
-        }
-    });
-    $(document).ready(function() {
-        $('.tooltipped').tooltip({
-            delay: 50
-        });
-        //$('.scrollspy').scrollSpy();
-    });
-    </script>
-    <div id="home" style="width: 100%; height: 100%; margin:0; top:0;" data-vide-bg="176.32.230.17/sriharshaguduguntla.com/Type/MP4/type" data-vide-options="loop: true, muted: true, position: 0% 0%" class="scrollspy">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 class="animated tada" style="font-family: 'Open Sans', sans-serif; font-weight: 100">Sriharsha Guduguntla</h1>
-                <hr style="border-color: gray">
-                <p style="color: white">I am Sriharsha Guduguntla and I am currently a Sophomore in Cupertino High School. I am involved in many extracurricular activities outside of school including chess, singing, app development, programming, math modeling, etc. Often, I strive to learn new things and explore the world ahead of me. I am most motivated by my favorite quote by Nikos Kazantzakis, "In order to succeed, we must first believe we can."
-                </p>
-                <a style="color: black" href="#about" class="waves-effect waves-dark btn white page-scroll animated pulse"><i class="fa fa-chevron-circle-down"></i></a>
-                <br>
-                <br>
-                <br>
-                <p class="lead label label-success" style="color: white; font-size: 1.5em"><span id="numViews"></span> Views</p>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Home Section (Top)-->
+    <div id="home" style="width: 100%; height: 100%; margin:0; top:0;" data-vide-bg="http://176.32.230.17/sriharshaguduguntla.com/Type/MP4/Type" data-vide-options="loop: true, muted: true, position: 0% 0%" class="scrollspy">
+        <div class="overlay">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1 class="animated tada" style="color: black; opacity: 1; font-family: 'Open Sans', sans-serif; font-weight: 100">Sriharsha Guduguntla</h1>
+                    <hr style="border-color: gray">
+                    <p style="color: black">"In order to succeed, we must first believe we can." - Nikos Kazantzakis
+                    </p>
+                    <a style="color: black; top: 100px" href="#about" class="waves-effect waves-dark btn white page-scroll animated pulse"><i class="fa fa-chevron-circle-down"></i></a>
+                    <br>
+                    <br>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
-    <!--<header style="font-family: 'Open Sans', sans-serif" id="home">
-    </header>-->
-    <!--<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-    <!--<div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top">Sriharsha Guduguntla</a>
-      </div>-->
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="page-scroll" href="#home">Home</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#about">About Me</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#services">Skills</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#portfolio">Projects</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#contact">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    <!--</div>
-    <!-- /.container-fluid -->
-    <!--</nav>-->
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--About Me Section-->
     <section class="bg-primary scrollspy" id="about">
-        <div style="color: black" class="container">
+        <div style="color: black;" class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">About Me</h2>
+                    <i class="fa fa-info-circle fa-lg"></i>
                     <hr style="border-color: black">
-                    <div style="color: black" class="text-faded">
-                        As mentioned earlier, one of my interests includes programming and developing apps for both ios, web, and java. Being more experienced with web and java, most of my projects are geared towards them. I've only recently developed an interest in ios app development and I hope to continue learning it.
+                    <div style="color: black; font-size: 1.2em;" class="text-faded">
+                        I am Sriharsha Guduguntla and I am currently a Sophomore in Cupertino High School. I am involved in many extracurricular activities outside of school including chess, singing, app development, programming, math modeling, etc. Often, I strive to learn new things and explore the world ahead of me. One of my major interests includes programming and developing apps for both ios, web, and java. Being more experienced with web and java, most of my projects are geared towards them. I've only recently developed an interest in ios app development and I hope to continue learning it.
                         </p>
                         <a style="color: black" href="#services" class="waves-effect waves-dark btn white page-scroll">
                             <i class="fa fa-chevron-circle-down"></i></span>
@@ -233,11 +167,14 @@
                 </div>
             </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Skills Section-->
     <section class="scrollspy" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Skills</h2>
+                    <i class="fa fa-code fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
@@ -276,202 +213,25 @@
         </div>
     </section>
     </div>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Projects Section-->
     <section class="no-padding scrollspy" id="portfolio">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
+                    <h2 style="margin-top: 100px;font-family: 'Open Sans', sans-serif; font-weight: 100;">Projects</h2>
+                    <i class="fa fa-suitcase fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
-            <!--<div class="row no-gutter">
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://176.32.230.17/saiwebdevdomain.com/php/tino-octagon-website/index.php" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Web Development
-                </div>
-                <div class="project-name">
-                  Tino Octagon Website
-                </div>
-                <div class="text-faded">
-                  http://176.32.230.17/saiwebdevdomain.com/php/tino-octagon-website/index.php
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://176.32.230.17/saiwebdevdomain.com/apis/googlemaps/postcode-finder-index.html" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Web Development
-                </div>
-                <div class="project-name">
-                  Sai Postcode Finder
-                </div>
-                <div class="text-faded">
-                  http://176.32.230.17/saiwebdevdomain.com/apis/googlemaps/postcode-finder-index.html
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://176.32.230.17/saiwebdevdomain.com/bday-countdown/index.php" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Web Development
-                </div>
-                <div class="project-name">
-                  My Birthday Countdown
-                </div>
-                <div class="text-faded">
-                    http://176.32.230.17/saiwebdevdomain.com/bday-countdown/index.php
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-          <div class="col-lg-4 col-sm-6">
-          <a href="http://176.32.230.17/saiwebdevdomain.com/alphabetizer/index.html" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Web Development
-                </div>
-                <div class="project-name">
-                  Alphabetizer
-                </div>
-                <div class="text-faded">
-                    http://176.32.230.17/saiwebdevdomain.com/alphabetizer/index.html
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="https://sites.google.com/site/sjcrvmolarmasscalculator/products-services" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Java
-                </div>
-                <div class="project-name">
-                  Molar Mass Calculator
-                </div>
-                <div class="text-faded">
-                    https://sites.google.com/site/sjcrvmolarmasscalculator/products-services
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Java
-                </div>
-                <div class="project-name">
-                  Scientific Calculator
-                </div>
-                <div class="text-faded">
-                  https://github.com/sguduguntla/Java-Scientific-Calculator
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="https://github.com/sguduguntla/Android-Finals-Grade-Calculator" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Android Java
-                </div>
-                <div class="project-name">
-                  Finals Grade Calculator App
-                </div>
-                <div class="text-faded">
-                  https://github.com/sguduguntla/Android-Finals-Grade-Calculator
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="https://github.com/sguduguntla/Android-Concursum-App" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Android Java
-                </div>
-                <div class="project-name">
-                  Concursum App
-                </div>
-                <div class="text-faded">
-                  https://github.com/sguduguntla/Android-Concursum-App
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  iOS Development
-                </div>
-                <div class="project-name">
-                  Finals Grade Calculator App
-                </div>
-                <div class="text-faded">
-                  https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="https://github.com/sguduguntla/iOS-Stopwatch" target="_blank" class="portfolio-box">
-            <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  iOS Development
-                </div>
-                <div class="project-name">
-                  Stopwatch App
-                </div>
-                <div class="text-faded">
-                  https://github.com/sguduguntla/iOS-Stopwatch
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>-->
             <div class="row">
+                <!--Tino Octagon Website-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/octagonlogo.png" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/octagonlogo.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Tino Octagon Website<i class="right fa fa-info-circle"></i></span>
@@ -483,10 +243,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Sai Postcode Finder-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/postcodepic.jpg" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/postcodepic.jpg">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Sai Postcode Finder<i class="right fa fa-info-circle"></i></span>
@@ -498,10 +261,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Alphabetizer-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/alphabetizerpic.png" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/alphabetizerpic.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Alphabetizer<i class="right fa fa-info-circle"></i></span>
@@ -513,10 +279,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Sai Code Player-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/codeplayerpic.png" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/codeplayerpic.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Sai Code Player<i class="right fa fa-info-circle"></i></span>
@@ -528,10 +297,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Molar Mass Calculator-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/molarmasscalcpic.png" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/molarmasscalcpic.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Molar Mass Calculator<i class="right fa fa-info-circle"></i></span>
@@ -543,10 +315,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Java Scientific Calculator-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/scientificcalcpic.png" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/scientificcalcpic.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Java Scientific Calculator<i class="right fa fa-info-circle"></i></span>
@@ -558,25 +333,13 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="col s12 m4">
-                    <div class="card wow zoomIn">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/finalscalcpic.png" width='1000' height='400'>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Finals Grade Calculator App<i class="right fa fa-info-circle"></i></span>
-                            <p><a href="https://github.com/sguduguntla/Android-Finals-Grade-Calculator" target="_blank">Github <i class="fa fa-github"></i></a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-2">Finals Grade Calculator App<i class="right fa fa-arrow-circle-down"></i></span>
-                            <p>An android app used to calculate your grade for finals. The app is mainly targeted towards high schoolers as they near their finals. For more info, click <a href="https://github.com/sguduguntla/Android-Finals-Grade-Calculator" target="_blank">here</a>.</p>
-                        </div>
-                    </div>
-                </div>-->
+                <!--Concursum App-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/concursumlogo.png" width='1000' height='400'>
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/concursumlogo.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Concursum App<i class="right fa fa-info-circle"></i></span>
@@ -588,10 +351,15 @@
                         </div>
                     </div>
                 </div>
+                <!--Finals Grade Calculator App-->
                 <div class="col s12 m4">
                     <div class="card wow zoomIn">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/finalscalcpic.png" width='1000' height='400'>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                    <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/finalscalcpic.png">
+                                </div>
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Finals Grade Calculator App<i class="right fa fa-info-circle"></i></span>
@@ -600,14 +368,17 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Finals Grade Calculator App<i class="right fa fa-arrow-circle-down"></i></span>
-                            <p>An iPhone app use to calculate your grade for finals. The app is mainly targeted towards high schoolers as they near their finals. For more info, click <a href="https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator" target="_blank">here</a>.</p>
+                            <p>An iPhone and Android app use to calculate your grade for finals. The app is mainly targeted towards high schoolers as they near their finals. For more info, click <a href="https://github.com/sguduguntla/iPhone-Finals-Grade-Calculator" target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
+                <!--iPhone Stopwatch-->
                 <div class="col s12 m4 wow zoomIn">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/stopwatchpic.png" width="1000" height="400">
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/stopwatchpic.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">iPhone Stopwatch App<i class="right fa fa-info-circle"></i></span>
@@ -619,10 +390,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Durim Fitness-->
                 <div class="col s12 m4 wow zoomIn">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/durimlogo.png" width="1000" height="400">
+                            <div style='position: relative; height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/durimlogo.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Durim<i class="right fa fa-info-circle"></i></span>
@@ -636,10 +410,13 @@
                         </div>
                     </div>
                 </div>
+                <!--QuikBux-->
                 <div class="col s12 m4 wow zoomIn">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/quikbuxpic.png" width="1000" height="400">
+                            <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/quikbuxpic.png">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">QuikBux<i class="right fa fa-info-circle"></i></span>
@@ -653,10 +430,13 @@
                         </div>
                     </div>
                 </div>
+                <!--Easy Loop Extension-->
                 <div class="col s12 m4 wow zoomIn">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/projectpics/Easy.jpg" width="1000" height="400">
+                            <div style='position: relative; height:300px; width: 100%;overflow: hidden;'>
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/Easy.jpg">
+                            </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Easy Loop<i class="right fa fa-info-circle"></i></span>
@@ -713,18 +493,22 @@
                 </div>
             </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Visit Github Section-->
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Visit my Github</h2>
                 <a href="https://github.com/sguduguntla" target="_blank" class="btn waves-effect waves-light wow tada">
-                    <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                    <i class="fa fa-github"></i>
                 </a>
             </div>
         </div>
     </aside>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Footer Section (Contact Me)-->
     <section class="scrollspy" id="contact">
-        <div class="container">
+        <div class="container" style="height: 250px;">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
@@ -739,19 +523,59 @@
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:sguduguntla11@gmail.com">sguduguntla11@gmail.com</a></p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a data-position="bottom" data-delay="50" data-tooltip="Back to Top" class="tooltipped btn waves-effect waves-dark page-scroll" href="#home"><i class="fa fa-arrow-circle-up"></i></a>
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="color: grey; margin-top: 80px; margin-bottom:0;">
+                    <p>&copy All Rights Reserved | Sriharsha Guduguntla</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!--Scripts-->
     <script>
-    $(".button-collapse").sideNav({
-        edge: 'right'
+    $(document).ready(function() {
+
+        //Mobile "Add to Homescreen" alert activated
+        addToHomescreen({
+            skipFirstVisit: true,
+            maxDisplayCount: 1
+        });
+
+        /*************************/
+
+        //Tooltips are activated
+        $('.tooltipped').tooltip({
+            delay: 50
+        });
+
+        /*************************/
+
+        //Side-nav comes out from the right
+        $(".button-collapse").sideNav({
+            edge: 'right'
+        });
+
+        /*************************/
+
+        //Google Analytics
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-72808221-1', 'auto');
+        ga('send', 'pageview');
     });
     </script>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--jQuery Background Video (Vide)-->
     <script src="Vide/dist/jquery.vide.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -761,6 +585,8 @@
     <script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <!--MaterializeCSS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
     <!--Add to Homescreen snippet-->
     <script src="js/addtohomescreen/src/addtohomescreen.js"></script>
 </body>
