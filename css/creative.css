@@ -7,7 +7,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: black;
 }
 
 
@@ -27,9 +26,7 @@ body {
 
 body {
     font-family: 'Helvetica Neue',Arial,sans-serif;
-
-body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    webkit-tap-highlight-color: #222;
 }
 
 hr {
@@ -549,8 +546,4 @@ img::selection {
 img::-moz-selection {
     color: #fff;
     background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: #222;
 }
