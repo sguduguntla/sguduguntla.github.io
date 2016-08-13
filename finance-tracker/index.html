@@ -1,0 +1,1269 @@
+<html>
+
+<head>
+    <title>Finance Tracker</title>
+    <link rel="icon" href="img/finance-icons/favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/jspdf.js"></script>
+    <script src="js/canvg.js"></script>
+    <script src="js/rgbcolor.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="js/suggestions.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div style="background-color: rgba(20, 147, 226, 1)" class="nav-wrapper">
+            <a href="#" class="animated fadeIn brand-logo center" style="color: white;">My Investments</a>
+            <a href="#" id="menuBtn" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="analytics animated fadeIn tabActive tooltipped" data-position="bottom" data-delay="50" data-tooltip="Investments"><i class="fa fa-lg fa-line-chart"></i></a></li>
+                <li><a class="aboutus animated fadeIn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Steps to Success"><i class="fa fa-lg fa-hourglass-start"></i></a></li>
+                <li><a class="goals animated fadeIn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Analytics"><i class="fa fa-lg fa-bar-chart"></i></a></li>
+                <li><a class="suggestions animated fadeIn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Motivate Me"><i class="fa fa-lg fa-smile-o"></i></a></li>
+                <li><a class="showProfile"><i class="fa fa-lg fa-chevron-down"></i></a></li>
+            </ul>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="home.html" class="animated fadeIn" id="logout"><i class="fa
+                 fa-lg fa-sign-out"></i></a></li>
+                <li style="margin-left: 10px; font-size: 1.2em;" class="animated fadeIn dateToday"></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="analytics animated fadeIn tabActive tooltipped" data-position="right" data-delay="50" data-tooltip="Investments"><i class="fa fa-lg fa-line-chart"></i></a></li>
+                <li><a class="aboutus animated fadeIn tooltipped" data-position="right" data-delay="50" data-tooltip="Steps to Success"><i class="fa fa-lg fa-hourglass-start"></i></a></li>
+                <li><a class="goals animated fadeIn tooltipped" data-position="right" data-delay="50" data-tooltip="Analytics"><i class="fa fa-lg fa-bar-chart"></i></a></li>
+                <li><a class="suggestions animated fadeIn tooltipped" data-position="right" data-delay="50" data-tooltip="Motivate Me"><i class="fa fa-lg fa-smile-o"></i></a></li>
+                <li><a class="showProfile"><i class="fa fa-lg fa-chevron-down"></i></a></li>
+                <li><a class="animated fadeIn" id="logout"><i class="fa
+                 fa-lg fa-sign-out"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="aboutUsPage" class="container-fluid">
+        <div id="explanation" class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="card-panel white">
+                            <span class="black-text">After careful analysis of you investment behavior, I have concluded that these companies are great choices for you to invest. I have chosen affordable and growing companies that are sure to maximize your investments. Although I am never 100% sure, I can assure you that you will be led in the right direction. I was programmed to take into account all variables including reliability, popularity, improvement, long-term changes, short-term changes, highs and lows, etc. If you are interested in starting your investment journey, press the "Begin" button now!
+          </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="center">
+                            <a id="begin" class="waves-effect waves-dark btn white black-text">Begin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="companyList" class="row">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12 m12 center">
+                            <div class="card-panel white">
+                                <span class="black-text">Here are the list of companies that I have gathered. Please take a moment to look through them.
+          </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <br/>
+                    <table class="striped centered highlight">
+                        <thead>
+                            <tr>
+                                <th data-field="companyCol">Company</th>
+                                <th data-field="stockCol">Current Stock ($)</th>
+                                <th data-field="shareCol"># of Shares</th>
+                                <th data-field="reasonCol">Reason</th>
+                                <th data-field="gainCol">Gains</th>
+                                <th data-field="investCol">Invest?</th>
+                            </tr>
+                        </thead>
+                        <tbody id="companyTable">
+                            <tr style="height: 100px !important;" class="animated fadeIn">
+                                <td>Starbucks</td>
+                                <td>$58.36</td>
+                                <td>250</td>
+                                <td>Profit of 2.7%</td>
+                                <td>0.15% in 3 days</td>
+                                <td>
+                                    <a href="https://us.etrade.com/investing-trading/investment-choices/stocks/stocks-v2?ploc=it-nav" style="color: black" target="_blank" class="btn waves-effect makeInvest waves-dark white"><i class="fa fa-credit-card"></i></a>
+                                </td>
+                            </tr>
+                            <tr style="height: 100px !important;" class="animated fadeIn">
+                                <td>Mcdonalds</td>
+                                <td>$123.26</td>
+                                <td>400</td>
+                                <td>Profit of 3.9%</td>
+                                <td>0.09% in 3 days</td>
+                                <td>
+                                    <a href="https://us.etrade.com/investing-trading/investment-choices/stocks/stocks-v2?ploc=it-nav" style="color: black" target="_blank" class="btn waves-effect makeInvest waves-dark white"><i class="fa fa-credit-card"></i></a>
+                                </td>
+                            </tr>
+                            <tr style="height: 100px !important;" class="animated fadeIn">
+                                <td>LAM Research</td>
+                                <td>$78.88</td>
+                                <td>100</td>
+                                <td>Profit of 1.1%</td>
+                                <td>0.05% in 3 days</td>
+                                <td>
+                                    <a href="https://us.etrade.com/investing-trading/investment-choices/stocks/stocks-v2?ploc=it-nav" style="color: black" target="_blank" class="btn waves-effect makeInvest waves-dark white"><i class="fa fa-credit-card"></i></a>
+                                </td>
+                            </tr>
+                            <tr style="height: 100px !important;" class="animated fadeIn">
+                                <td>NVIDIA</td>
+                                <td>$34.48</td>
+                                <td>575</td>
+                                <td>Profit of 2.0 %</td>
+                                <td>0.15% in 3 days</td>
+                                <td>
+                                    <a href="https://us.etrade.com/investing-trading/investment-choices/stocks/stocks-v2?ploc=it-nav" style="color: black" target="_blank" class="btn waves-effect makeInvest waves-dark white"><i class="fa fa-credit-card"></i></a>
+                                </td>
+                            </tr>
+                            <tr style="height: 100px !important;" class="animated fadeIn">
+                                <td>Walmart</td>
+                                <td>$67.99</td>
+                                <td>75</td>
+                                <td>Profit of 1.3%</td>
+                                <td>0.79% in 3 days</td>
+                                <td>
+                                    <a href="https://us.etrade.com/investing-trading/investment-choices/stocks/stocks-v2?ploc=it-nav" style="color: black" target="_blank" class="btn waves-effect makeInvest waves-dark white"><i class="fa fa-credit-card"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="goalsPage" class="container-fluid">
+        <div class="row">
+            <div class="col s12">
+                <div class="center">
+                    <h1>Starbucks</h1>
+                    <div id="starbucksGraph" class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="center">
+                    <h1>Mcdonalds</h1>
+                    <div id="mcdGraph" class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="center">
+                    <h1>LAM Research</h1>
+                    <div id="lamGraph" class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="center">
+                    <h1>NVIDIA</h1>
+                    <div id="nvidiaGraph" class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="center">
+                    <h1>Walmart</h1>
+                    <div id="walmartGraph" class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="suggestionsPage" class="container-fluid">
+        <div class="row">
+            <div class="col s12">
+                <div id="motivateButtons" class="center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="graphPage" class="container-fluid">
+        <div id="investButton" class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+            <a href="#investmentsModal" data-target="#investmentsModal" target="_top" style="background-color: #0293ed" class="btn-floating btn-large waves-effect waves-light modal-trigger tooltip" data-tooltip="Add Investment" data-position="left" data-delay="50">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <br/>
+                <button id='clearInvestments' style='color: black' class='btn waves-effect deleteInvestment waves-dark white'>CLEAR</button>
+                <table class="striped centered highlight">
+                    <thead>
+                        <tr>
+                            <th data-field="companyCol">Company</th>
+                            <th data-field="stockCol">Current Stock ($)</th>
+                            <th data-field="shareCol"># of Shares</th>
+                            <th data-field="totalCol">Total Investment</th>
+                            <th data-field="profitCol">Profit (+) / Loss (-)</th>
+                            <th data-field="deleteCol">Delete?</th>
+                        </tr>
+                    </thead>
+                    <tbody id="investmentsTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="investmentsModal" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Add Investment</h4>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">label</i>
+                                <input id="icon_prefix" type="text" class="validate companyTicker">
+                                <label for="icon_prefix">Company Ticker (i.e. GOOGL, AAPL)</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">list</i>
+                                <input id="icon_telephone" type="tel" class="validate companyShares">
+                                <label for="icon_telephone"># of Shares</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">payment</i>
+                                <input id="icon_telephone" type="tel" class="validate origPrice">
+                                <label for="icon_telephone">Price Bought At</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a style="position: relative; bottom: 60px; !important; color: black;" id="setInvestment" class="modal-action modal-close waves-effect waves-green btn-flat">Add</a>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(window).load(function() {
+        suggestionsJS();
+
+        responsiveVoice.setDefaultVoice("US English Female");
+
+        responsiveVoice.speak("Welcome Guest! I am Rena, your personal investment assistant. Nice to meet you. Did you know that Wall Street is a not only a physical location in lower Manhattan, it is also a colloquial expression that can be used to describe the entire stock market?");
+
+        Materialize.toast('Welcome Guest! I am Rena, your personal investment assistant. Nice to meet you. Did you know that Wall Street is a not only a physical location in lower Manhattan, it is also a colloquial expression that can be used to describe the entire stock market?', 8000, 'rounded');
+
+
+        $(".dateToday").html(getWordDateToday());
+
+        $('select').material_select();
+
+        $('.tooltipped').tooltip({
+            delay: 50
+        });
+
+        $('.modal-trigger').leanModal();
+
+        $(".button-collapse").sideNav();
+
+        initGraphs();
+        initProfile();
+
+        $("#menuBtn").click(function(e) {
+            if ($(".showProfile i").hasClass("fa-chevron-up")) {
+                $(".showProfile").html('<i style="color: black" class="fa fa-lg fa-chevron-up"></i>');
+            } else {
+                $(".showProfile").html('<i style="color: black" class="fa fa-lg fa-chevron-down"></i>');
+            }
+        });
+
+        var ref = new Firebase("https://finance-tracker.firebaseio.com/");
+
+        $("#investmentsTable").html("");
+
+        ref.child("myinvestments").once("value", function(snapshot) {
+
+            var snap = snapshot.val();
+
+            var numInvestments = Object.keys(snap).length;
+
+            var overallInvestment = 0;
+
+            var overallProfit = 0;
+
+            console.log(numInvestments);
+
+            console.log(snap);
+
+            var i = 0;
+
+            while (i < numInvestments) {
+
+                var tickerName = Object.keys(snap)[i];
+
+                ! function outer(i, tickerName) {
+
+                    getCurrentStockPrice(tickerName, function(curStockPrice) {
+
+                        console.log("Stock Price: " + curStockPrice);
+
+                        console.log(tickerName);
+
+                        var companyShares = snap[tickerName].numShares;
+
+                        console.log(companyShares);
+
+                        var totalInvest = snap[tickerName].totalInvestment;
+
+                        overallInvestment += totalInvest;
+
+                        var profit = (parseFloat(companyShares) * parseFloat(curStockPrice)) - parseFloat(totalInvest);
+
+                        overallProfit += profit;
+
+                        var str = '<tr style="height: 100px !important;" class="animated fadeIn">';
+                        str += '<td>' + tickerName + '</td>';
+                        str += '<td>$' + parseFloat(curStockPrice).toFixed(2) + '</td>';
+                        str += '<td>' + companyShares + '</td>';
+                        str += '<td>$' + parseFloat(totalInvest).toFixed(2) + '</td>';
+                        str += '<td>$' + profit.toFixed(2) + '</td>';
+                        str += '<td><button style="color: black" class="btn waves-effect deleteInvestment waves-dark white"><i class="fa fa-trash"></i></button></td>';
+                        str += '</tr>';
+
+                        $("#investmentsTable").append(str);
+
+                        $(".deleteInvestment").click(function(e) {
+                            e.preventDefault();
+                            $(this).parent().parent().fadeOut();
+
+                            ref.child("myinvestments").child($(this).parent().parent().children(":first").text()).remove();
+                        });
+                    });
+                }(i, tickerName)
+
+                i++;
+
+
+
+            }
+
+        });
+
+        initSuggestionsAlerts();
+
+        function initSuggestionsAlerts() {
+            var notificationMessage = "";
+
+            if (!Notification) {
+                alert('Desktop notifications not available in your browser. Try Chromium.');
+                return;
+            }
+
+            if (Notification.permission !== "granted") {
+                Notification.requestPermission();
+            } else {
+                console.log("Added already");
+            }
+
+            var quotes = ["Our work is the presentation of our capabilities. - Edward Gibbon", "An organization's ability to learn, and translate that learning into action rapidly, is the ultimate competitive advantage. - Jack Welch", "Just because something doesn't do what you planned it to do doesn't mean it's useless. - Thomas Edison", "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations. - Steve Jobs", "The entrepreneur always searches for change, responds to it, and exploits it as an opportunity. - Peter Drucker", "Sales are contingent upon the attitude of the salesman - not the attitude of the prospect. - W. Clement Stone", "If you listen to your fears, you will die never knowing what a great person you might have been. - Robert H. Schuller"];
+
+
+            var number = Math.floor(Math.random() * 6);
+
+            var startNotification = new Notification("Welcome Guest! How's your day?", {
+                icon: 'img/profilePic.jpg',
+                body: quotes[number]
+            });
+
+        }
+
+        function setupSuggestionsLog() {
+            var table = "<div class='row'><div class='col s12'><button id='clearSuggestions' style='color: black' class='btn waves-effect waves-dark white'>CLEAR</button><table class='animated fadeIn centered highlight striped'>";
+            table += "<thead><tr><th data-field='date'>Date of Occurrence</th>";
+            table += "<th data-field='time'>Time</th>";
+            table += "<th data-field='degrees'>Posture (\xB0)</th>";
+            table += "<th data-field='suggestion'>Suggestion</th>";
+            table += "</tr></thead>";
+            table += "<tbody id='suggestionLog'>";
+
+            var isFirstTime = true;
+
+            $("#sugLog").html("");
+
+            ref.child("suggestions").on("value", function(snapshot) {
+
+
+                var valuesStr = snapshot.val();
+
+                if (isFirstTime) {
+
+                    //Just get initial values
+
+                    if (valuesStr != null && valuesStr) {
+                        var allValues = valuesStr.split(","); //[26*2016/02/18 12:30:33, 32*2016/02/18 12:30:33, 26*2016/02/18 12:30:33, 32*2016/02/18 12:30:33]
+                        for (var i = allValues.length - 1; i >= 0; i--) {
+                            var val = allValues[i];
+                            var eachVal = val.split("*");
+                            var suggestion = eachVal[0];
+                            var fullTimeStamp = eachVal[1].split("#")[0];
+                            var degrees = eachVal[1].split("#")[1];
+                            var date = fullTimeStamp.split(" ")[0];
+                            var time = fullTimeStamp.split(" ")[1];
+                            table += "<tr><td>" + date + "</td><td>" + time + "</td><td>" + degrees + "\xB0</td><td>" + suggestion + "</td></tr>";
+                        }
+
+
+                        $("#sugLog").html(table + "</tbody></table></div></div>");
+
+
+                        isFirstTime = false;
+
+                    } else {
+
+                        $("#suggestionLog").html("<h4>No data to display</h4>");
+
+                    }
+
+                } else {
+                    //Check if value changed
+
+                    if (valuesStr != null && valuesStr) {
+                        var allValues = valuesStr.split(","); //[26*2016/02/18 12:30:33, 32*2016/02/18 12:30:33, 26*2016/02/18 12:30:33, 32*2016/02/18 12:30:33]
+
+                        var val = allValues[allValues.length - 1];
+                        var eachVal = val.split("*");
+                        var suggestion = eachVal[0];
+                        var fullTimeStamp = eachVal[1].split("#")[0];
+                        var degrees = eachVal[1].split("#")[1];
+                        var date = fullTimeStamp.split(" ")[0];
+                        var time = fullTimeStamp.split(" ")[1];
+
+                        if (allValues.length == 1) {
+                            $("#suggestionLog").html("");
+                        }
+
+                        $("#suggestionLog").prepend("<tr><td>" + date + "</td><td>" + time + "</td><td>" + degrees + "\xB0</td><td>" + suggestion + "</td></tr>");
+
+                    } else {
+
+                        $("#suggestionLog").html("<h4>No data to display</h4>");
+                    }
+                }
+
+                $("#clearSuggestions").click(function(e) {
+                    e.preventDefault();
+
+                    ref.child("suggestions").set("");
+
+                });
+
+            });
+
+        }
+
+        $("#clearInvestments").click(function(e) {
+            e.preventDefault();
+
+            ref.child("myinvestments").set("");
+
+        });
+
+        function getDateToday() {
+
+            var d = new Date();
+
+            var month = (d.getMonth() + 1).toString();
+
+            if (month.length < 2) {
+                month = "0" + month;
+            }
+
+            var today = d.getFullYear().toString() + "-" + month + "-" + (d.getDate() - 1);
+
+            return today;
+        }
+
+        function getDateYesterday() {
+
+            var d = new Date();
+
+            var month = (d.getMonth() + 1).toString();
+
+            if (month.length < 2) {
+                month = "0" + month;
+            }
+
+            var today = d.getFullYear().toString() + "-" + month + "-" + (d.getDate() - 3);
+
+            return today;
+        }
+
+        function getWordDateToday() {
+
+            var d = new Date();
+
+            var month = "";
+
+            switch (d.getMonth() + 1) {
+                case 1:
+                    month = "January";
+                    break;
+                case 2:
+                    month = "February";
+                    break;
+                case 3:
+                    month = "March";
+                    break;
+                case 4:
+                    month = "April";
+                    break;
+                case 5:
+                    month = "May";
+                    break;
+                case 6:
+                    month = "June";
+                    break;
+                case 7:
+                    month = "July";
+                    break;
+                case 8:
+                    month = "August";
+                    break;
+                case 9:
+                    month = "September";
+                    break;
+                case 10:
+                    month = "October";
+                    break;
+                case 11:
+                    month = "November";
+                    break;
+                case 12:
+                    month = "December";
+                    break;
+            }
+
+            var today = month + " " + d.getDate() + ", 20" + d.getFullYear().toString().substring(2);
+
+            return today;
+        }
+
+        function getCurrentStockPrice(ticker, callback) {
+
+            var dateToday = getDateToday().substring(0, getDateToday().length);
+            var dateYesterday = getDateYesterday().substring(0, getDateYesterday().length);;
+
+            var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22" + encodeURIComponent(ticker) + "%22%20and%20startDate%20%3D%20%22" + encodeURIComponent(dateYesterday) + "%22%20and%20endDate%20%3D%20%22" + encodeURIComponent(dateToday) + "%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+
+            console.log(yql);
+
+            $.ajax({
+                url: yql,
+                success: function(result) {
+                    if (result.query.results != null && result.query.results.quote != null && result.query.results.quote.Close != null) {
+                        callback(result.query.results.quote.Close);
+                    } else {
+                        console.log(result);
+                    }
+                }
+            });
+
+        }
+
+        function getHighAndLowStockPrices(ticker, callback) {
+
+            var dateToday = getDateToday().substring(0, getDateToday().length);
+            var dateYesterday = getDateYesterday().substring(0, getDateYesterday().length);;
+
+            var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22" + encodeURIComponent(ticker) + "%22%20and%20startDate%20%3D%20%22" + encodeURIComponent(dateYesterday) + "%22%20and%20endDate%20%3D%20%22" + encodeURIComponent(dateToday) + "%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+
+            console.log(yql);
+
+            $.ajax({
+                url: yql,
+                success: function(result) {
+                    var resultsArr = [];
+
+                    if (result.query.results.quote.High != null) {
+                        resultsArr.push(result.query.results.quote.High);
+                    } else {
+                        console.log(result);
+                    }
+
+                    if (result.query.results.quote.Low != null) {
+                        resultsArr.push(result.query.results.quote.Low);
+                    } else {
+                        console.log(result);
+                    }
+
+                    callback(resultsArr);
+                }
+            });
+
+        }
+
+        var numGoals = 0;
+
+        $("#setInvestment").click(function(e) {
+            e.preventDefault();
+
+            var companyTicker = $(".companyTicker").val().trim();
+            var companyShares = $(".companyShares").val().trim();
+            var origPrice = $(".origPrice").val().trim();
+
+            var totalInvest = parseFloat(companyShares) * parseFloat(origPrice);
+
+
+            getCurrentStockPrice(companyTicker, function(curStockPrice) {
+                //var companyName = changeTickerToName(companyTicker);
+
+                numGoals++;
+
+                var profit = (parseFloat(companyShares) * parseFloat(curStockPrice)) - parseFloat(totalInvest);
+
+                var str = '<tr style="height: 100px !important;" class="animated fadeIn">';
+                str += '<td>' + companyTicker + '</td>';
+                str += '<td>$' + parseFloat(curStockPrice).toFixed(2) + '</td>';
+                str += '<td>' + companyShares + '</td>';
+                str += '<td>$' + parseFloat(totalInvest).toFixed(2) + '</td>';
+                str += '<td>$' + profit.toFixed(2) + '</td>';
+                str += '<td><button style="color: black" class="btn waves-effect deleteInvestment waves-dark white"><i class="fa fa-trash"></i></button></td>';
+                str += '</tr>';
+
+                $("#investmentsTable").prepend(str);
+
+                $(".deleteInvestment").click(function(e) {
+                    e.preventDefault();
+                    $(this).parent().parent().fadeOut();
+
+                    ref.child("myinvestments").child($(this).parent().parent().children(":first").text()).remove();
+                });
+
+                ref.child("myinvestments").child(companyTicker).set({
+                    numShares: companyShares,
+                    totalInvestment: totalInvest,
+                    originalPrice: origPrice
+                });
+            });
+
+            /*  getHighAndLowStockPrices(companyTicker, function(results) {
+                  var highest = results[0];
+                  var lowest = results[1];
+
+                  alert(highest);
+
+                  $("#investmentsTable tr:first").addClass("tooltip");
+                  $("#investmentsTable tr:first").attr("data-position", "bottom");
+                  $("#investmentsTable tr:first").attr("data-delay", "50");
+                  $("#investmentsTable tr:first").attr("data-tooltip", "High: $" + highest + " Lowest: $" + lowest);
+
+                  setTimeout(function() {
+
+                      alert($("#investmentsTable tr:first").html());
+                  }, 100);
+
+              });*/
+
+        });
+
+        $(".goals").click(function(e) {
+            $("#graphPage").fadeOut();
+            $("#aboutUsPage").fadeOut();
+            $("#suggestionsPage").fadeOut();
+
+            responsiveVoice.speak("Hey! I see that you have taken an interest in the companies that I have suggested! These area graphs serve as good representations to further convince you to trust my word. So Guest? What do you say about Starbucks, Mcdonalds, Lam Research, Nvidia, or Walmart? Hope you choose soon because in order to be a successful business man, you have to do the things that are easier first, then you can actually make a lot of progress as Facebook CEO Mark Zuckerberg once stated. Good Luck! This is Rena signing off!");
+
+            $("#goalsTable").html("");
+
+            setTimeout(function() {
+                $("#goalsPage").fadeIn();
+            }, 500)
+
+            $(".analytics").removeClass("tabActive");
+            $(".aboutus").removeClass("tabActive");
+            $(".suggestions").removeClass("tabActive");
+            $(this).addClass("tabActive");
+
+            $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+
+                $('#starbucksGraph').highcharts({
+                    chart: {
+                        zoomType: 'x'
+                    },
+                    title: {
+                        text: 'Starbucks'
+                    },
+                    subtitle: {
+                        text: document.ontouchstart === undefined ?
+                            'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'USD'
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        area: {
+                            fillColor: {
+                                linearGradient: {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops: [
+                                    [0, Highcharts.getOptions().colors[0]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                                ]
+                            },
+                            marker: {
+                                radius: 2
+                            },
+                            lineWidth: 1,
+                            states: {
+                                hover: {
+                                    lineWidth: 1
+                                }
+                            },
+                            threshold: null
+                        }
+                    },
+
+                    series: [{
+                        type: 'area',
+                        name: '$',
+                        data: data
+                    }]
+                });
+            });
+
+            $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+
+                $('#mcdGraph').highcharts({
+                    chart: {
+                        zoomType: 'x'
+                    },
+                    title: {
+                        text: 'McDonalds'
+                    },
+                    subtitle: {
+                        text: document.ontouchstart === undefined ?
+                            'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'USD'
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        area: {
+                            fillColor: {
+                                linearGradient: {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops: [
+                                    [0, Highcharts.getOptions().colors[0]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                                ]
+                            },
+                            marker: {
+                                radius: 2
+                            },
+                            lineWidth: 1,
+                            states: {
+                                hover: {
+                                    lineWidth: 1
+                                }
+                            },
+                            threshold: null
+                        }
+                    },
+
+                    series: [{
+                        type: 'area',
+                        name: '$',
+                        data: data
+                    }]
+                });
+            });
+
+            $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+
+                $('#lamGraph').highcharts({
+                    chart: {
+                        zoomType: 'x'
+                    },
+                    title: {
+                        text: 'LAM Research'
+                    },
+                    subtitle: {
+                        text: document.ontouchstart === undefined ?
+                            'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'USD'
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        area: {
+                            fillColor: {
+                                linearGradient: {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops: [
+                                    [0, Highcharts.getOptions().colors[0]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                                ]
+                            },
+                            marker: {
+                                radius: 2
+                            },
+                            lineWidth: 1,
+                            states: {
+                                hover: {
+                                    lineWidth: 1
+                                }
+                            },
+                            threshold: null
+                        }
+                    },
+
+                    series: [{
+                        type: 'area',
+                        name: '$',
+                        data: data
+                    }]
+                });
+            });
+
+            $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+
+                $('#nvidiaGraph').highcharts({
+                    chart: {
+                        zoomType: 'x',
+                        minRange: 0.8
+                    },
+                    title: {
+                        text: 'NVIDIA'
+                    },
+                    subtitle: {
+                        text: document.ontouchstart === undefined ?
+                            'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        minRange: 36000
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'USD'
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        area: {
+                            fillColor: {
+                                linearGradient: {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops: [
+                                    [0, Highcharts.getOptions().colors[0]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                                ]
+                            },
+                            marker: {
+                                radius: 2
+                            },
+                            lineWidth: 1,
+                            states: {
+                                hover: {
+                                    lineWidth: 1
+                                }
+                            },
+                            threshold: null
+                        }
+                    },
+
+                    series: [{
+                        type: 'area',
+                        name: '$',
+                        data: data
+                    }]
+                });
+            });
+
+            $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+
+                $('#walmartGraph').highcharts({
+                    chart: {
+                        zoomType: 'x'
+                    },
+                    title: {
+                        text: 'Walmart'
+                    },
+                    subtitle: {
+                        text: document.ontouchstart === undefined ?
+                            'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'USD'
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        area: {
+                            fillColor: {
+                                linearGradient: {
+                                    x1: 0,
+                                    y1: 0,
+                                    x2: 0,
+                                    y2: 1
+                                },
+                                stops: [
+                                    [0, Highcharts.getOptions().colors[0]],
+                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                                ]
+                            },
+                            marker: {
+                                radius: 2
+                            },
+                            lineWidth: 1,
+                            states: {
+                                hover: {
+                                    lineWidth: 1
+                                }
+                            },
+                            threshold: null
+                        }
+                    },
+
+                    series: [{
+                        type: 'area',
+                        name: '$',
+                        data: data
+                    }]
+                });
+            });
+
+            TweenLite.to("nav", 0.8, {
+                height: 64,
+                color: "white",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                ease: Sine.easeOut
+            });
+
+            $(".showProfile").html('<i style="color: white" class="fa fa-lg fa-chevron-down"></i>');
+
+            $("#profileInfo").remove();
+
+            $(".brand-logo").html("Analytics");
+
+        });
+
+        $("#investmentsTable").hover(function(e) {
+
+        }, function() {
+            responsiveVoice.speak("These are your current investments. Please note your profit and your total investment.");
+        });
+
+        $(".analytics").hover(function(e) {
+            responsiveVoice.speak("Do you want to go to the Investments tab?");
+        }, function() {
+
+        });
+
+        $(".aboutus").hover(function(e) {
+            responsiveVoice.speak("Do you want to go to the Steps to Success tab?");
+        }, function() {
+
+        });
+
+        $(".goals").hover(function(e) {
+            responsiveVoice.speak("Do you want to go to the Analytics tab?");
+        }, function() {
+
+        });
+
+        $(".suggestions").hover(function(e) {
+            responsiveVoice.speak("Do you want to go to the Motivate Me tab?");
+        }, function() {
+
+        });
+
+
+        $(".suggestions").click(function(e) {
+            $("#graphPage").fadeOut();
+            $("#aboutUsPage").fadeOut();
+            $("#goalsPage").fadeOut();
+
+            setupSuggestionsLog();
+
+            setTimeout(function() {
+                $("#suggestionsPage").fadeIn();
+            }, 500)
+
+            responsiveVoice.setDefaultVoice("US English Female");
+
+            responsiveVoice.speak("Hi Guest! You have finally come to the motivation tab! Would you like some motivation?");
+
+            Materialize.toast('Hi Guest! You have finally come to the motivation tab! Would you like some motivation?', 3000, 'rounded');
+
+            $("#motivateButtons").html('<button style="width: 200px; height: 200px; color: black; margin-top: 200px;" class="animated rotateIn btn waves-effect motivateMe waves-dark white"><i style="font-size: 5em;" class="fa fa-lg fa-check"></i></button>');
+
+            $("#motivateButtons").click(function(e) {
+                e.preventDefault();
+
+                var arr = []
+
+                $("html").css("background-color", "rgba(155, 213, 253, 0.7)");
+
+                TweenLite.to("html", 10, {
+                    backgroundColor: "rgba(255, 255, 255, 1)",
+                    ease: Sine.easeOut
+                });
+
+                var quotes = ["Our work is the presentation of our capabilities. by Edward Gibbon", "An organization's ability to learn, and translate that learning into action rapidly, is the ultimate competitive advantage. by Jack Welch", "Just because something doesn't do what you planned it to do doesn't mean it's useless. by Thomas Edison", "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations. by Steve Jobs", "The entrepreneur always searches for change, responds to it, and exploits it as an opportunity. by Peter Drucker", "Sales are contingent upon the attitude of the salesman. not the attitude of the prospect.  W. Clement Stone", "If you listen to your fears, you will die never knowing what a great person you might have been. by Robert H. Schuller"];
+
+
+                var number = Math.floor(Math.random() * 6);
+
+                responsiveVoice.speak(quotes[number]);
+
+
+
+                //Materialize.toast(quotes[number], 3000, 'round');
+
+                $(this).html("<h1>" + quotes[number] + "</h1>");
+
+                setTimeout(function() {
+                    $(this).html('<button style="width: 200px; height: 200px; color: black; margin-top: 200px;" class="animated rotateIn btn waves-effect motivateMe waves-dark white"><i style="font-size: 5em;" class="fa fa-lg fa-check"></i></button>');
+                }, 10000);
+
+            });
+
+
+
+            $(".analytics").removeClass("tabActive");
+            $(".aboutus").removeClass("tabActive");
+            $(".goals").removeClass("tabActive");
+            $(this).addClass("tabActive");
+
+            TweenLite.to("nav", 0.8, {
+                height: 64,
+                color: "white",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                ease: Sine.easeOut
+            });
+
+            $(".showProfile").html('<i style="color: white" class="fa fa-lg fa-chevron-down"></i>');
+
+            $("#profileInfo").remove();
+
+            $(".brand-logo").html("Motivate Me");
+
+        });
+
+
+
+        $(".aboutus").click(function(e) {
+            $("#graphPage").fadeOut();
+            $("#suggestionsPage").fadeOut();
+            $("#goalsPage").fadeOut();
+
+            setTimeout(function() {
+                $("#aboutUsPage").fadeIn();
+            }, 500)
+
+            responsiveVoice.speak("After careful analysis of your investment behavior, I have concluded that these companies are great choices for your to invest. I have chosen affordable and growing companies that are sure to maximize your investments. I can assure you that you will be led in the right direction. I was programmed to take into account all variables including reliability, popularity, improvement, long-term changes, short-term changes, highs and lows, etc. If you are interested in starting your journey, start now!");
+
+
+            $(".analytics").removeClass("tabActive");
+            $(".suggestions").removeClass("tabActive");
+            $(".goals").removeClass("tabActive");
+            $(this).addClass("tabActive");
+
+            TweenLite.to("nav", 0.8, {
+                height: 64,
+                color: "white",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                ease: Sine.easeOut
+            });
+
+            $(".showProfile").html('<i style="color: white" class="fa fa-lg fa-chevron-down"></i>');
+
+            $("#profileInfo").remove();
+
+            $(".brand-logo").html("Steps to Success");
+
+        });
+
+        $(".analytics").click(function(e) {
+            $("#aboutUsPage").fadeOut();
+            $("#suggestionsPage").fadeOut();
+            $("#goalsPage").fadeOut();
+
+            responsiveVoice.speak("Welcome Guest! I am Rena, your personal investment assistant. Nice to meet you.");
+
+            setTimeout(function() {
+                $("#graphPage").fadeIn();
+            }, 500)
+
+            $(".aboutus").removeClass("tabActive");
+            $(".suggestions").removeClass("tabActive");
+            $(".goals").removeClass("tabActive");
+            $(this).addClass("tabActive");
+
+            $("#investmentsTable").html("");
+
+            ref.child("myinvestments").once("value", function(snapshot) {
+
+                var snap = snapshot.val();
+
+                var numInvestments = Object.keys(snap).length;
+
+                var overallInvestment = 0;
+
+                var overallProfit = 0;
+
+                console.log(numInvestments);
+
+                console.log(snap);
+
+                var i = 0;
+
+                while (i < numInvestments) {
+
+                    var tickerName = Object.keys(snap)[i];
+
+                    ! function outer(i, tickerName) {
+
+                        getCurrentStockPrice(tickerName, function(curStockPrice) {
+
+                            console.log("Stock Price: " + curStockPrice);
+
+                            console.log(tickerName);
+
+                            var companyShares = snap[tickerName].numShares;
+
+                            console.log(companyShares);
+
+                            var totalInvest = snap[tickerName].totalInvestment;
+
+                            overallInvestment += totalInvest;
+
+                            var profit = (parseFloat(companyShares) * parseFloat(curStockPrice)) - parseFloat(totalInvest);
+
+                            overallProfit += profit;
+
+                            var str = '<tr style="height: 100px !important;" class="animated fadeIn">';
+                            str += '<td>' + tickerName + '</td>';
+                            str += '<td>$' + parseFloat(curStockPrice).toFixed(2) + '</td>';
+                            str += '<td>' + companyShares + '</td>';
+                            str += '<td>$' + parseFloat(totalInvest).toFixed(2) + '</td>';
+                            str += '<td>$' + profit.toFixed(2) + '</td>';
+                            str += '<td><button style="color: black" class="btn waves-effect deleteInvestment waves-dark white"><i class="fa fa-trash"></i></button></td>';
+                            str += '</tr>';
+
+                            $("#investmentsTable").append(str);
+
+                            $(".deleteInvestment").click(function(e) {
+                                e.preventDefault();
+                                $(this).parent().parent().fadeOut();
+
+                                ref.child("myinvestments").child($(this).parent().parent().children(":first").text()).remove();
+                            });
+                        });
+                    }(i, tickerName)
+
+                    i++;
+
+                }
+
+            });
+
+            TweenLite.to("nav", 0.8, {
+                height: 64,
+                color: "white",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                ease: Sine.easeOut
+            });
+
+            $(".showProfile").html('<i style="color: white" class="fa fa-lg fa-chevron-down"></i>');
+
+            $("#profileInfo").remove();
+
+            $(".brand-logo").html("My Investments");
+
+        });
+
+    });
+    </script>
+</body>
+
+</html>

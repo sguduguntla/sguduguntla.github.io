@@ -1,0 +1,72 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "rishang10@gmail.com",
+    "longName": "DURIM",
+    "projectType": "pebblejs",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/logo_splash.png",
+                "name": "IMAGE_LOGO_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGE_TILE_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "fonts/UbuntuMono-Regular.ttf",
+                "name": "MONO_FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "images/rsz_jogging-hi.png",
+                "name": "IMAGES_RSZ_JOGGING_HI_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/rsz_sit-up-large.png",
+                "name": "IMAGES_RSZ_SIT_UP_LARGE_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/rsz_push-up.png",
+                "name": "IMAGES_RSZ_PUSH_UP_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/rsz_runner.png",
+                "name": "IMAGES_RSZ_RUNNER_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/logo.png",
+                "name": "IMAGES_LOGO_PNG",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "DURIM",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "1d4f979d-ca0e-4a00-90d5-7d42be9ae511",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "hiddenApp": false,
+        "watchface": false
+    }
+}

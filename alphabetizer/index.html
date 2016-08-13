@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sai Alphabetizer</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="An Alphabetizer that alphabetizes all the words entered within seconds!">
+    <meta name="author" content="Sriharsha G.">
+    <link rel="icon" href="icons/favicon.ico">
+    <!--Mobile App Compatibility-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Sai Alphabetizer">
+    <meta itemprop="description" content="An Alphabetizer that alphabetizes all the words entered within seconds!">
+    <meta itemprop="image" content="icons/apple-touch-icon-180x180.png">
+    <!--Facebook Open Graph Data-->
+    <meta property="og:title" content="Sai Alphabetizer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="icons/apple-touch-icon-180x180.png" />
+    <meta property="og:url" content="http://176.32.230.17/sriharshaguduguntla.com/alphabetizer/index.html" />
+    <meta property="og:description" content="An Alphabetizer that alphabetizes all the words entered within seconds!" />
+    <!--Twitter Card Data-->
+    <meta name="twitter:card" content="An Alphabetizer that alphabetizes all the words entered within seconds!">
+    <meta name="twitter:url" content="http://176.32.230.17/sriharshaguduguntla.com/alphabetizer/index.html">
+    <meta name="twitter:title" content="Sai Alphabetizer">
+    <meta name="twitter:description" content="An Alphabetizer that alphabetizes all the words entered within seconds!">
+    <meta name="twitter:image" content="newicons/apple-touch-icon-180x180.png">
+    <!--Apple Touch Icons-->
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--JQuery-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,100,100italic,300,400italic,600,600italic,700,700italic,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+    <style type="text/css">
+    
+    body {
+        font-family: "Josefin Slab" !important;
+        background-color: coral;
+    }
+    
+    #title {
+        font-size: 6em !important;
+        color: white;
+        font-weight: bold;
+        text-shadow: 0px 5px 70px black;
+    }
+    
+    .form-control {
+        height: 140px !important;
+        border-radius: 60px !important;
+        width: 800px !important;
+        font-size: 2.5em;
+    }
+    
+    .form-control:focus {
+        border: 1px solid gray;
+        box-shadow: 0px 0px 10px green;
+    }
+    
+    #submitBtn {
+        border-radius: 40px;
+        width: 120px;
+        height: 100px;
+        border: 1px inset black;
+        box-shadow: 0px 5px 70px black;
+        top: 20px;
+        -webkit-transition-property: border-radius;
+        -webkit-transition-duration: 0.4s;
+        margin-left: 315px;
+        position: relative;
+    }
+    
+    #submitBtn:hover {
+        border-radius: 150px;
+    }
+    
+    #addBtn {
+        border-radius: 40px;
+        width: 100px;
+        height: 100px;
+        border: 1px inset black;
+        box-shadow: 0px 5px 70px black;
+        -webkit-transition-property: border-radius;
+        -webkit-transition-duration: 0.4s;
+        margin-left: 317px;
+        position: relative;
+    }
+    
+    #addBtn:hover {
+        border-radius: 150px;
+    }
+    
+    #removeBtn {
+        border-radius: 40px;
+        width: 100px;
+        height: 100px;
+        border: 1px inset black;
+        box-shadow: 0px 5px 70px black;
+        -webkit-transition-property: border-radius;
+        -webkit-transition-duration: 0.4s;
+        margin-left: 317px;
+        top: 10px;
+        position: relative;
+    }
+    
+    #removeBtn:hover {
+        border-radius: 150px;
+    }
+    
+    #clearBtn {
+        border-radius: 40px;
+        width: 100px;
+        height: 100px;
+        border: 1px inset black;
+        box-shadow: 0px 5px 70px black;
+        -webkit-transition-property: border-radius;
+        -webkit-transition-duration: 0.4s;
+        margin-left: 317px;
+        top: 12px;
+        position: relative;
+    }
+    
+    #clearBtn:hover {
+        border-radius: 150px;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    p {
+        position: relative;
+        bottom: 0 auto;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    #signup {
+        top: 30px;
+    }
+    
+    #homeLink {
+        top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center lead animated flipInX" id="title">Alphabetizer</h1>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter word or phrase" class="form-control animated flipInX" id="word" />
+                    </div>
+                    <button type="submit" id="addBtn" class="btn btn-success btn-lg animated fadeIn">Add</button>
+                    <button type="submit" id="removeBtn" title="Remove a word" class="btn btn-danger btn-lg animated fadeIn">Remove</button>
+                    <button type="submit" id="clearBtn" title="Clear all words" class="btn btn-warning btn-lg animated fadeIn">Clear</button>
+                    <button type="submit" id="submitBtn" title="Alphabetize" class="btn btn-info btn-lg animated fadeIn">Alphabetize</button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <p id="signup" class="lead small center"><a href="#">&copy;Sriharsha Guduguntla 2015</a></p>
+                    <p id="homeLink" class="lead small center"><a href="http://176.32.230.17/saiwebdevdomain.com/" target="_blank">Home</a></p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var numWords = 1;
+        var words = [];
+
+        $("#addBtn").click(function(e) {
+            numWords++;
+            e.preventDefault();
+            $(".form-group").append("<input type='text' placeholder='Enter word or phrase' id='word" + numWords + "' class='form-control animated flipInX'/>");
+        });
+
+
+
+        $("#removeBtn").click(function(e) {
+            if (numWords > 1) {
+                numWords--;
+            }
+            e.preventDefault();
+
+            $("#word" + (numWords + 1)).addClass("flipOutX");
+
+            //Delay of 500s
+
+            setTimeout(function() {
+                $("#word" + (numWords + 1)).remove();
+            }, 500);
+
+        });
+
+        $("#clearBtn").click(function(e) {
+            e.preventDefault();
+            words.length = 0;
+            $(".form-control").val("");
+        });
+
+        $("#submitBtn").click(function(e) {
+            words.length = 0;
+            e.preventDefault();
+            words.push($("#word").val());
+            for (var i = 2; i <= numWords; i++) {
+                words.push($("#word" + i).val());
+            }
+            words.sort();
+            var answer = "";
+            for (var j = 0; j < words.length; j++) {
+                if (j == words.length - 1) {
+                    answer += words[j];
+                } else {
+                    answer += words[j] + ", ";
+                }
+            }
+
+            alert(answer);
+
+        });
+        </script>
+</body>
+
+</html>

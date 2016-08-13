@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<!--
+    Photon by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Durim Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link rel="icon" href="touchicons/favicon.ico">
+    <!-- Compiled and minified JavaScript -->
+    <!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/utils/Draggable.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div style="min-height:70px; width: 100%;overflow:scroll;" id="resultsBox" class="text-center white black-text center">
+                    <h4>Search for students...</h4>
+                </div>
+                <!--<div class="row">
+                            <a style="bottom: 14.5px" id="search" href="#modal1" class="white waves-effect waves-dark col s4 offset-s4 m4 offset-m4 l4 offset-l4 black-text center modal-trigger">Search</a>
+                        </div>-->
+            </div>
+        </nav>
+    </div>
+    <section class="z-depth-3" id="header">
+        <div class="inner">
+            <!--<span class="icon major fa-cloud"></span>-->
+            <img src="touchicons/apple-touch-icon-180x180.png" width="250" height="250" />
+            <h1 id="welcome"><strong>Welcome </strong><br /></h1>
+            <p>to the teacher's lounge!</p>
+            <ul class="actions">
+                <li><a style="color: black" class="btn waves-effect waves-dark white" onclick="Parse.User.logOut(); window.location.href='http://176.32.230.17/sriharshaguduguntla.com/durim/index.html'">Log Out</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+        <ul class="icons">
+            <li><a style="color: black" href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a style="color: black" href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a style="color: black" href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a style="color: black" href="mailto:durim3000@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Durim Tech</li>
+        </ul>
+    </section>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>All Results</h4>
+            <p>Students</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    Parse.$ = jQuery;
+
+
+    Parse.initialize("74r51EZApPpxAoBhl2wV2jEbizWsEm7b0SP7YawZ", "OlV6vgDlTLZB546RuxsQyqOkNpuEK7rVE1GxSmAO");
+
+    var resultsBoxClicked = false;
+
+    $('.materialboxed').materialbox();
+
+
+    $('.slider').slider({
+        full_width: false
+    });
+
+    $('.slider').slider('start');
+
+    $(".button-collapse").sideNav();
+
+
+    var currentUser = Parse.User.current();
+
+
+    if (currentUser /* && (currentUser.get("accountType") == "teacher")*/ ) {
+        var firstname = currentUser.get("firstname");
+        $("#welcome").html($("#welcome").html() + firstname);
+
+        var q1 = new Parse.Query(Parse.User);
+
+        var allusers = [];
+        var allusernames = [];
+        var students = [];
+        var teachers = [];
+        var studentUsernames = [];
+        var teacherUsernames = [];
+
+        q1.find({
+            success: function(items) {
+                $.each(items, function(i, item) {
+
+                    var fname = item.get("firstname");
+
+                    var lname = item.get("lastname");
+
+                    var username = item.get("username");
+
+                    var accountType = item.get("accountType");
+
+                    var fullname = fname + " " + lname;
+
+                    allusers.push(fullname);
+
+                    allusernames.push(username);
+
+                    if (accountType == "student") {
+                        students.push(fullname)
+                        studentUsernames.push(username);
+                    } else if (accountType == "teacher") {
+                        teachers.push(fullname);
+                        teacherUsernames.push(username);
+                    }
+
+                });
+            }
+        });
+
+        $("#searchBox").autocomplete({
+            source: allusers
+        });
+
+        $("#resultsBox").click(function(e) {
+            if (!resultsBoxClicked) {
+                resultsBoxClicked = true;
+                TweenLite.to($("#resultsBox"), 3, {
+                    ease: Power2.easeOut,
+                    height: 650
+                });
+                var str = '<table class="stripes responsive-table centered highlight"><thead><tr><th data-field="id">Name</th><th data-field="id">Username</th><th data-field="id">Add Friend?</th></tr></thead>';
+
+
+                /*< table >
+                    < thead >
+                    < tr >
+                    < th data - field = "id" > Name < /th> < th data - field = "name" > Item Name < /th> < th data - field = "price" > Item Price < /th> < /tr> < /thead>
+
+                < tbody >
+                    < tr >
+                    < td > Alvin < /td> < td > Eclair < /td> < td > $0.87 < /td> < /tr> < tr >
+                    < td > Alan < /td> < td > Jellybean < /td> < td > $3.76 < /td> < /tr> < tr >
+                    < td > Jonathan < /td> < td > Lollipop < /td> < td > $7.00 < /td> < /tr> < /tbody> < /table>*/
+
+
+                for (var i = 0; i < students.length; i++) {
+                    if (i < (students.length - 1)) {
+                        str += '<tr>';
+                        str += '<td>' + students[i] + '</td>';
+                        str += '<td>' + studentUsernames[i] + '</td>';
+                        str += '<td><button id=' + studentUsernames[i] + ' class="btn waves-effect addStudent waves-dark white">Add Student</button></td>';
+                        str += '</tr>';
+                    } else {
+                        str += '<tr>';
+                        str += '<td>' + students[i] + '</td>';
+                        str += '<td>' + studentUsernames[i] + '</td>';
+                        str += '<td><button id=' + studentUsernames[i] + ' class="btn waves-effect addStudent waves-dark white">Add Student</button></td>';
+                        str += '</tr>';
+                        str += '</table>';
+                    }
+                }
+
+                $("#resultsBox").append(str);
+                $("#resultsBox").append("<button id='cancel' class='btn waves-effect white-text waves-dark red'>Cancel</button>");
+
+                $("#cancel").click(function(e) {
+                    window.location.href = "http://176.32.230.17/sriharshaguduguntla.com/durim/teacherhome.html";
+                });
+
+                $(".addStudent").click(function(e) {
+                    var q1 = new Parse.Query(Parse.User);
+                    var self = this;
+
+                    q1.find({
+                        success: function(items) {
+                            $.each(items, function(i, item) {
+
+                                var fname = item.get("firstname");
+
+                                var lname = item.get("lastname");
+
+                                var username = item.get("username");
+
+                                var accountType = item.get("accountType");
+
+                                var fullname = fname + " " + lname;
+
+
+                                if (item.get("username") == currentUser.get("username")) {
+                                    item.set("studentsOfTeacher", item.get("studentsOfTeacher") + ', ' + $(self).attr('id'));
+                                    item.save();
+                                    $(self).html("Added");
+                                    $(self).addClass("btn-flat disabled");
+                                }
+
+                            });
+                        }
+                    });
+                });
+
+            }
+        });
+
+    } else {
+        $("#welcome").html("Error!");
+        $("body").html("Error!");
+    }
+
+    String.prototype.capitalizeFirstLetter = function() {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    }
+
+    $('.modal-trigger').leanModal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        in_duration: 300, // Transition in duration
+        out_duration: 200, // Transition out duration
+        ready: function() {
+
+        }, // Callback for Modal open
+        complete: function() {
+
+            } // Callback for Modal clos3
+    });
+
+
+
+
+
+    //var currentUser = Parse.User.current();
+    </script>
+    <!-- Scripts -->
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/hammer.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
