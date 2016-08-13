@@ -9,6 +9,7 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
 .profile-img {
     max-width: 200;
     max-height: 200;
@@ -25,6 +26,10 @@ body {
 
 body {
     font-family: 'Helvetica Neue',Arial,sans-serif;
+=======
+body {
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+>>>>>>> 77516a2e12acb9087e1ac83f43a869c94d13d429
 }
 
 hr {
