@@ -33,11 +33,10 @@ $(function() {
 
   var userCountRef = database.ref('numUsers');
 
-  userCountRef.on('value', function(snapshot) {
+  userCountRef.once('value').then(function(snapshot) {
     database.ref().set({
       numUsers: (snapshot.val() + 1)
     });
-
   });
 
   window.fbAsyncInit = function() {
