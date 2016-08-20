@@ -39,6 +39,14 @@ $(function() {
     });
   });
 
+  $("#downloadBtn").click(function(e) {
+    var downloadCountRef = database.ref('downloadClicked');
+
+    userCountRef.once('value').then(function(snapshot) {
+      database.ref("downloadClicked").set(snapshot.val() + 1);
+    });
+  });
+
   window.fbAsyncInit = function() {
     FB.init({
       appId: '1155738174469383',
