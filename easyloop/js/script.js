@@ -28,12 +28,12 @@ $(function() {
   };
   firebase.initializeApp(config);
 
-  firebase.database().ref('numUsers').set({
-    numPeople: 2
-  });
-
   // Get a reference to the database service
   var database = firebase.database();
+
+  database.ref('numUsers').set({
+    numPeople: 2
+  });
 
   window.fbAsyncInit = function() {
     FB.init({
