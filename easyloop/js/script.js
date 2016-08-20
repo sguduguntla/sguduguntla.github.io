@@ -31,8 +31,8 @@ $(function() {
   // Get a reference to the database service
   var database = firebase.database();
 
-  database.ref('numUsers').set({
-    numPeople: 2
+  database.ref().set({
+    numUsers: 2
   });
 
   window.fbAsyncInit = function() {
