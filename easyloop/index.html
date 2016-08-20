@@ -68,7 +68,7 @@
                 </a>
               </div>
               <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                <a target="_blank" id="downloadBtn" style="float:left;" href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">
+                <a target="_blank" class="downloadBtn" style="float:left;" href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">
                   <button data-wow-delay="1s" class="wow fadeIn btn btn-primary actionBtn">Download</button>
                 </a>
               </div>
@@ -97,12 +97,12 @@
       </div>
       <div class="col-md-4">
         <h2 data-wow-delay="0.1s" class="wow fadeIn text-center"><div data-wow-delay="0.1s" class="wow rollIn center-block circle iconContainer"><img width="60%" height="60%" style="margin-top: 40px;" src="img/cloud-computing.svg"/></div><br/> Download</h2>
-        <p data-wow-delay="0.1s" class="wow fadeIn text-center">Easy Loop can be found on the Chrome Web Store. Please click <a target="_blank" href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">here</a> to check out Easy Loop right now!</p>
+        <p data-wow-delay="0.1s" class="wow fadeIn text-center">Easy Loop can be found on the Chrome Web Store. Please click <a class="downloadBtn" target="_blank" href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">here</a> to check out Easy Loop right now!</p>
       </div>
     </div>
     <br/>
     <br/>
-    <em>*Before enabling this extension, please make sure that any other schoolloop extensions are <a href="">disabled</a></em>
+    <em>*Before enabling this extension, please make sure that any other schoolloop chrome extensions are <a style="cursor: pointer;" data-toggle="modal" data-target="#disableModal">disabled</a></em>
   </section>
 
   <section id="sect3" data-wow-delay="0.1s" class="wow slideInLeft sect gradientBackground">
@@ -183,7 +183,7 @@
         <br/>
       </div>
       <div class="col-md-12">
-        <a target="_blank" href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">
+        <a class="downloadBtn" target="_blank" href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">
           <button data-wow-delay="0.1s" style="font-size: 1.4em; width: 150px; height:75px;" class="wow fadeInUp center-block btn btn-primary">Click Here</button>
         </a>
       </div>
@@ -216,6 +216,30 @@
         </div>
       </div>
     </footer>
+  </div>
+
+  <!-- How to Disable Modal -->
+  <div style="color: black; font-weight: 200; max-height: 80vh;" class="modal fade" id="disableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 style="color:black; font-weight: 200;" class="modal-title" id="myModalLabel">How to Disable an Extension</h4>
+        </div>
+        <div style="color:black;" class="modal-body">
+          <blockquote>
+            <ol>
+              <li>On your browser, click <strong>menu</strong> <i class="fa fa-bars"></i> or <i class="fa fa-ellipsis-v"></i></li>
+              <li>Select <strong> More tools > Extensions</strong>.</li>
+              <li>To turn off an extension, uncheck the <strong>Enabled</strong> box. Check the box to turn it on.</li>
+            </ol>
+          </blockquote>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-inverse" data-dismiss="modal">Got it</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Privacy Policy Modal -->

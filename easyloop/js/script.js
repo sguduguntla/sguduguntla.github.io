@@ -19,34 +19,6 @@ $(function() {
     }
   });
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC7GK5mrHwbvVWa90RSORQlyALWGrEB4Js",
-    authDomain: "easy-loop.firebaseapp.com",
-    databaseURL: "https://easy-loop.firebaseio.com",
-    storageBucket: "easy-loop.appspot.com",
-  };
-  firebase.initializeApp(config);
-
-  // Get a reference to the database service
-  var database = firebase.database();
-
-  var userCountRef = database.ref('numUsers');
-
-  userCountRef.once('value').then(function(snapshot) {
-    $("#numViews").html(snapshot.val() + 1);
-    database.ref('numUsers').set(snapshot.val() + 1);
-  });
-
-  $("#downloadBtn").click(function(e) {
-    var downloadCountRef = database.ref('downloadClicked');
-
-    downloadCountRef.once('value').then(function(snapshot) {
-      database.ref("downloadClicked").set(snapshot.val() + 1);
-    });
-  });
-
-
   window.fbAsyncInit = function() {
     FB.init({
       appId: '1155738174469383',
@@ -66,5 +38,31 @@ $(function() {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC7GK5mrHwbvVWa90RSORQlyALWGrEB4Js",
+    authDomain: "easy-loop.firebaseapp.com",
+    databaseURL: "https://easy-loop.firebaseio.com",
+    storageBucket: "easy-loop.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
+
+  var userCountRef = database.ref('numUsers');
+
+  userCountRef.once('value').then(function(snapshot) {
+    $("#numViews").html(snapshot.val() + 1);
+    database.ref('numUsers').set(snapshot.val() + 1);
+  });
+
+  $(".downloadBtn").click(function(e) {
+    var downloadCountRef = database.ref('downloadClicked');
+
+    downloadCountRef.once('value').then(function(snapshot) {
+      database.ref("downloadClicked").set(snapshot.val() + 1);
+    });
+  });
 
 });
