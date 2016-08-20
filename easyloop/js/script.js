@@ -34,6 +34,7 @@ $(function() {
   var userCountRef = database.ref('numUsers');
 
   userCountRef.once('value').then(function(snapshot) {
+    $("#numViews").html(snapshot.val() + 1);
     database.ref('numUsers').set(snapshot.val() + 1);
   });
 
@@ -44,6 +45,7 @@ $(function() {
       database.ref("downloadClicked").set(snapshot.val() + 1);
     });
   });
+
 
   window.fbAsyncInit = function() {
     FB.init({
