@@ -34,9 +34,7 @@ $(function() {
   var userCountRef = database.ref('numUsers');
 
   userCountRef.once('value').then(function(snapshot) {
-    database.ref().set({
-      numUsers: (snapshot.val() + 1)
-    });
+    database.ref('numUsers').set(snapshot.val() + 1);
   });
 
   $("#downloadBtn").click(function(e) {
