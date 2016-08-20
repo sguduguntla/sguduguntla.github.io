@@ -42,7 +42,7 @@ $(function() {
   $("#downloadBtn").click(function(e) {
     var downloadCountRef = database.ref('downloadClicked');
 
-    userCountRef.once('value').then(function(snapshot) {
+    downloadCountRef.once('value').then(function(snapshot) {
       database.ref("downloadClicked").set(snapshot.val() + 1);
     });
   });
