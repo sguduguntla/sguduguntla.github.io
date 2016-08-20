@@ -28,9 +28,7 @@ $(function() {
   };
   firebase.initializeApp(config);
 
-  firebase.database().ref().set({
-    numUsers: 1
-  });
+  firebase.database().ref('numUsers').set(1);
 
   // Get a reference to the database service
   var database = firebase.database();
