@@ -19,6 +19,22 @@ $(function() {
     }
   });
 
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC7GK5mrHwbvVWa90RSORQlyALWGrEB4Js",
+    authDomain: "easy-loop.firebaseapp.com",
+    databaseURL: "https://easy-loop.firebaseio.com",
+    storageBucket: "easy-loop.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+  firebase.database().ref().set({
+    numUsers: 1
+  });
+
+  // Get a reference to the database service
+  var database = firebase.database();
+
   window.fbAsyncInit = function() {
     FB.init({
       appId: '1155738174469383',
