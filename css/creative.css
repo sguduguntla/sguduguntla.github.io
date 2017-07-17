@@ -17,6 +17,28 @@ html, body {
   font-weight: 100;
 }
 
+.collapsible-body {
+    padding: 10px !important;
+}
+
+
+.collapsible-header:hover {
+    transition: background-color 0.2s ease;
+    background-color: #f2f2f2 !important;
+}
+
+#mediumBtn:hover {
+    color: #00ad6a !important;
+}
+
+#twitterBtn:hover {
+    color: #059ff5 !important;
+}
+
+#devpostBtn:hover {
+    color: #003e55 !important;
+}
+
 .profile-img {
   width: 30%;
   height: 25%;
