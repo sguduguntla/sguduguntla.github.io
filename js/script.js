@@ -33,6 +33,4 @@ $(document).ready(function() {
         loop: true
     });
 
-
-
 });
