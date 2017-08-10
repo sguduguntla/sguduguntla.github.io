@@ -39,6 +39,10 @@ html, body {
     color: #003e55 !important;
 }
 
+.linkedinBtn:hover {
+    color: #0276b8 !important;
+}
+
 .profile-img {
   width: 30%;
   height: 25%;
