@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="646px" height="593px" viewBox="0 0 646 593" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-28.6%" y="-24.0%" width="157.2%" height="147.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="24" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-29.0%" y="-24.3%" width="158.1%" height="148.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="24.3470982" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-45.000000, -49.000000)">
+            <g id="Group" transform="translate(87.000000, 96.000000)">
+                <polygon id="Polygon" fill="#E45126" transform="translate(140.326508, 164.689033) rotate(-540.000000) translate(-140.326508, -164.689033) " points="140.326508 2.27373675e-13 280.653016 125.811226 227.05306 329.378067 53.5999566 329.378067 -5.3379523e-13 125.811226"></polygon>
+                <polygon id="Polygon" fill="#F2672C" filter="url(#filter-1)" transform="translate(138.062707, 164.480474) rotate(-540.000000) translate(-138.062707, -164.480474) " points="138.062707 14.2658376 263.831002 130.796789 214.008275 314.695111 62.747647 314.695111 12.2944126 125.394108"></polygon>
+                <text id="JS" font-family="Orbitron-Black, Orbitron" font-size="100" font-weight="700" fill="#FFFFFF">
+                    <tspan x="60.4" y="194">JS</tspan>
+                </text>
+                <text id="INTRO--TO" font-family="Orbitron-Medium, Orbitron" font-size="24" font-weight="400" fill="#FFFFFF">
+                    <tspan x="73.428" y="77">INTRO  TO</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(368.000000, 275.000000)">
+                <polygon id="Polygon" fill="#0C73B8" transform="translate(140.326508, 164.689033) rotate(-540.000000) translate(-140.326508, -164.689033) " points="140.326508 2.27373675e-13 280.653016 125.811226 227.05306 329.378067 53.5999566 329.378067 -5.3379523e-13 125.811226"></polygon>
+                <polygon id="Polygon" fill="#2FAADD" filter="url(#filter-2)" transform="translate(140.768294, 164.214637) rotate(-540.000000) translate(-140.768294, -164.214637) " points="140.768294 14 266.536589 130.530952 216.713862 314.429273 65.4532344 314.429273 15 125.12827"></polygon>
+                <text id="JAVA" font-family="Orbitron-Black, Orbitron" font-size="60" font-weight="700" fill="#FFFFFF">
+                    <tspan x="35.18" y="194">JAVA</tspan>
+                </text>
+                <text id="INTRO-TO" font-family="Orbitron-Medium, Orbitron" font-size="20" font-weight="400" fill="#FFFFFF">
+                    <tspan x="84.19" y="78">INTRO  TO</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="736" height="717"></rect>
+        </g>
+    </g>
+</svg>

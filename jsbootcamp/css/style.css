@@ -1,19 +1,5 @@
-@font-face {
-    font-family: "lightHelvetica";
-    src: url(../resources/HelveticaNeue-UltraLight.ttf);
-}
-
-@font-face {
-    font-family: "thinHelvetica";
-    src: url(../resources/HelveticaNeue-Thin.ttf);
-}
-
-@font-face {
-    font-family: "boldHelvetica";
-    src: url(../resources/HelveticaNeue-Bold.ttf);
-}
-
-html, body {
+html,
+body {
     height: 100%;
     font-family: "Arial", sans-serif !important;
     font-weight: 100;
@@ -39,8 +25,8 @@ body {
 }
 
 .panel-title {
-  font-family: "Arial";
-  font-size: 3vmin;
+    font-family: "Arial";
+    font-size: 3vmin;
 }
 
 .dayTitle {
@@ -84,9 +70,10 @@ a {
     font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 100;
-    font-family: "lightHelvetica";
+h1 {
+    font-family: "Titillium Web";
+    color: #acacac;
+    text-shadow: 2px 2px 3px #929292;
 }
 
 .mainTitle {
@@ -102,17 +89,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
     color: #fff;
-    background-color: transparent;
+    background-color: rgb(12, 135, 216);
+    height: 50px;
+    width: 200px;
     -webkit-transition: background-color 0.5s ease;
     /* Safari */
     transition: background-color 0.5s ease;
-    border-color: #FFF;
     font-weight: 100;
+    font-size: 1.4em;
+    border-radius: 50px;
+    border: none;
+    line-height: 35px;
 }
 
 .btn-primary:hover {
-    color: black;
-    background-color: #FFF;
+    background-color: rgb(11, 123, 198);
 }
 
 .btn-inverse {
@@ -127,22 +118,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: background-color 0.5s ease;
     /* Safari */
     transition: background-color 0.5s ease;
-}
-
-a .scrollArrow {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    z-index: 1000;
-    color: black;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb04 1s infinite;
-    animation: sdb04 1s infinite;
-    box-sizing: border-box;
-    margin-top: 7vh;
 }
 
 @-webkit-keyframes sdb04 {
@@ -186,18 +161,8 @@ a .scrollArrow {
 }
 
 .gradientBackground {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#207cca+51 */
-    background: #840000;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #840000 51%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #840000 51%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #840000 51%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#840000', endColorstr='#840000', GradientType=0);
-    /* IE6-9 */
-    color: white;
+    background-color: #fefeff;
+    color: black;
 }
 
 .whiteBackground {
