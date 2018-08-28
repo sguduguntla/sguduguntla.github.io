@@ -96,8 +96,8 @@
 <body id="page-top">
     <!-------------------------------------------------------------------------------------------------------->
     <!--Navbar Section-->
-    <nav style="position: fixed; z-index: 2000; opacity: 1; background-color: white; color: black;
-    font-weight: 100;">
+    <nav style="position: fixed; z-index: 2000; opacity: 1; background-color: #f9f9f9; color: black;
+    font-weight: 100; box-shadow: none;">
         <div class="nav-wrapper">
             <a href="#" data-activates="mobile-demo" class="button-collapse right">
                 <i class="fa fa-bars fa-lg" style="color: black; font-size: 1.7em; position: relative; top: 5px; right: 20px"></i>
@@ -108,26 +108,64 @@
             </a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="#!" style="text-decoration: none; color: black; font-family: 'lightHelvetica'" class="welcomeTyper brand-logo center">Welcome</a>
+                    <a href="#!" style="text-decoration: none; color: black; font-family: 'lightHelvetica'" class="brand-logo center">Welcome</a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black; border-right: 1px solid gray; border-left: 1px solid gray"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#home">
+                    <a data-position="bottom" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#about">
                         <i class="fa fa-home"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="About Me" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#about">
-                        <i class="fa fa-info-circle"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
+                    <a data-position="bottom" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black;"
                         class="tooltipped waves-effect waves-dark page-scroll" href="#services">
                         <i class="fa fa-code"></i>
                     </a>
                 </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Hobbies" style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#hobbies">
+                        <i class="fa fa-hashtag"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Current Events" style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#currentEvents">
+                        <i class="fa fa-newspaper-o"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio">
+                        <i class="fa fa-suitcase"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#contact">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Resumé" style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="resume.pdf" target="_blank">
+                        <i class="fa fa-file"></i>
+                    </a>
+                </li>
+            </ul>
+            <!--Mobile Navbar-->
+            <ul class="side-nav right" id="mobile-demo">
+                <li>
+                    <a data-position="left" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;"
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#about">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="left" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black; "
+                        class="tooltipped waves-effect waves-dark page-scroll" href="#services">
+                        <i class="fa fa-code"></i>
+                    </a>
                 <li>
                     <a data-position="bottom" data-delay="50" data-tooltip="Hobbies" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
                         class="tooltipped waves-effect waves-dark page-scroll" href="#hobbies">
@@ -141,13 +179,13 @@
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
+                    <a data-position="left" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black; "
                         class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio">
                         <i class="fa fa-suitcase"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
+                    <a data-position="left" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; "
                         class="tooltipped waves-effect waves-dark page-scroll" href="#contact">
                         <i class="fa fa-phone"></i>
                     </a>
@@ -159,151 +197,84 @@
                     </a>
                 </li>
             </ul>
-            <!--Mobile Navbar-->
-            <ul class="side-nav right" id="mobile-demo">
-                <li>
-                    <a data-position="left" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#home">
-                        <i class="fa fa-home"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-position="left" data-delay="50" data-tooltip="About Me" style="text-decoration: none; font-size: 1.2em;color: black; "
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#about">
-                        <i class="fa fa-info-circle"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-position="left" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black; "
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#services">
-                        <i class="fa fa-code"></i>
-                    </a>
-                    <li>
-                        <a data-position="bottom" data-delay="50" data-tooltip="Hobbies" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                            class="tooltipped waves-effect waves-dark page-scroll" href="#hobbies">
-                            <i class="fa fa-hashtag"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-position="bottom" data-delay="50" data-tooltip="Current Events" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                            class="tooltipped waves-effect waves-dark page-scroll" href="#currentEvents">
-                            <i class="fa fa-newspaper-o"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-position="left" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black; "
-                            class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio">
-                            <i class="fa fa-suitcase"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-position="left" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; "
-                            class="tooltipped waves-effect waves-dark page-scroll" href="#contact">
-                            <i class="fa fa-phone"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-position="bottom" data-delay="50" data-tooltip="Resumé" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                            class="tooltipped waves-effect waves-dark page-scroll" href="resume.pdf" target="_blank">
-                            <i class="fa fa-file"></i>
-                        </a>
-                    </li>
-            </ul>
         </div>
     </nav>
     <!-------------------------------------------------------------------------------------------------------->
-    <!--Home Section (Top)-->
-
-    <div id="home" style="width: 100%; height: 100%; margin:0; top:0;;
-    font-weight: 100;background-image: url(img/laptop-bg.jpg); background-size: cover; background-position: right center;"
-        class="scrollspy">
-        <div class="overlay">
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <div class="animated rollIn profile-img"></div>
-                    <h1 id="titleTyper" class="animated slideInUp" style="color: black; opacity: 1;
-    font-weight: 200;">Sriharsha Guduguntla</h1>
-                    <hr style="border-color: gray">
-                    <a style="color: black; top: 10px" href="#about" class="waves-effect waves-dark btn white page-scroll animated pulse">
-                        <i class="fa fa-chevron-circle-down"></i>
-                    </a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-------------------------------------------------------------------------------------------------------->
     <!--About Me Section-->
-    <section class="bg-primary scrollspy" id="about">
-        <div style="color: black;" class="container">
+    <section class="bg-primary" id="about">
+        <div style="color: black; padding: 50px;" class="container-fluid">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 class="section-heading" style="font-weight: 100;">About Me</h2>
-                    <i class="fa fa-info-circle fa-lg"></i>
-                    <hr style="border-color: black">
+                <div class="col-md-4">
+                    <img src="img/sai-profile-edited.jpg" style="border-radius:50%;" class="img-responsive" alt="HII">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h2 class="section-heading" style="font-weight: 100;">Hi. I'm Sriharsha Guduguntla</h2>
                     <div style="color: black; font-size: 1.2em; ; font-weight: 300;" class="text-faded">
-                        Hi. I'm Sriharsha Guduguntla and I'm currently a Senior at Cupertino High School. I am a full stack developer and aspiring
-                        Computer Scientist with solid experience in Web and Mobile application development. I am well-versed
-                        in object oriented and functional programming analysis and design, QA automation, and REST API development.
-                        In my free time, I enjoy researching the latest cutting-edge technologies to design and develop open
-                        source applications. Outside of school, I am a competitive chess player, musician, data science enthusiast,
-                        hacker, mentor, and hackathon organizer. I have recently developed an interest in Machine Learning,
-                        Artificial Intelligence, and Data Science, and I look forward to applying my research to create more
-                        impactful applications. Don't forget to check out my Medium blog below.
+                        I am currently an undergraduate student at the University of California, Berkeley studying
+                        Computer Science. I am a full stack developer and aspiring Computer Scientist with solid
+                        experience in Web and Mobile application development. I am well-versed in object oriented and
+                        functional programming analysis and design, QA automation, and REST API development. In my free
+                        time, I enjoy researching the latest cutting-edge technologies to design and develop open
+                        source applications.
+
+                        I have recently developed an interest in Machine Learning, Artificial Intelligence, and Data
+                        Science, and I look forward to applying my research to create more impactful applications for
+                        social good.
+
+                        Feel free to shoot me an email anytime at <a href="mailto:sguduguntla@berkeley.edu" target="_blank">sguduguntla11@gmail.com</a>
+                        or <a href="mailto:sguduguntla@berkeley.edu" target="_blank">sguduguntla@berkeley.edu</a>.
                         </p>
                         <div class="btn-toolbar">
-                            <a style="color: black" id="mediumBtn" target="_blank" href="https://medium.com/@sguduguntla11" class="waves-effect waves-dark btn white page-scroll">
+                            <a style="color: black" id="mediumBtn" target="_blank" href="https://medium.com/@sguduguntla11"
+                                class="btn-flat white page-scroll">
                                 <i class="fa fa-medium"></i>
                                 </span>
                             </a>
-                            <a style="color: black" id="twitterBtn" target="_blank" href="https://twitter.com/sguduguntla11" class="waves-effect waves-dark btn white page-scroll">
+                            <a style="color: black" id="twitterBtn" target="_blank" href="https://twitter.com/sguduguntla11"
+                                class="btn-flat white page-scroll">
                                 <i class="fa fa-twitter"></i>
                                 </span>
                             </a>
-                            <a style="color: black" target="_blank" href="https://github.com/sguduguntla" class="waves-effect waves-dark btn white page-scroll">
+                            <a style="color: black" target="_blank" href="https://github.com/sguduguntla" class="btn-flat white page-scroll">
                                 <i class="fa fa-github"></i>
                                 </span>
                             </a>
-                            <a style="color: black" target="_blank" href="https://www.linkedin.com/in/sriharsha-guduguntla-b1a34a145/" class="linkedinBtn waves-effect waves-dark btn white page-scroll">
+                            <a style="color: black" target="_blank" href="https://www.linkedin.com/in/sriharsha-guduguntla-b1a34a145/"
+                                class="linkedinBtn btn-flat white page-scroll">
                                 <i class="fa fa-linkedin"></i>
                                 </span>
                             </a>
-                            <a style="color: black" id="devpostBtn" target="_blank" href="https://devpost.com/sguduguntla" class="waves-effect waves-dark btn white page-scroll">
-                                <i class="fa fa-globe"></i>&nbsp; Devpost</span>
-                            </a>
-                            <a style="color: black" target="_blank" href="resume.pdf" class="waves-effect waves-dark btn white page-scroll">
-                                <i class="fa fa-file"></i>&nbsp; Resumé</span>
+                            <a style="color: black" target="_blank" href="resume.pdf" class="btn-flat white page-scroll">
+                                <i class="fa fa-file"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
     <!--Skills Section-->
-    <section class="scrollspy" id="services">
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 style=";
-    font-weight: 100;" class="section-heading">Technical Skills</h2>
+                    <h2 style="font-weight: 100;" class="section-heading">Technical Skills</h2>
                     <i class="fa fa-code fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div>
-            <div style=";
-    font-weight: 300;" class="row">
+            <div style="font-weight: 300;" class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s">
                             <span class="skill glyphicon glyphicon-stats" aria-hidden="true"></span>
                         </i>
                         <h3 style="margin-top: 30px; font-size: 2em">Hardware / Machine Learning</h3>
-                        <p class="text-muted">I am currently in the process of learning machine learning and data science. I also enjoy exploring
+                        <p class="text-muted">I am currently in the process of learning machine learning and data
+                            science. I also enjoy exploring
                             different hardware modules using the Rasperry Pi.</p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
                             <li>
@@ -324,9 +295,11 @@
                             <span class="skill glyphicon glyphicon-cloud" aria-hidden="true"></span>
                         </i>
                         <h3 style="font-size: 2em">Full Stack Web Development</h3>
-                        <p class="text-muted">I have been doing Full Stack Web Development for more than 4 years with experience in various backend,
+                        <p class="text-muted">I have been doing Full Stack Web Development for more than 4 years with
+                            experience in various backend,
                             front-end, QA automation, and cloud technologies. Check out my
-                            <a target="_blank" href="https://github.com/sguduguntla">Github</a> to see my latest projects!</p>
+                            <a target="_blank" href="https://github.com/sguduguntla">Github</a> to see my latest
+                            projects!</p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header">HTML5, CSS3, JS/JQuery, MERN Stack</div>
@@ -364,7 +337,8 @@
                             <span class="skill glyphicon glyphicon-phone" aria-hidden="true"></span>
                         </i>
                         <h3 style="font-size: 2em">Mobile App Development</h3>
-                        <p class="text-muted">I have been doing Mobile Development for about 2.5 years and I continue to expand my knowledge each
+                        <p class="text-muted">I have been doing Mobile Development for about 2.5 years and I continue
+                            to expand my knowledge each
                             day. Currently, I'm exploring how to build cross-platform React Native apps.
                         </p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
@@ -383,7 +357,8 @@
                             <span class="skill glyphicon glyphicon-briefcase" aria-hidden="true"></span>
                         </i>
                         <h3 style="font-size: 2em">Technical / Design (UI/UX)</h3>
-                        <p class="text-muted">I have a strong passion for design and videography and I enjoy making covers and remixing music as
+                        <p class="text-muted">I have a strong passion for design and videography and I enjoy making
+                            covers and remixing music as
                             well.
                         </p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
@@ -413,7 +388,7 @@
     </section>
     <!---------------------------->
     <!---Experiences / Hobbies Section -->
-    <section class="scrollspy" id="hobbies">
+    <section id="hobbies">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -433,24 +408,26 @@
                             <span class="skill glyphicon glyphicon-pencil" aria-hidden="true"></span>
                         </i>
                         <h3 style="margin-top: 30px; font-size: 2em">Cupertino High School</h3>
-                        <p class="text-muted">I am an upcoming senior at Cupertino High School. I am involved in various school clubs/activites.
+                        <p class="text-muted">I am an upcoming senior at Cupertino High School. I am involved in
+                            various school clubs/activites.
                             Click on tabs below to learn more.</p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header active">Cupertino FBLA</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Led a group of 150+ students as a member of the Competitions Committee.
-                                        <strong>Received 6th place in the E-Business category out of 108 teams across California</strong>
+                                        <strong>Received 6th place in the E-Business category out of 108 teams across
+                                            California</strong>
                                     </span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Classes</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>
                                         <ul>
                                             <li>AP Calculus BC, Multivariable Calculus.</li>
@@ -458,58 +435,62 @@
                                             <li>4 years of Spanish</li>
                                         </ul>
                                     </span>
-                                    <br/>
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header active">Chamber Orchestra</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Have been playing the Cello for 6 years. Performed at California All-State Music Education
+                                    <br />
+                                    <span>Have been playing the Cello for 6 years. Performed at California All-State
+                                        Music Education
                                         Conference (CASMEC).</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header active">Advanced Capella Choir</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Currently in Cupertino High School's Advanced Capella Choir.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Easy Loop Chrome Extension</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Developed a chrome extension called
-                                        <a target="_blank" href="/easyloop">Easy Loop</a> for the online gradebook system, Schoolloop. Currently has more than
+                                        <a target="_blank" href="/easyloop">Easy Loop</a> for the online gradebook
+                                        system, Schoolloop. Currently has more than
                                         6000 daily users and 60 5-star reviews. Check out my
-                                        <a target="_blank" href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286">medium blog</a> for more info!</span>
-                                    <br/>
-                                    <br/>
+                                        <a target="_blank" href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286">medium
+                                            blog</a> for more info!</span>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Chess Club Vice President</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Held weekly meetings and led the CHS chess team to 3rd place in the district.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">AOCMM Secretary/Webmaster</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Built the
-                                        <a target="_blank" href="http://aocmm.net">website</a> for the Association of Computational and Mathematical Modeling and led
+                                        <a target="_blank" href="http://aocmm.net">website</a> for the Association of
+                                        Computational and Mathematical Modeling and led
                                         a team of three to win the Gamma Prize in the competition.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                         </ul>
@@ -522,56 +503,60 @@
                             <span class="skill glyphicon glyphicon-music" aria-hidden="true"></span>
                         </i>
                         <h3 style="font-size: 2em">Music</h3>
-                        <p class="text-muted">Music has played a large role in my life and I'm involved in many musical activities both at school
+                        <p class="text-muted">Music has played a large role in my life and I'm involved in many musical
+                            activities both at school
                             and out of school. Click on tabs below to learn more.</p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header active">Indian Classical Singer</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Have been learning Indian Karnatik Music for over 6 years with many performances throughout
+                                    <br />
+                                    <span>Have been learning Indian Karnatik Music for over 6 years with many
+                                        performances throughout
                                         the years.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Cello Player</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>
-                                        Have been playing the Cello for 6 years and have done more than 10 different stage performances including at the California
+                                        Have been playing the Cello for 6 years and have done more than 10 different
+                                        stage performances including at the California
                                         All-State Music Education Conference (CASMEC).
                                     </span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header active">CHS Capella Member</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Currently in Cupertino High School's Advanced Capella Choir.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Karaoke / Casual Performances</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Performed at many karaoke programs and won 1st place in an Indian Singing Competition.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <span>Performed at many karaoke programs and won 1st place in an Indian Singing
+                                        Competition.</span>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Garageband / Covers</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Love to make covers and remixes of songs using Garageband</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                         </ul>
@@ -584,48 +569,53 @@
                             <span class="skill glyphicon glyphicon-king" aria-hidden="true"></span>
                         </i>
                         <h3 style="font-size: 2em">Chess</h3>
-                        <p class="text-muted">I have been playing chess for over 7 years now, and it's one of my favorite sports/board games. Click
+                        <p class="text-muted">I have been playing chess for over 7 years now, and it's one of my
+                            favorite sports/board games. Click
                             on tabs below to learn more.</p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header active">Competitive Chess</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>
-                                        Have a USCF rating of 1660 and have participated in over 80 chess tournaments, both in-state and out of state. Won 3rd place
-                                        in regionals and state tournaments. Attended over 7 National events, more than 25
+                                        Have a USCF rating of 1660 and have participated in over 80 chess tournaments,
+                                        both in-state and out of state. Won 3rd place
+                                        in regionals and state tournaments. Attended over 7 National events, more than
+                                        25
                                         state events, and 40 bay area chess events.
                                     </span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Early Years</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Began learning chess in 5th grade, but only started playing competitively in 6th grade.
+                                    <br />
+                                    <span>Began learning chess in 5th grade, but only started playing competitively in
+                                        6th grade.
                                     </span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header active">Teaching Chess</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Taught chess to many beginners and intermediate players in-school and out of school</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <span>Taught chess to many beginners and intermediate players in-school and out of
+                                        school</span>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Kolty Chess Club</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>Regular member of the Kolty Chess Club in San Jose.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                         </ul>
@@ -637,58 +627,68 @@
                             <span class="skill glyphicon glyphicon-globe" aria-hidden="true"></span>
                         </i>
                         <h3 style="font-size: 2em">Hackathons / Science Fairs</h3>
-                        <p class="text-muted">I have attended over 10 hackathons/CTFs as well as a few science fairs throughout my high school
-                            career and I am an avid supporter and organizer of these events. Click on tabs below to learn
+                        <p class="text-muted">I have attended over 10 hackathons/CTFs as well as a few science fairs
+                            throughout my high school
+                            career and I am an avid supporter and organizer of these events. Click on tabs below to
+                            learn
                             more.
                         </p>
                         <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header active">TinoHacks</div>
                                 <div class="collapsible-body">
-                                    <br/>
+                                    <br />
                                     <span>
-                                        Organized Cupertino High School's very first high school 29-hour, 300-person hackathon along with a team of 7 others. As
-                                        the Technology &amp; Operations Director &amp; Webmaster, I led the Technology and
+                                        Organized Cupertino High School's very first high school 29-hour, 300-person
+                                        hackathon along with a team of 7 others. As
+                                        the Technology &amp; Operations Director &amp; Webmaster, I led the Technology
+                                        and
                                         Operations Teams in making the events sucessful. Check out my
-                                        <a target="_blank" href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c">medium blog</a> for more info!
+                                        <a target="_blank" href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c">medium
+                                            blog</a> for more info!
                                     </span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Palo Alto Networks CTF</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Attended my very first Capture the Flag event at Palo Alto Networks. Won 9th place out
+                                    <br />
+                                    <span>Attended my very first Capture the Flag event at Palo Alto Networks. Won 9th
+                                        place out
                                         of 20 teams. Check out my
-                                        <a target="_blank" href="https://medium.com/@sguduguntla11/the-hidden-world-of-information-security-8ccc7449093e">medium blog</a> for more info! </span>
-                                    <br/>
-                                    <br/>
+                                        <a target="_blank" href="https://medium.com/@sguduguntla11/the-hidden-world-of-information-security-8ccc7449093e">medium
+                                            blog</a> for more info! </span>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header active">Synopsys Science Fair</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Participated in the Synopsys Science Fair for the past 2 years with focus on Ergonomics
+                                    <br />
+                                    <span>Participated in the Synopsys Science Fair for the past 2 years with focus on
+                                        Ergonomics
                                         and Brain Computer Interfaces. Check out
-                                        <a target="_blank" href="/evexia">Evexia</a>, a lightweight back-strap system built to monitor and improve your posture
+                                        <a target="_blank" href="/evexia">Evexia</a>, a lightweight back-strap system
+                                        built to monitor and improve your posture
                                         throughout the day. Check out my
                                         <a href="#portfolio">projects</a> for more info.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Awards</div>
                                 <div class="collapsible-body">
-                                    <br/>
-                                    <span>Won 4th place out of more than 40 teams at MakeHacks 2015, a collegiate hackathon. Placed
+                                    <br />
+                                    <span>Won 4th place out of more than 40 teams at MakeHacks 2015, a collegiate
+                                        hackathon. Placed
                                         in the top 5 teams at Los Altos Hacks 2016. Check out my
                                         <a href="#portfolio">projects</a> for more info.</span>
-                                    <br/>
-                                    <br/>
+                                    <br />
+                                    <br />
                                 </div>
                             </li>
                         </ul>
@@ -699,7 +699,7 @@
     </section>
     <!---------------------------------------------->
     <!--News Section-->
-    <section class="scrollspy" id="currentEvents">
+    <section id="currentEvents">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -732,10 +732,12 @@
                                 <img style="width: 100%; margin: 0 auto;" src="img/news/pennapps-banner.JPG" />
                                 <div class="carousel-caption">
                                     <h3>PennApps XIV 2018</h3>
-                                    <p>Attended first PennApps Hackathon on January 19-21, 2018 at UPenn! Built Sara AI Productivity
+                                    <p>Attended first PennApps Hackathon on January 19-21, 2018 at UPenn! Built Sara AI
+                                        Productivity
                                         Desktop App.</p>
                                     <div class="btn-toolbar">
-                                        <a style="color: black;" target="_blank" href="https://devpost.com/software/sara-bic897" class="waves-effect waves-dark btn white page-scroll animated pulse">
+                                        <a style="color: black;" target="_blank" href="https://devpost.com/software/sara-bic897"
+                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-globe"></i>&nbsp; More on Devpost</a>
                                     </div>
                                 </div>
@@ -749,7 +751,8 @@
                                 <img style="width: 100%; margin: 0 auto;" src="img/news/tinohacks-team.jpg" />
                                 <div class="carousel-caption">
                                     <h3>TinoHacks 2017</h3>
-                                    <p>Technology/Operations Director and Webmaster of Cupertino's first-ever full-fledged 29-hour,
+                                    <p>Technology/Operations Director and Webmaster of Cupertino's first-ever
+                                        full-fledged 29-hour,
                                         300 person high school hackathon</p>
                                     <div class="btn-toolbar">
                                         <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c"
@@ -757,9 +760,11 @@
                                             <i class="fa fa-medium"></i>&nbsp; Read More</a>
                                         <a style="color: black;" target="_blank" href="http://tinohacks.tech" class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-globe"></i>&nbsp; Visit Site</a>
-                                        <a style="color: black;" target="_blank" href="https://www.youtube.com/watch?v=MYdoP88Bv6Y" class="waves-effect waves-dark btn white page-scroll animated pulse">
+                                        <a style="color: black;" target="_blank" href="https://www.youtube.com/watch?v=MYdoP88Bv6Y"
+                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-youtube"></i>&nbsp; Closing Speech</a>
-                                        <a style="color: black;" target="_blank" href="https://www.flickr.com/photos/150174093@N05/albums/72157683241181075" class="waves-effect waves-dark btn white page-scroll animated pulse">
+                                        <a style="color: black;" target="_blank" href="https://www.flickr.com/photos/150174093@N05/albums/72157683241181075"
+                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-picture-o"></i>&nbsp; Pictures</a>
                                     </div>
                                 </div>
@@ -773,7 +778,8 @@
                                 <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/news/palo-alto-networks-banner.JPG" />
                                 <div class="carousel-caption">
                                     <h3>Palo Alto Networks CTF Event</h3>
-                                    <p>Won 9th place out of 20 teams at the Palo Alto Network's Info Security team's very first
+                                    <p>Won 9th place out of 20 teams at the Palo Alto Network's Info Security team's
+                                        very first
                                         Capture the Flag event
                                     </p>
                                     <div class="btn-toolbar">
@@ -792,13 +798,15 @@
                                 <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/news/js-bootcamp.jpg" />
                                 <div class="carousel-caption">
                                     <h3>Beginner JavaScript Bootcamp</h3>
-                                    <p>Held my first ever 8-day JavaScript Bootcamp for elementary and middle school children.
+                                    <p>Held my first ever 8-day JavaScript Bootcamp for elementary and middle school
+                                        children.
                                     </p>
                                     <div class="btn-toolbar">
                                         <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/javascript-bootcamp-for-schoolchildren-e9f5ff1f85b4"
                                             class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-medium"></i>&nbsp; Read More</a>
-                                        <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/jsbootcamp/" class="waves-effect waves-dark btn white page-scroll animated pulse">
+                                        <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/jsbootcamp/"
+                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-globe"></i>&nbsp; Visit Site</a>
                                     </div>
                                 </div>
@@ -812,18 +820,21 @@
                                 <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/projectpics/easyloop-simplebanner-920x680.jpg" />
                                 <div class="carousel-caption">
                                     <h3>Easy Loop for Schoolloop</h3>
-                                    <p>Developed a simple Schoolloop Chrome extension for high school students, Over 6000 daily
+                                    <p>Developed a simple Schoolloop Chrome extension for high school students, Over
+                                        6000 daily
                                         users and 60 5-star reviews</p>
                                     <div class="btn-toolbar">
                                         <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286"
                                             class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-medium"></i>&nbsp; Read More</a>
-                                        <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/easyloop/" class="waves-effect waves-dark btn white page-scroll animated pulse">
+                                        <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/easyloop/"
+                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-globe"></i>&nbsp; Visit Site</a>
                                         <a style="color: black;" target="_blank" href="https://cupertino.schoolloop.com/groups/news_item?d=x&id=1471332429553&group_id=1123558358016&return_url=1473068061914"
                                             class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-newspaper-o"></i>&nbsp; School News</a>
-                                        <a style="color: black;" target="_blank" href="https://www.facebook.com/schoolloopeasyloop/" class="waves-effect waves-dark btn white page-scroll animated pulse">
+                                        <a style="color: black;" target="_blank" href="https://www.facebook.com/schoolloopeasyloop/"
+                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
                                             <i class="fa fa-facebook"></i>&nbsp; Facebook Page</a>
                                     </div>
                                 </div>
@@ -846,7 +857,7 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
     <!--Individual Projects Section-->
-    <section class="no-padding scrollspy" id="portfolio">
+    <section class="no-padding " id="portfolio">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -871,13 +882,12 @@
                             </span>
                             <p>
                                 <a href="http://www.sriharshaguduguntla.com/evexia" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                  
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Evexia-Posture-Monitoring" target="_blank">Github
-                                    <i class="fa fa-github"></i>
-                                </a> |
+                                   
+                                </a> -
                                 <a href="https://www.youtube.com/watch?v=gchk8AzGgaQ" target="_blank">Youtube
-                                    <i class="fa fa-youtube"></i>
                                 </a>
 
                         </div>
@@ -885,47 +895,73 @@
                             <span class="card-title grey-text text-darken-2">Evexia Posture Monitoring
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>Improving Body Posture through a Light, Flexible Back-Strap System with Real-Time Smartphone
+                            <p>Improving Body Posture through a Light, Flexible Back-Strap System with Real-Time
+                                Smartphone
                                 Microcontroller Monitoring</p>
                             <p>Built at Synopsis Science Fair 2016, Project 102-E80-D2 with Mokshith Voodarla</p>
                             <p>Visit the website
                                 <a href="http://www.sriharshaguduguntla.com/evexia" target="_blank">here</a>
                             </p>
                             <h5>Objectives/Goals</h5>
-                            <p>The objective of this project is to create a device that is able to monitor and improve the posture
-                                of a person. Everyday, more than 65 million Americans and many other people around the world
-                                either stand or sit in detrimental positions which have led to a 30% decrease in lung capacity
+                            <p>The objective of this project is to create a device that is able to monitor and improve
+                                the posture
+                                of a person. Everyday, more than 65 million Americans and many other people around the
+                                world
+                                either stand or sit in detrimental positions which have led to a 30% decrease in lung
+                                capacity
                                 as well as cause gastrointestinal discomfort and body pains. </p>
                             <h5>Methods/Materials</h5>
-                            <p>The materials we used include vibration motors, an Arduino Uno (micro-controller/computer), a
-                                flex sensor, an HC-06 bluetooth module, 4 precisely 3D printed models, and a smartphone (Android).
-                                These materials helped us build our final physical model that would go on to reduce stress
-                                and improve a person’s posture. The way we did this was by hooking up a bluetooth module
-                                and a flex sensor to the Arduino. We developed an algorithm that was able to map a resistance
-                                level sent by the flex sensor to the number of degrees a person is bending. This data was
-                                then sent to our Android app via Bluetooth where heavier analysis took place. The data was
-                                used to extrapolate the average bend of a person and then advise the user to make certain
-                                changes to their posture in order to improve. This data was then sent to an online database
-                                (Firebase) where further data analysis was done. Finally, we displayed the results on a website
+                            <p>The materials we used include vibration motors, an Arduino Uno
+                                (micro-controller/computer), a
+                                flex sensor, an HC-06 bluetooth module, 4 precisely 3D printed models, and a smartphone
+                                (Android).
+                                These materials helped us build our final physical model that would go on to reduce
+                                stress
+                                and improve a person’s posture. The way we did this was by hooking up a bluetooth
+                                module
+                                and a flex sensor to the Arduino. We developed an algorithm that was able to map a
+                                resistance
+                                level sent by the flex sensor to the number of degrees a person is bending. This data
+                                was
+                                then sent to our Android app via Bluetooth where heavier analysis took place. The data
+                                was
+                                used to extrapolate the average bend of a person and then advise the user to make
+                                certain
+                                changes to their posture in order to improve. This data was then sent to an online
+                                database
+                                (Firebase) where further data analysis was done. Finally, we displayed the results on a
+                                website
                                 dashboard consisting of detailed graphs and charts.
                             </p>
                             <h5>Results</h5>
-                            <p>After we finished building everything, we had a seamless, easy to use, and low cost device that
-                                could monitor and improve posture. The 3D models in unison with the vibration motors successfully
-                                improved posture over time. Also, the Arduino and Flex sensor were able to accurately monitor
-                                how much the person was bending and they sent this data to an online database in real-time.
-                                The person received push notifications and suggestions on their phone and watch as well as
-                                their desktop. With the help of personalized graphs and reports, and a doctor and user profile
+                            <p>After we finished building everything, we had a seamless, easy to use, and low cost
+                                device that
+                                could monitor and improve posture. The 3D models in unison with the vibration motors
+                                successfully
+                                improved posture over time. Also, the Arduino and Flex sensor were able to accurately
+                                monitor
+                                how much the person was bending and they sent this data to an online database in
+                                real-time.
+                                The person received push notifications and suggestions on their phone and watch as well
+                                as
+                                their desktop. With the help of personalized graphs and reports, and a doctor and user
+                                profile
                                 (to share information with their doctor), the user was able to use the app effectively.</p>
-                            <h5>Conclusion/Discussion</h5> All our goals were met however there are many ways to improve this
-                            product. A major improvement could be to create a small, detachable vest/frame in order to allow
-                            the user to monitor his/her posture without relying on a backpack. This major improvement could
-                            make the device modular and could appeal to a larger audience in order to create a more interconnected
+                            <h5>Conclusion/Discussion</h5> All our goals were met however there are many ways to
+                            improve this
+                            product. A major improvement could be to create a small, detachable vest/frame in order to
+                            allow
+                            the user to monitor his/her posture without relying on a backpack. This major improvement
+                            could
+                            make the device modular and could appeal to a larger audience in order to create a more
+                            interconnected
                             system.
                             </p>
                             <h5>Summary</h5>
-                            <p>This device monitors and rectifies lack of lung capacity, shortness of breath, vascular disease,
-                                degradation of brain functions, and more by seamlessly tracking and physically improving
+                            <p>This device monitors and rectifies lack of lung capacity, shortness of breath, vascular
+                                disease,
+                                degradation of brain functions, and more by seamlessly tracking and physically
+                                improving
                                 posture.
                             </p>
                         </div>
@@ -944,17 +980,15 @@
                                 <i class="right fa fa-info-circle"></i>
                             </span>
                             <p>
-                                <a href="https://chrome.google.com/webstore/detail/school-loop-easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                <a href="https://chrome.google.com/webstore/detail/school-loop-easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj"
+                                    target="_blank">Website
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Easy-Loop-Extension" target="_blank">Github
-                                    <i class="fa fa-github"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://www.facebook.com/schoolloopeasyloop" target="_blank">Facebook
-                                    <i class="fa fa-facebook"></i>
-                                </a> |
-                                <a href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286" target="_blank">Medium
-                                    <i class="fa fa-medium"></i>
+                                </a> -
+                                <a href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286"
+                                    target="_blank">Medium
                                 </a>
                             </p>
                         </div>
@@ -962,18 +996,22 @@
                             <span class="card-title grey-text text-darken-2">Easy Loop
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>Easy Loop is a simple Schoolloop Chrome extension that adds the ability to calculate grades with
-                                realtime grade updates and a beautiful user interface. Before enabling this extension, please
-                                make sure that any similar schoolloop extensions are disabled since they may interfere with
+                            <p>Easy Loop is a simple Schoolloop Chrome extension that adds the ability to calculate
+                                grades with
+                                realtime grade updates and a beautiful user interface. Before enabling this extension,
+                                please
+                                make sure that any similar schoolloop extensions are disabled since they may interfere
+                                with
                                 Easy Loop.
-                                <br/> How to Disable Extensions Temporarily:
-                                <br/>
+                                <br /> How to Disable Extensions Temporarily:
+                                <br />
                                 <ol>
                                     <li> On your browser, click menu or the three bars that look like a hamburger</li>
                                     <li> Select More tools > Extensions.</li>
-                                    <li> To turn off an extension, uncheck the Enabled box. Check the box to turn it on.</li>
+                                    <li> To turn off an extension, uncheck the Enabled box. Check the box to turn it
+                                        on.</li>
                                 </ol>
-                                <br/>
+                                <br />
                                 <p>Easy Loop Features:</p>
                                 <ol>
                                     <li> Add and delete assignments</li>
@@ -986,29 +1024,34 @@
                                     <li> Visual customization (New!)</li>
                                     <li> Enhance the visual appearance of their Schoolloop</li>
                                 </ol>
-                                <br/> Easy Loop will provide you the features that only your teachers are essentially permitted.
+                                <br /> Easy Loop will provide you the features that only your teachers are essentially
+                                permitted.
                                 Therefore, be your teacher today and calculate your grade within seconds!
-                                <br/>
-                                <br/> Email me at sguduguntla11@gmail.com for any questions, concerns, or comments. Leave suggestions
+                                <br />
+                                <br /> Email me at sguduguntla11@gmail.com for any questions, concerns, or comments.
+                                Leave suggestions
                                 or report any issues at:
-                                <br/>
-                                <br/> Visit Easy Loop at
+                                <br />
+                                <br /> Visit Easy Loop at
                                 <a href="http://sriharshaguduguntla.com/easyloop">http://sriharshaguduguntla.com/easyloop</a>
-                                <br/>
-                                <br/> Download here:
+                                <br />
+                                <br /> Download here:
                                 <a href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj</a>
-                                <br/>
-                                <br/> Report any issues
+                                <br />
+                                <br /> Report any issues
                                 <a href="https://github.com/sguduguntla/Easy-Loop-Extension/issues">here</a>
-                                <br/>
-                                <br/> Check out my Github Page:
-                                <br/>
-                                <br/>
+                                <br />
+                                <br /> Check out my Github Page:
+                                <br />
+                                <br />
                                 <a href="https://github.com/sguduguntla">https://github.com/sguduguntla</a>
-                                <br/>
-                                <br/> Privacy Policy: Please note that Easy Loop is 100% safe as it does not store any data and
-                                it ensures that all extracted info is deleted after the particular session. Login details,
-                                grades, etc. are not stored or accessible by Easy Loop thanks to the Google Chrome extension
+                                <br />
+                                <br /> Privacy Policy: Please note that Easy Loop is 100% safe as it does not store any
+                                data and
+                                it ensures that all extracted info is deleted after the particular session. Login
+                                details,
+                                grades, etc. are not stored or accessible by Easy Loop thanks to the Google Chrome
+                                extension
                                 policies. This extension has no affiliation with the Schoolloop company.
                         </div>
                     </div>
@@ -1027,16 +1070,13 @@
                             </span>
                             <p>
                                 <a href="http://tinohacks.tech" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/OfficialTinoHacks/officialtinohacks.github.io" target="_blank">Github
-                                    <i class="fa fa-github"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://www.youtube.com/watch?v=MYdoP88Bv6Y" target="_blank">Youtube
-                                    <i class="fa fa-youtube"></i>
-                                </a> |
-                                <a href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c" target="_blank">Medium
-                                    <i class="fa fa-medium"></i>
+                                </a> -
+                                <a href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c"
+                                    target="_blank">Medium
                                 </a>
                             </p>
                         </div>
@@ -1044,10 +1084,14 @@
                             <span class="card-title grey-text text-darken-2">TinoHacks Website
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>TinoHacks is a two day long, 350 person hackathon hosted by Cupertino High School students where
-                                both new and experienced programmers can work together on projects, learn new skills, and
-                                have a splendid time. As the Technology Director and webmaster of the hackathon, I built
-                                the website, and I help coordinate any other technology related activities. Visit the website
+                            <p>TinoHacks is a two day long, 350 person hackathon hosted by Cupertino High School
+                                students where
+                                both new and experienced programmers can work together on projects, learn new skills,
+                                and
+                                have a splendid time. As the Technology Director and webmaster of the hackathon, I
+                                built
+                                the website, and I help coordinate any other technology related activities. Visit the
+                                website
                                 <a href="http://tinohacks.tech" target="_blank">here</a>.</p>
                         </div>
                     </div>
@@ -1066,13 +1110,10 @@
                             </span>
                             <p>
                                 <a href="http://aocmm.net" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/sguduguntla.github.io/tree/master/aocmm" target="_blank">Github
-                                    <i class="fa fa-github"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://www.facebook.com/aocmm" target="_blank">Facebook
-                                    <i class="fa fa-facebook"></i>
                                 </a>
                             </p>
                         </div>
@@ -1081,18 +1122,30 @@
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
                             <p>Association of Computational Mathematical Modeling</p>
-                            <p>AoCMM is a non-profit organization that, in short, strives to educate determined individuals
-                                on the importance and applicability of mathematical and computational modeling. To expand,
-                                however, our intentions first lie with the fact that the world is full of complicated and
-                                often devastating issues. Whether these include the volatile spread of disease or locating
-                                the whereabouts of criminals, mathematical and computational modeling has its place in soundly
-                                solving real problems. Next, by recognizing the potential of modeling situations, we desire
-                                to spread more information and knowledge about mathematical and computational analysis to
-                                the general public. If more people around the globe understood the importance of mathematics
-                                to our lives or knew how to apply mathematics using data analysis, then many of our world’s
-                                problems can be efficiently and effectively solved. Ultimately, we here at AoCMM strive for
-                                more knowledge to better the world and therefore, we have created a competition both equally
-                                challenging and rewarding for those who are interested to test and expand their research
+                            <p>AoCMM is a non-profit organization that, in short, strives to educate determined
+                                individuals
+                                on the importance and applicability of mathematical and computational modeling. To
+                                expand,
+                                however, our intentions first lie with the fact that the world is full of complicated
+                                and
+                                often devastating issues. Whether these include the volatile spread of disease or
+                                locating
+                                the whereabouts of criminals, mathematical and computational modeling has its place in
+                                soundly
+                                solving real problems. Next, by recognizing the potential of modeling situations, we
+                                desire
+                                to spread more information and knowledge about mathematical and computational analysis
+                                to
+                                the general public. If more people around the globe understood the importance of
+                                mathematics
+                                to our lives or knew how to apply mathematics using data analysis, then many of our
+                                world’s
+                                problems can be efficiently and effectively solved. Ultimately, we here at AoCMM strive
+                                for
+                                more knowledge to better the world and therefore, we have created a competition both
+                                equally
+                                challenging and rewarding for those who are interested to test and expand their
+                                research
                                 experience with math modeling. Visit the website
                                 <a href="http://aocmm.net" target="_blank">here</a>.
                             </p>
@@ -1113,7 +1166,6 @@
                             </span>
                             <p>
                                 <a href="https://github.com/sguduguntla/Tino-Octagon-Website" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1140,10 +1192,8 @@
                             </span>
                             <p>
                                 <a href="http://www.sriharshaguduguntla.com/saicodeplayer/codeplayer.html" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Sai-Code-Player" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1171,7 +1221,6 @@
                             </span>
                             <p>
                                 <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1179,7 +1228,8 @@
                             <span class="card-title grey-text text-darken-2">Java Scientific Calculator
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>The Java program provides an interactive scientific calculator that requires a login. Very useful
+                            <p>The Java program provides an interactive scientific calculator that requires a login.
+                                Very useful
                                 if you want to use a scientific calculator on the computer. For more info, click
                                 <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">here</a>.</p>
                         </div>
@@ -1189,7 +1239,7 @@
             </div>
     </section>
     <!--Hackathon Projects-->
-    <section class="no-padding scrollspy">
+    <section class="no-padding ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -1218,7 +1268,6 @@
                             </span>
                             <p>
                                 <a href="https://devpost.com/software/sara-bic897" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
                                 </a>
                             </p>
                         </div>
@@ -1228,52 +1277,79 @@
                             </span>
                             <p>Made at PennApps XIV 2018 with the help of Kiran Kunigiri.</p>
                             <h5>Inspiration</h5>
-                            Sara is inspired by science fiction AI assistants that help out their creators. After noticing how lazy many people (even
-                            including us!) could get from a simple Youtube video chain or social media post, we believed
-                            that a bot could start holding people accountable. When people try to "change" or set resolutions
-                            to improve by themselves, they often fail because they can't hold themselves accountable. But
-                            by creating a human-like bot that simulates human emotion and loves to be cynical of our abilities,
+                            Sara is inspired by science fiction AI assistants that help out their creators. After
+                            noticing how lazy many people (even
+                            including us!) could get from a simple Youtube video chain or social media post, we
+                            believed
+                            that a bot could start holding people accountable. When people try to "change" or set
+                            resolutions
+                            to improve by themselves, they often fail because they can't hold themselves accountable.
+                            But
+                            by creating a human-like bot that simulates human emotion and loves to be cynical of our
+                            abilities,
                             people can become more motivated to simply try harder.
 
                             <h5>What it does</h5>
 
-                            <p>Sara is a culmination of multiple different features that work together for the best productivity
-                                training experience. It tracks everything you do and begins blocking or killing certain browser
-                                windows and apps if your unproductivity levels cross a certain threshold. It also records
-                                all of this data about your browsing habits to generate detailed daily reports and summaries
-                                of how you are performing. Moreover, Sara also has an integrated project management system.
-                                It uses an algorithm that automatically sorts all of the tasks you have to do each project,
-                                and creates an according to schedule to ensure that you spread your work across all of them
-                                to complete them on time, rather than pulling off an all-nighter the day before it's due!
-                                The AI also isn't just another Siri - rather than always waiting for your command, it also
-                                directly talks to you to scold you when you're going off track, or even congratulate you
+                            <p>Sara is a culmination of multiple different features that work together for the best
+                                productivity
+                                training experience. It tracks everything you do and begins blocking or killing certain
+                                browser
+                                windows and apps if your unproductivity levels cross a certain threshold. It also
+                                records
+                                all of this data about your browsing habits to generate detailed daily reports and
+                                summaries
+                                of how you are performing. Moreover, Sara also has an integrated project management
+                                system.
+                                It uses an algorithm that automatically sorts all of the tasks you have to do each
+                                project,
+                                and creates an according to schedule to ensure that you spread your work across all of
+                                them
+                                to complete them on time, rather than pulling off an all-nighter the day before it's
+                                due!
+                                The AI also isn't just another Siri - rather than always waiting for your command, it
+                                also
+                                directly talks to you to scold you when you're going off track, or even congratulate
+                                you
                                 if you're doing particularly well.</p>
 
                             <h5>How we built it</h5>
-                            <p>We wanted to build a cross-platform desktop app, so we used Electron so that it would be compatible
-                                with both Mac and Windows. We used the native scripting languages of each OS to track all
-                                browsing activity, and stored them in Firebase. Blocking and killing sites/apps was also
+                            <p>We wanted to build a cross-platform desktop app, so we used Electron so that it would be
+                                compatible
+                                with both Mac and Windows. We used the native scripting languages of each OS to track
+                                all
+                                browsing activity, and stored them in Firebase. Blocking and killing sites/apps was
+                                also
                                 done using the native scripting languages.</p>
 
                             <h5>Challenges we ran into</h5>
-                            <p>Electron created limitations for us, such as the fact that Google had removed the Text to Speech
-                                API in Electron. This often invoked the need to create or look for other workarounds to do
+                            <p>Electron created limitations for us, such as the fact that Google had removed the Text
+                                to Speech
+                                API in Electron. This often invoked the need to create or look for other workarounds to
+                                do
                                 simple tasks.</p>
 
                             <h5>Accomplishments that we're proud of</h5>
-                            <p>We believe our user experience for this project flows well and looks appealing to the user, as
+                            <p>We believe our user experience for this project flows well and looks appealing to the
+                                user, as
                                 it is complete with animations and a responsive UI.</p>
 
                             <h5>What we learned</h5>
-                            <p>We learned a lot about structuring complex web apps, as our app consisted of many different smaller
-                                components that all worked together. With so many different pieces of code doing completely
+                            <p>We learned a lot about structuring complex web apps, as our app consisted of many
+                                different smaller
+                                components that all worked together. With so many different pieces of code doing
+                                completely
                                 different things, we had to always keep our code organized.</p>
 
                             <h5>What's next for Sara</h5>
-                            <p>Sara has only touched the surface of what is possible for this kind of application. We believe
-                                it can revolutionize the way people work and create a new and simple way for people to improve
-                                their productivity levels. Other methods of training such as integrated work-break flow systems,
-                                an online productivity leaderboard competition, and more can be utilized to change the way
+                            <p>Sara has only touched the surface of what is possible for this kind of application. We
+                                believe
+                                it can revolutionize the way people work and create a new and simple way for people to
+                                improve
+                                their productivity levels. Other methods of training such as integrated work-break flow
+                                systems,
+                                an online productivity leaderboard competition, and more can be utilized to change the
+                                way
                                 people work!</p>
                         </div>
                     </div>
@@ -1295,10 +1371,8 @@
                             </span>
                             <p>
                                 <a href="https://github.com/sguduguntla/LAHacks2" target="_blank">Github
-                                    <i class="fa fa-github"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://devpost.com/software/lahacks2" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
                                 </a>
                             </p>
                         </div>
@@ -1307,22 +1381,38 @@
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
                             <p>Made at Los Altos Hacks II 2017 with the help of Jai Sankar and David Hong.</p>
-                            <p>A common problem for young entrepreneurs who have an idea is that they simply do not have efficient
-                                ways to find resources. Many times they go on multiple tabs at once to search for different
-                                videos, articles, and events that could potentially help with their idea. Our idea, Erudite,
-                                is a simple search engine that allows anyone who has an idea to be able to access all the
-                                necessary materials in a short period of time. Our app first asks for the user to state their
-                                project title and different key words to go along with their project as well. The more specific
-                                the user's key words are, the more accurate the search engine results will be. The user also
-                                enters the category of their project. Finally, they are given access to wide range of YouTube
-                                videos, Khan Academy lessons, research papers, online articles, and public events that are
-                                related to their project. In order to access these resources, we used a multitude of apis.
-                                We used the YouTube api for the YouTube and Khan Academy videos, the CORE api for the research
-                                articles, and the MeetUp api for the local events. Our main struggle throughout this hackathon
-                                was finding a way to effectively organize all the resources that we accessed. This was important
-                                as it was the defining factor for our project. Another challenge was retrieving the most
-                                relevant data. At times, a few resources did not pertain to the idea given by the user. We
-                                combated this by constantly manipulating the api's until we received optimal search results.</p>
+                            <p>A common problem for young entrepreneurs who have an idea is that they simply do not
+                                have efficient
+                                ways to find resources. Many times they go on multiple tabs at once to search for
+                                different
+                                videos, articles, and events that could potentially help with their idea. Our idea,
+                                Erudite,
+                                is a simple search engine that allows anyone who has an idea to be able to access all
+                                the
+                                necessary materials in a short period of time. Our app first asks for the user to state
+                                their
+                                project title and different key words to go along with their project as well. The more
+                                specific
+                                the user's key words are, the more accurate the search engine results will be. The user
+                                also
+                                enters the category of their project. Finally, they are given access to wide range of
+                                YouTube
+                                videos, Khan Academy lessons, research papers, online articles, and public events that
+                                are
+                                related to their project. In order to access these resources, we used a multitude of
+                                apis.
+                                We used the YouTube api for the YouTube and Khan Academy videos, the CORE api for the
+                                research
+                                articles, and the MeetUp api for the local events. Our main struggle throughout this
+                                hackathon
+                                was finding a way to effectively organize all the resources that we accessed. This was
+                                important
+                                as it was the defining factor for our project. Another challenge was retrieving the
+                                most
+                                relevant data. At times, a few resources did not pertain to the idea given by the user.
+                                We
+                                combated this by constantly manipulating the api's until we received optimal search
+                                results.</p>
                         </div>
                     </div>
                 </div>
@@ -1343,7 +1433,6 @@
                             </span>
                             <p>
                                 <a href="https://github.com/sguduguntla/OpenCV-Snapchat-DogFilter" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1373,13 +1462,10 @@
                             </span>
                             <p>
                                 <a href="http://www.sriharshaguduguntla.com/finance-tracker" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="http://devpost.com/software/finance-tracker" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1387,13 +1473,19 @@
                             <span class="card-title grey-text text-darken-2">Finance Tracker
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>Often times, people are afraid of the stock market because it seems intimidating and like too
-                                much of a risk because they can't keep track of what they've invested in, let alone figure
-                                out what are good stocks to buy in the future. Our applications aim to solve this fear by
-                                not only helping people keep track of the stocks they've purchased, but also to provide guidance
-                                on which stocks are best to buy next, based on things like market cap, trends, and the affordability.
+                            <p>Often times, people are afraid of the stock market because it seems intimidating and
+                                like too
+                                much of a risk because they can't keep track of what they've invested in, let alone
+                                figure
+                                out what are good stocks to buy in the future. Our applications aim to solve this fear
+                                by
+                                not only helping people keep track of the stocks they've purchased, but also to provide
+                                guidance
+                                on which stocks are best to buy next, based on things like market cap, trends, and the
+                                affordability.
                                 Built at Gunn Hacks 2.0 2016 with the help of Laikh Tewari. Visit the Github
-                                <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks" target="_blank">here</a> and visit the website
+                                <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks" target="_blank">here</a>
+                                and visit the website
                                 <a href="http://www.sriharshaguduguntla.com/finance-tracker" target="_blank">here</a>
                             </p>
                         </div>
@@ -1416,13 +1508,10 @@
                             </span>
                             <p>
                                 <a href="http://www.sriharshaguduguntla.com/commutaire/main/html/" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="http://devpost.com/software/commute-3vcy0d" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Commutaire-SVHacks" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1430,19 +1519,31 @@
                             <span class="card-title grey-text text-darken-2">Commutaire
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>In our community we lacked a lot of connection to each other, so we decided to develop Commutaire
-                                (A.K.A. Commute). Commutaire was based of the many requests that we got from high school
-                                students, teachers, and various mentors. We believed that in order to reach the community
-                                in a strong way, we not only needed to connect with them virtually, but also physically through
-                                transportation. Along with this issue, also arose education which is a high priority in our
-                                generation today which was also another key factor that led us to this endeavor. Commutaire
-                                is an application that allows to connect with the community in such a way that finding real-estate
-                                was much easier along with connecting to education that is heavily important for advancements
-                                in society. This allows us to quickly grab details about a certain place, get directions,
-                                details about a community, schools near by, and the opportunities to expand the community
-                                as a whole in a better shape. Built at SV Hacks 2016 with the help of Jai Sankar and Mitesh
+                            <p>In our community we lacked a lot of connection to each other, so we decided to develop
+                                Commutaire
+                                (A.K.A. Commute). Commutaire was based of the many requests that we got from high
+                                school
+                                students, teachers, and various mentors. We believed that in order to reach the
+                                community
+                                in a strong way, we not only needed to connect with them virtually, but also physically
+                                through
+                                transportation. Along with this issue, also arose education which is a high priority in
+                                our
+                                generation today which was also another key factor that led us to this endeavor.
+                                Commutaire
+                                is an application that allows to connect with the community in such a way that finding
+                                real-estate
+                                was much easier along with connecting to education that is heavily important for
+                                advancements
+                                in society. This allows us to quickly grab details about a certain place, get
+                                directions,
+                                details about a community, schools near by, and the opportunities to expand the
+                                community
+                                as a whole in a better shape. Built at SV Hacks 2016 with the help of Jai Sankar and
+                                Mitesh
                                 Malaviya. Visit the Github
-                                <a href="https://github.com/sguduguntla/Commutaire-SVHacks" target="_blank">here</a> and visit the website
+                                <a href="https://github.com/sguduguntla/Commutaire-SVHacks" target="_blank">here</a>
+                                and visit the website
                                 <a href="http://www.sriharshaguduguntla.com/commutaire/main/html" target="_blank">here</a>
                             </p>
                         </div>
@@ -1465,13 +1566,10 @@
                             </span>
                             <p>
                                 <a href="http://www.sriharshaguduguntla.com/mercari/html" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="http://devpost.com/software/mercari" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Mercari-LAHacks" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1479,13 +1577,19 @@
                             <span class="card-title grey-text text-darken-2">Mercari
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>As high–schoolers, we haven't had the opportunity to work with many companies or startups; however,
-                                with Mercari we are trying to connect people with ideas to those that can create the idea
-                                in exchange for equity in the company. Instead of working for no salary, anyone can bid on
-                                projects; if the seller – the person with the idea – agrees, they exchange contact information
-                                and can work together. Built at Los Altos Hacks 2016 with Jai Sankar, Varun Shenoy, and Anirudh
+                            <p>As high–schoolers, we haven't had the opportunity to work with many companies or
+                                startups; however,
+                                with Mercari we are trying to connect people with ideas to those that can create the
+                                idea
+                                in exchange for equity in the company. Instead of working for no salary, anyone can bid
+                                on
+                                projects; if the seller – the person with the idea – agrees, they exchange contact
+                                information
+                                and can work together. Built at Los Altos Hacks 2016 with Jai Sankar, Varun Shenoy, and
+                                Anirudh
                                 Pai. Visit the Github
-                                <a href="https://github.com/sguduguntla/Mercari-LAHacks" target="_blank">here</a> and visit the website
+                                <a href="https://github.com/sguduguntla/Mercari-LAHacks" target="_blank">here</a> and
+                                visit the website
                                 <a href="http://www.sriharshaguduguntla.com/mercari/html" target="_blank">here</a>
                             </p>
                         </div>
@@ -1508,16 +1612,12 @@
                             </span>
                             <p>
                                 <a href="http://quikbux.github.io" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="http://devpost.com/software/quikbux-github-io" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/QuikBux" target="_blank">Github
-                                    <i class="fa fa-github"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://www.youtube.com/watch?v=vk26-MyJtgw" target="_blank">Youtube
-                                    <i class="fa fa-youtube"></i>
                                 </a>
                             </p>
                         </div>
@@ -1525,21 +1625,35 @@
                             <span class="card-title grey-text text-darken-2">QuikBux
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>We made a simple Web and iOS app called QuikBux that allows people to hire others for small jobs
-                                to earn quick cash. Workers have an online profile that others can see and follow. Clients
-                                can leave reviews of the workers. Clients can also post new jobs for workers to find and
-                                contact them. Everyone can see other's public profiles and contact them for a job. We have
-                                also included an interactive map powered by Google Maps that updates the location of all
-                                users in realtime. It is a very significant app because many people struggle to find credible
-                                people that they can trust to do their jobs. For example, it would be nice to hire movers
-                                to help move furniture out of the house. You can simply go to our app, and post a job which
-                                will then be seen by other workers that are interested in earning some money. The app was
-                                built by Ayush Jain, Kiran KV, Rishan Girish, and I during MakeHacks Fall 2015 in 24 hours.
-                                The web development was done by Ayush and I while the iOS Development was done by Kiran and
-                                Rishan. The app won first prize for the Dailymotion Social Media Hack and 5th overall out
+                            <p>We made a simple Web and iOS app called QuikBux that allows people to hire others for
+                                small jobs
+                                to earn quick cash. Workers have an online profile that others can see and follow.
+                                Clients
+                                can leave reviews of the workers. Clients can also post new jobs for workers to find
+                                and
+                                contact them. Everyone can see other's public profiles and contact them for a job. We
+                                have
+                                also included an interactive map powered by Google Maps that updates the location of
+                                all
+                                users in realtime. It is a very significant app because many people struggle to find
+                                credible
+                                people that they can trust to do their jobs. For example, it would be nice to hire
+                                movers
+                                to help move furniture out of the house. You can simply go to our app, and post a job
+                                which
+                                will then be seen by other workers that are interested in earning some money. The app
+                                was
+                                built by Ayush Jain, Kiran KV, Rishan Girish, and I during MakeHacks Fall 2015 in 24
+                                hours.
+                                The web development was done by Ayush and I while the iOS Development was done by Kiran
+                                and
+                                Rishan. The app won first prize for the Dailymotion Social Media Hack and 5th overall
+                                out
                                 of about 45-50 other teams. You can visit the website
-                                <a href="http://quikbux.github.io" target="_blank">here</a>. Check out Dailymotion's Blog on Quikbux
-                                <a href="http://blog.dailymotion.com/en/dailymotion-partners-with-make-school-make-hacks/" target="_blank">here</a>.
+                                <a href="http://quikbux.github.io" target="_blank">here</a>. Check out Dailymotion's
+                                Blog on Quikbux
+                                <a href="http://blog.dailymotion.com/en/dailymotion-partners-with-make-school-make-hacks/"
+                                    target="_blank">here</a>.
                             </p>
                         </div>
                     </div>
@@ -1561,13 +1675,10 @@
                             </span>
                             <p>
                                 <a href="http://www.sriharshaguduguntla.com/durim" target="_blank">Website
-                                    <i class="fa fa-edge"></i>
-                                </a> |
+                                </a> -
                                 <a href="http://devpost.com/software/durim" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Durim-Fitness-App" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1575,16 +1686,25 @@
                             <span class="card-title grey-text text-darken-2">Durim Fitness App
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>We have built a simple Pebble and Web app that allows users to track their fitness data over
-                                time. Users with a Pebble watch will enter their data into their watch which will be displayed
-                                on our website as stats and graphs. We display our data in a variety of ways to ensure that
-                                the user has the best visual representation possible! Durim is mainly geared towards schools
-                                that are interested in modernizing their physical fitness classes. Students can easily track
-                                their data throughout the school year and share their data with their teacher straight through
-                                the website. It is a much more flexible way to track your data instead of trying to keep
-                                loose papers safe. Instead, everything you do will be stored on our secure cloud to ensure
+                            <p>We have built a simple Pebble and Web app that allows users to track their fitness data
+                                over
+                                time. Users with a Pebble watch will enter their data into their watch which will be
+                                displayed
+                                on our website as stats and graphs. We display our data in a variety of ways to ensure
+                                that
+                                the user has the best visual representation possible! Durim is mainly geared towards
+                                schools
+                                that are interested in modernizing their physical fitness classes. Students can easily
+                                track
+                                their data throughout the school year and share their data with their teacher straight
+                                through
+                                the website. It is a much more flexible way to track your data instead of trying to
+                                keep
+                                loose papers safe. Instead, everything you do will be stored on our secure cloud to
+                                ensure
                                 the perfect user experience! You can visit the website
-                                <a href="http://www.sriharshaguduguntla.com/durim" target="_blank">here</a>. Built at HackingEDU 2015 with the help of Rishan Girish</p>
+                                <a href="http://www.sriharshaguduguntla.com/durim" target="_blank">here</a>. Built at
+                                HackingEDU 2015 with the help of Rishan Girish</p>
                         </div>
                     </div>
                 </div>
@@ -1604,13 +1724,10 @@
                                 <p>Teen Hackathon 2015</p>
                             </span>
                             <p>
-                                <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">Website
-                                    <i class="fa fa-edge"></i>|</a>
+                                <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">Website</a> -
                                 <a href="http://devpost.com/software/molar-mass-calculator" target="_blank">Devpost
-                                    <i class="fa fa-globe"></i>
-                                </a> |
+                                </a> -
                                 <a href="https://github.com/sguduguntla/Java-Molar-Mass-Calculator" target="_blank">Github
-                                    <i class="fa fa-github"></i>
                                 </a>
                             </p>
                         </div>
@@ -1618,9 +1735,11 @@
                             <span class="card-title grey-text text-darken-2">Molar Mass Calculator
                                 <i class="right fa fa-arrow-circle-down"></i>
                             </span>
-                            <p>The simple java program provides a GUI of the periodic table of elements. Use the periodic table
+                            <p>The simple java program provides a GUI of the periodic table of elements. Use the
+                                periodic table
                                 provided, to build compounds. Press enter to calculate the molar mass. Download
-                                <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">here</a>. Built at Teen Hackathon with the help of Jai Sankar, Chinmay Gharpure, and Rishi
+                                <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">here</a>. Built at Teen
+                                Hackathon with the help of Jai Sankar, Chinmay Gharpure, and Rishi
                                 Sawhney
                             </p>
                         </div>
@@ -1630,14 +1749,16 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
 
-    <footer id="contact" class="page-footer scrollspy">
-        <div class="container">
+    <footer id="contact" class="page-footer ">
+        <div class="container white-text">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Let's Get in Touch!</h5>
+                    <h5>Let's Get in Touch!</h5>
                     <p>
                         <span class="fa fa-envelope white-text"></span>
-                        <a class="grey-text text-lighten-2" href="mailto:sguduguntla11@gmail.com"> &nbsp;&nbsp;sguduguntla11@gmail.com</a>
+                        <a class="grey-text text-lighten-2" href="mailto:sguduguntla11@gmail.com">
+                            &nbsp;&nbsp;sguduguntla11@gmail.com</a> or <a class="grey-text text-lighten-2" href="mailto:sguduguntla@berkeley.edu">
+                            &nbsp;&nbsp;sguduguntla@berkeley.edu</a>
                     </p>
                     <p class="grey-text text-lighten-2">
                         <span class="fa fa-phone white-text"></span> &nbsp;&nbsp;1(408)-816-4779</p>
@@ -1646,7 +1767,7 @@
                         <a target="_blank" href="resume.pdf" class="grey-text text-lighten-2"> &nbsp;&nbsp;Resumé</a>
                     </p>
 
-                    <p class="grey-text text-lighten-2">Feel free to shoot me an email, and we can schedule a call or meeting.</p>
+                    <p class="grey-text text-lighten-2">Feel free to shoot me an email anytime.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Follow Me</h5>
@@ -1692,7 +1813,6 @@
     <script src="js/creative.js" type="text/javascript"></script>
     <!--MaterializeCSS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-    <script src='js/typed.min.js'></script>
 
     <script>
         // Initialize WOW.js Scrolling Animations
@@ -1725,18 +1845,6 @@
         });
 
         $('.collapsible').collapsible();
-
-        $(".welcomeTyper").typed({
-            strings: ["Hi. I'm Sriharsha.", "I believe that...",
-                "<span style='font-size: 0.7em;'>\"In order to succeed</span>",
-                "<span style='font-size: 0.7em;'>we must first believe we can.\"</span>", "I am a....",
-                "High Schooler", "Web Developer", "Music Lover", "Java Developer", "Singer", "Designer",
-                "Chess Player", "Tech Fanatic", "Cello Player", "And last, but not least....",
-                "<span style='font-size: 0.7em;'>an Award-Winning Hacker</span>"
-            ],
-            typeSpeed: 0,
-            loop: true
-        });
     </script>
 </body>
 
