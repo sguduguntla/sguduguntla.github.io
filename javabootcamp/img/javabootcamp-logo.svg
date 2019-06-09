@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="629px" height="734px" viewBox="0 0 629 734" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.1%" y="-11.8%" width="128.1%" height="123.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="24.3470982" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(24.000000, 32.000000)">
+            <polygon id="Polygon" fill="#0C73B8" transform="translate(289.500000, 340.000000) rotate(-540.000000) translate(-289.500000, -340.000000) " points="289.5 1.13686838e-13 579 259.736888 468.42084 680 110.57916 680 -1.21502808e-12 259.736888"></polygon>
+            <polygon id="Polygon" fill="#2FAADD" filter="url(#filter-1)" transform="translate(290.500000, 339.000000) rotate(-540.000000) translate(-290.500000, -339.000000) " points="290.5 29 550 269.486518 447.199865 649 135.101072 649 31 258.336931"></polygon>
+            <text id="JAVA" font-family="Orbitron-Black, Orbitron" font-size="90" font-weight="700" fill="#FFFFFF">
+                <tspan x="130.52" y="378">JAVA</tspan>
+            </text>
+            <text id="INTRO-TO" font-family="Orbitron-Medium, Orbitron" font-size="60" font-weight="400" fill="#FFFFFF">
+                <tspan x="186.58" y="175">INTRO  </tspan>
+                <tspan x="242.89" y="247">TO</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
