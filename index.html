@@ -64,136 +64,128 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,800' rel='stylesheet' type='text/css'>
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700,900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/creative.css">
-    <!--MaterializeCSS-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <style>
-        @font-face {
-            font-family: "lightHelvetica";
-            src: url(resources/HelveticaNeue-UltraLight.ttf);
-        }
-
-        @font-face {
-            font-family: "thinHelvetica";
-            src: url(resources/HelveticaNeue-Thin.ttf);
-        }
-
-        @font-face {
-            font-family: "boldHelvetica";
-            src: url(resources/HelveticaNeue-Bold.ttf);
-        }
-    </style>
+    <link rel="stylesheet" href="css/materialize.min.css">
 </head>
 
 <body id="page-top">
     <!-------------------------------------------------------------------------------------------------------->
     <!--Navbar Section-->
-    <nav style="position: fixed; z-index: 2000; opacity: 1; background-color: #f9f9f9; color: black;
-    font-weight: 100; box-shadow: none;">
+    <nav>
         <div class="nav-wrapper">
-            <a href="#" data-activates="mobile-demo" class="button-collapse right">
-                <i class="fa fa-bars fa-lg" style="color: black; font-size: 1.7em; position: relative; top: 5px; right: 20px"></i>
-            </a>
-            <a href="#!" data-activates="mobile-demo" style="text-decoration: none;font-size: 2.5em; color: black; margin-left: 10px;"
-                class="brand-logo">
+            <a href="#!" style="margin-left: 10px;" class="brand-logo">
                 <img width="50" height="50" src="img/personal-logo-4.jpg" />
             </a>
+            <a href="#" style="color:black;" data-target="mobile-demo" class="sidenav-trigger"><i
+                    class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="#!" style="text-decoration: none; color: black; font-family: 'lightHelvetica'" class="brand-logo center">Welcome</a>
-                </li>
-                <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#about">
-                        <i class="fa fa-home"></i>
+                    <a href="#!" style="text-decoration: none; color: black;" class="brand-logo center">Welcome
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#services">
-                        <i class="fa fa-code"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Home"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#about">
+                        <i class="fas fa-home"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Hobbies" style="text-decoration: none; font-size: 1.2em;color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#hobbies">
-                        <i class="fa fa-hashtag"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Skills"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#skills">
+                        <i class="fas fa-code"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Current Events" style="text-decoration: none; font-size: 1.2em;color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#currentEvents">
-                        <i class="fa fa-newspaper-o"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Hobbies"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#hobbies">
+                        <i class="fas fa-guitar"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio">
-                        <i class="fa fa-suitcase"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Current Events"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#currentEvents">
+                        <i class="fas fa-newspaper"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#contact">
-                        <i class="fa fa-phone"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Projects"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#portfolio">
+                        <i class="fas fa-suitcase-rolling"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Resumé" style="text-decoration: none; font-size: 1.2em;color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="resume.pdf" target="_blank">
-                        <i class="fa fa-file"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Contact"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#contact">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Resumé"
+                        style="text-decoration: none; font-size: 1.2em;color: black;"
+                        class="tooltipped waves-effect waves-dark" href="resume.pdf" target="_blank">
+                        <i class="fas fa-file"></i>
                     </a>
                 </li>
             </ul>
             <!--Mobile Navbar-->
-            <ul class="side-nav right" id="mobile-demo">
+            <ul class="sidenav" id="mobile-demo">
                 <li>
-                    <a data-position="left" data-delay="50" data-tooltip="Home" style="text-decoration: none; font-size: 1.2em; color: black;"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#about">
-                        <i class="fa fa-home"></i>
+                    <a data-position="left" data-delay="50" data-tooltip="Home"
+                        style="text-decoration: none; font-size: 1.2em; color: black;"
+                        class="tooltipped waves-effect waves-dark" href="#about">
+                        <i class="fas fa-home"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="left" data-delay="50" data-tooltip="Skills" style="text-decoration: none; font-size: 1.2em;color: black; "
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#services">
-                        <i class="fa fa-code"></i>
+                    <a data-position="left" data-delay="50" data-tooltip="Skills"
+                        style="text-decoration: none; font-size: 1.2em;color: black; "
+                        class="tooltipped waves-effect waves-dark" href="#skills">
+                        <i class="fas fa-code"></i>
                     </a>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Hobbies" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#hobbies">
-                        <i class="fa fa-hashtag"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Current Events" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#currentEvents">
-                        <i class="fa fa-newspaper-o"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Hobbies"
+                        style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
+                        class="tooltipped waves-effect waves-dark" href="#hobbies">
+                        <i class="fas fa-guitar"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="left" data-delay="50" data-tooltip="Projects" style="text-decoration: none; font-size: 1.2em;color: black; "
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#portfolio">
-                        <i class="fa fa-suitcase"></i>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Current Events"
+                        style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
+                        class="tooltipped waves-effect waves-dark" href="#currentEvents">
+                        <i class="fas fa-newspaper"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="left" data-delay="50" data-tooltip="Contact" style="text-decoration: none; font-size: 1.2em;color: black; "
-                        class="tooltipped waves-effect waves-dark page-scroll" href="#contact">
-                        <i class="fa fa-phone"></i>
+                    <a data-position="left" data-delay="50" data-tooltip="Projects"
+                        style="text-decoration: none; font-size: 1.2em;color: black; "
+                        class="tooltipped waves-effect waves-dark" href="#portfolio">
+                        <i class="fas fa-suitcase-rolling"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-position="bottom" data-delay="50" data-tooltip="Resumé" style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
-                        class="tooltipped waves-effect waves-dark page-scroll" href="resume.pdf" target="_blank">
-                        <i class="fa fa-file"></i>
+                    <a data-position="left" data-delay="50" data-tooltip="Contact"
+                        style="text-decoration: none; font-size: 1.2em;color: black; "
+                        class="tooltipped waves-effect waves-dark" href="#contact">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a data-position="bottom" data-delay="50" data-tooltip="Resumé"
+                        style="text-decoration: none; font-size: 1.2em;color: black; border-right: 1px solid gray"
+                        class="tooltipped waves-effect waves-dark" href="resume.pdf" target="_blank">
+                        <i class="fas fa-file"></i>
                     </a>
                 </li>
             </ul>
@@ -201,87 +193,92 @@
     </nav>
     <!-------------------------------------------------------------------------------------------------------->
     <!--About Me Section-->
-    <section class="bg-primary" id="about">
-        <div style="color: black; padding: 50px;" class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/sai-profile-edited.jpg" style="border-radius:50%;" class="img-responsive" alt="HII">
-                </div>
-                <div class="col-md-8 text-center">
-                    <h2 class="section-heading" style="font-weight: 100;">Hi. I'm Sriharsha Guduguntla</h2>
-                    <div style="color: black; font-size: 1.2em; ; font-weight: 300;" class="text-faded">
-                        Hi. I am currently an undergraduate student at the University of California, Berkeley studying
-                        Computer Science. I am an aspiring Computer Scientist and Entrepreneur with solid experience in
-                        full-stack Web/Mobile application development, Marketing, and Design . I am well-versed in
-                        object oriented and functional programming analysis and design, QA automation, and REST API
-                        development. In my free time, I enjoy researching the latest cutting-edge technologies to
-                        design and develop open source applications.
+    <section class="container-fluid" id="about">
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <img src="img/sai-profile-edited.jpg" style="border-radius:50%;" class="img-fluid"
+                    alt="Sriharsha Picture">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="section-heading">Hi. I'm Sriharsha Guduguntla</h2>
+                <p class="text-muted lead">University of California, Berkeley</p>
+                <p class="lead">
+                    I am currently an undergraduate student at the University of California, Berkeley studying
+                    Computer Science and Economics. I am an aspiring Computer Scientist and Entrepreneur with solid
+                    experience in full-stack Web/Mobile application development, Systems, Marketing, and Design. I am
+                    well-versed in object oriented and functional programming analysis and design, QA automation, and
+                    REST API development. In my free time, I enjoy researching the latest cutting-edge technologies to
+                    design and develop open source applications.
 
-                        I have recently developed an interest in Machine Learning, Artificial Intelligence, and Data
-                        Science, and I look forward to applying my research to create more impactful applications for
-                        social good.
+                    I have recently developed an interest in Machine Learning, Data Science, and Blockchain. I look
+                    forward to applying my research to create more impactful applications for social good.
 
-                        Feel free to shoot me an email anytime at <a href="mailto:sguduguntla@berkeley.edu" target="_blank">sguduguntla@berkeley.edu</a>
-                        or <a href="mailto:sguduguntla11@gmail.com" target="_blank">sguduguntla11@gmail.com</a>.
-                        </p>
-                        <div class="btn-toolbar">
-                            <a style="color: black" id="mediumBtn" target="_blank" href="https://medium.com/@sguduguntla11"
-                                class="btn-flat white page-scroll">
-                                <i class="fa fa-medium"></i>
-                                </span>
-                            </a>
-                            <a style="color: black" id="twitterBtn" target="_blank" href="https://twitter.com/sguduguntla11"
-                                class="btn-flat white page-scroll">
-                                <i class="fa fa-twitter"></i>
-                                </span>
-                            </a>
-                            <a style="color: black" target="_blank" href="https://github.com/sguduguntla" class="btn-flat white page-scroll">
-                                <i class="fa fa-github"></i>
-                                </span>
-                            </a>
-                            <a style="color: black" target="_blank" href="https://www.linkedin.com/in/sriharsha-guduguntla-b1a34a145/"
-                                class="linkedinBtn btn-flat white page-scroll">
-                                <i class="fa fa-linkedin"></i>
-                                </span>
-                            </a>
-                            <a style="color: black" target="_blank" href="resume.pdf" class="btn-flat white page-scroll">
-                                <i class="fa fa-file"></i>
-                            </a>
-                        </div>
-                    </div>
+                    Feel free to shoot me an email anytime at <a href="mailto:sguduguntla@berkeley.edu"
+                        target="_blank">sguduguntla@berkeley.edu</a>.
+                </p>
+                <div class="mx-auto">
+                    <a id="mediumBtn" target="_blank" href="https://medium.com/@sguduguntla11" class="btn-flat white">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a id="twitterBtn" target="_blank" href="https://twitter.com/sguduguntla11" class="btn-flat white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCi__Q3Ytv1BJPpaUqpmQtpw" class="btn-flat white">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="mailto:sguduguntla@berkeley.edu" id="resumeBtn" class="btn-flat white">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a id="githubBtn" target="_blank" href="https://github.com/sguduguntla" class="btn-flat white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/sriharsha-guduguntla-b1a34a145/"
+                        class="linkedinBtn btn-flat white">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a id="resumeBtn" target="_blank" href="resume.pdf" class="btn-flat white">
+                        <i class="fas fa-file"></i>
+                    </a>
                 </div>
             </div>
+        </div>
+        <br>
+        <br>
+        <div class="row justify-content-center">
+            <a id="resumeBtn" href="#skills" class="btn-flat white">
+                <i class="fas fa-arrow-down"></i>
+            </a>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
     <!--Skills Section-->
-    <section id="services">
+    <section id="skills">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style="font-weight: 100;" class="section-heading">Technical Skills</h2>
-                    <i class="fa fa-code fa-lg"></i>
+                <div class="col-md-12 text-center">
+                    <h2 class="section-heading">Technical Skills</h2>
+                    <i class="fas fa-code fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div>
-            <div style="font-weight: 300;" class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s">
-                            <span class="skill glyphicon glyphicon-stats" aria-hidden="true"></span>
+            <div class="row text-center">
+                <div class="col-md-4 text-center">
+                    <div class="service-box text-center">
+                        <i class="fas fa-chart-line fa-4x text-primary">
                         </i>
-                        <h3 style="margin-top: 30px; font-size: 2em">Hardware / Machine Learning</h3>
-                        <p class="text-muted">I am currently in the process of learning machine learning and data
-                            science. I also enjoy exploring
-                            different hardware modules using the Rasperry Pi.</p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
+                        <h4>Hardware / ML</h4>
+                        <p class="text-muted">I am currently studying machine learning and data
+                            science to explore opportunities to build more powerful applications.</p>
+                        <ul class="collapsible" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header">Python, Java</div>
+                                <div class="collapsible-header">Scikit Learn, Tensorflow.js</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">Numpy, Scikit Learn, OpenCV</div>
+                                <div class="collapsible-header">Numpy, OpenCV</div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Raspberry Pi Development, Linux</div>
@@ -289,90 +286,62 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-md-4">
                     <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s">
-                            <span class="skill glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                        <i class="fas fa-database fa-4x text-primary">
                         </i>
-                        <h3 style="font-size: 2em">Full Stack Web Development</h3>
-                        <p class="text-muted">I have been doing Full Stack Web Development for more than 4 years with
-                            experience in various backend,
-                            front-end, QA automation, and cloud technologies. Check out my
-                            <a target="_blank" href="https://github.com/sguduguntla">Github</a> to see my latest
-                            projects!</p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
+                        <h4>App Development</h4>
+                        <p class="text-muted">I have 5+ years of experience with Full Stack Web/Mobile Development.
+                            Check out
+                            my
+                            <a target="_blank" href="https://github.com/sguduguntla">Github</a>.</p>
+                        <ul class="collapsible" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header">HTML5, CSS3, JS/JQuery, MERN Stack</div>
+                                <div class="collapsible-header">HTML5, CSS3, JS, Java, Python</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">NodeJS, ExpressJS, EJS, React/Redux</div>
+                                <div class="collapsible-header">MongoDB, Express, React/Redux, NodeJS (MERN)</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">SeleniumHQ, Mocha/Chai</div>
+                                <div class="collapsible-header">GRPC, REST API Development, Apollo GraphQL</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">Java Spring/Maven, JDBC, REST</div>
+                                <div class="collapsible-header">Electron, React Native/Redux</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">JavaFX, Java Swing, Electron</div>
+                                <div class="collapsible-header">PostgresSQL, Neo4J, Firebase</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">MongoDB, MySQL, Neo4J, Firebase</div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">AWS, Heroku, PostgresSQL, SQLite</div>
+                                <div class="collapsible-header">AWS, Heroku</div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Bootstrap, Material</div>
                             </li>
+                            <li>
+                                <div class="collapsible-header">SeleniumHQ, Mocha/Chai</div>
+                            </li>
+
                             <li>
                                 <div class="collapsible-header">Chrome Developer Tools, Git / Github</div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-md-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".2s">
-                            <span class="skill glyphicon glyphicon-phone" aria-hidden="true"></span>
+                        <i class="fas fa-pencil-ruler fa-4x text-primary">
                         </i>
-                        <h3 style="font-size: 2em">Mobile App Development</h3>
-                        <p class="text-muted">I have been doing Mobile Development for about 2.5 years and I continue
-                            to expand my knowledge each
-                            day. Currently, I'm exploring how to build cross-platform React Native apps.
-                        </p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
-                            <li>
-                                <div class="collapsible-header">iOS, Swift, Firebase</div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">React Native/Redux Cross Platform</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".3s">
-                            <span class="skill glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-                        </i>
-                        <h3 style="font-size: 2em">Technical / Design (UI/UX)</h3>
+                        <h4>Music &amp; Design (UI/UX)</h4>
                         <p class="text-muted">I have a strong passion for design and videography and I enjoy making
                             covers and remixing music as
                             well.
                         </p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible z-depth-1" data-collapsible="accordion">
+                        <ul class="collapsible" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header">Sketch, Adobe Illustrator</div>
                             </li>
                             <li>
-                                <div class="collapsible-header">Adobe Photoshop</div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">Microsoft Word, Powerpoint, Excel</div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">Final Cut Pro / iMovie / Garageband</div>
+                                <div class="collapsible-header">Final Cut Pro, Garageband, Audacity</div>
                             </li>
                             <li>
                                 <div class="collapsible-header">Bootstrap, Material, d3.js</div>
@@ -388,27 +357,24 @@
     <section id="hobbies">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style=";
-    font-weight: 100;" class="section-heading">Hobbies / Experience</h2>
-                    <i class="fa fa-hashtag fa-lg"></i>
+                <div class="col-md-12 text-center">
+                    <h2 class="section-heading">Hobbies / Experience</h2>
+                    <i class="fas fa-guitar fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div>
-            <div style=";
-    font-weight: 300;" class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+            <div style="font-weight: 300;" class="row">
+                <div class="col-md-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s">
-                            <span class="skill glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        <i class="fas fa-university fa-4x text-primary">
                         </i>
-                        <h3 style="margin-top: 30px; font-size: 2em">UC Berkeley</h3>
-                        <p class="text-muted">I am currently a Freshman at UC Berkeley studying Computer Science.
+                        <h4>UC Berkeley</h4>
+                        <p class="text-muted">I am currently a Sophomore at UC Berkeley studying Computer Science.
                             Click on tabs below to learn more.</p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
-                            <li>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li class="active">
                                 <div class="collapsible-header active">Relevant Coursework</div>
                                 <div class="collapsible-body">
                                     <br />
@@ -416,10 +382,48 @@
                                         <ul>
                                             <li><strong>CS 61A:</strong> Structure and Interpretation of Computer
                                                 Programs</li>
-                                            <li><strong>EE 16A:</strong> Designing Information Devices and Systems I</li>
-                                            <li><strong>IND ENG 95:</strong> A. Richard Newton Lecture Series</li>
+                                            <li><strong>CS 61B:</strong> Data Structures</li>
+                                            <li><strong>CS 70:</strong> Discrete Mathematics &amp; Probability Theory
+                                            </li>
+                                            <li><strong>EE 16A:</strong> Designing Information Devices and Systems I
+                                            </li>
+                                            <li><strong>EE 16B:</strong> Designing Information Devices and Systems II
+                                            </li>
+                                            <li><strong>Data 8:</strong> The Foundations of Data Science
+                                            </li>
+                                            <li><strong>Stat 88:</strong> Probability and Mathematical Statistics in
+                                                Data Science</li>
+                                            <li><strong>IND ENG 185:</strong> Challenge Lab</li>
+                                            <li><strong>IND ENG 192:</strong> Berkeley Method of Entrepreneurship
+                                                Bootcamp</li>
                                         </ul>
                                     </span>
+                                    <br />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">RISE Lab (BETS Research Group)</div>
+                                <div class="collapsible-body">
+                                    <br />
+                                    <span>Working under Prof. David Culler in the Building, Energy, Transportation
+                                        Systems (<a href="https://bets.cs.berkeley.edu" target="_blank">BETS</a>) Group.
+                                        Enhancing energy efficiency and sustainability of commercial buildings by
+                                        developing an Extensible Building
+                                        Operating System (XBOS) for smart integration between building control
+                                        systems</span>
+                                    <br />
+                                    <br />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Decal Board</div>
+                                <div class="collapsible-body">
+                                    <br />
+                                    <span>Webmaster, Launching UC Berkeley DeCal Program’s premiere portal for students
+                                        to find, create, and facilitate courses. Visit the <a
+                                            href="https://decal.berkeley.edu" target="_blank">website</a> for more
+                                        info.</span>
+                                    <br />
                                     <br />
                                 </div>
                             </li>
@@ -427,34 +431,8 @@
                                 <div class="collapsible-header">SeedBase Consulting</div>
                                 <div class="collapsible-body">
                                     <br />
-                                    <span>Sales Marketing Consultant at <a target="_blank" href="https://bungeetech.com">Bungee Tech</a></span>
-                                    <br />
-                                    <br />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">Berkeley Hyperloop</div>
-                                <div class="collapsible-body">
-                                    <br />
-                                    <span>Raise money and build social media campaign for <a target="_blank" href="http://berkeleyhyperloop.com">Berkeley's Hyperloop Initative</a> as a Marketing Associate</span>
-                                    <br />
-                                    <br />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">Berkeley NeuroTech</div>
-                                <div class="collapsible-body">
-                                    <br/>
-                                    <span>Contribute to NeuroTech research and develop projects as a Software Developer.</span>
-                                    <br />
-                                    <br />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">Data Science Society</div>
-                                <div class="collapsible-body">
-                                    <br />
-                                    <span>Develop projects using latest Data Science tools and research.</span>
+                                    <span>Sales Marketing Consultant at <a target="_blank"
+                                            href="https://bungeetech.com">Bungee Tech</a></span>
                                     <br />
                                     <br />
                                 </div>
@@ -462,18 +440,28 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-md-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s">
-                            <span class="skill glyphicon glyphicon-music" aria-hidden="true"></span>
+                        <i class="fas fa-music fa-4x text-primary">
                         </i>
-                        <h3 style="font-size: 2em">Music</h3>
-                        <p class="text-muted">Music has played a large role in my life and I'm involved in many musical
-                            activities both at school
-                            and out of school. Click on tabs below to learn more.</p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
+                        <h4>Music</h4>
+                        <p class="text-muted">Music has played a significant role in my life, shaping me as a person
+                            both in and out of school.</p>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li class="active">
+                                <div class="collapsible-header">Covers / Youtube Channel</div>
+                                <div class="collapsible-body">
+                                    <br />
+                                    <span>Love to make covers and fusion remixes of English, Telugu, and Hindi songs.
+                                        Check out my
+                                        youtube <a href="https://www.youtube.com/channel/UCi__Q3Ytv1BJPpaUqpmQtpw"
+                                            target="_blank">channel</a>!</span>
+                                    <br />
+                                    <br />
+                                </div>
+                            </li>
                             <li>
-                                <div class="collapsible-header active">Indian Classical Singer</div>
+                                <div class="collapsible-header">Indian Classical Singer</div>
                                 <div class="collapsible-body">
                                     <br />
                                     <span>Have been learning Indian Karnatik Music for over 6 years with many
@@ -520,17 +508,9 @@
                                 <div class="collapsible-header">Karaoke / Casual Performances</div>
                                 <div class="collapsible-body">
                                     <br />
-                                    <span>Performed at many karaoke programs and won 1st place in an Indian Singing
+                                    <span>Performed at many karaoke programs and won 1st place at the Keeravani Indian
+                                        Singing
                                         Competition.</span>
-                                    <br />
-                                    <br />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">Garageband / Covers</div>
-                                <div class="collapsible-body">
-                                    <br />
-                                    <span>Love to make covers and remixes of songs using Garageband</span>
                                     <br />
                                     <br />
                                 </div>
@@ -539,17 +519,15 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-md-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".2s">
-                            <span class="skill glyphicon glyphicon-king" aria-hidden="true"></span>
+                        <i class="fas fa-chess-king fa-4x text-primary">
                         </i>
-                        <h3 style="font-size: 2em">Chess</h3>
-                        <p class="text-muted">I have been playing chess for over 7 years now, and it's one of my
-                            favorite sports/board games. Click
-                            on tabs below to learn more.</p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
-                            <li>
+                        <h4>Chess</h4>
+                        <p class="text-muted">I played chess competitively for 7+ years, and it is one of my
+                            favorite sports/board games and pasttimes.</p>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li class="active">
                                 <div class="collapsible-header active">Competitive Chess</div>
                                 <div class="collapsible-body">
                                     <br />
@@ -592,6 +570,15 @@
                                 </div>
                             </li>
                             <li>
+                                <div class="collapsible-header">UC Berkeley Chess Club</div>
+                                <div class="collapsible-body">
+                                    <br />
+                                    <span>Regular member of the Berkeley Chess Club at UC Berkeley.</span>
+                                    <br />
+                                    <br />
+                                </div>
+                            </li>
+                            <li>
                                 <div class="collapsible-header">Former Chess Club VP</div>
                                 <div class="collapsible-body">
                                     <br />
@@ -604,19 +591,27 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-md-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".3s">
-                            <span class="skill glyphicon glyphicon-globe" aria-hidden="true"></span>
+                        <i class="fas fa-trophy fa-4x text-primary">
                         </i>
-                        <h3 style="font-size: 2em">Competitions / Hackathons</h3>
-                        <p class="text-muted">I have attended various hackathons/CTFs as well as the Synopsys Science
-                            Fair.
-                            Click on tabs below to
-                            learn
-                            more.
-                        </p>
-                        <ul style="border: none;font-family: Helvetica" class="collapsible popout" data-collapsible="accordion">
+                        <h4>Competitions</h4>
+                        <p class="text-muted">I have attended various hackathons, Capture the Flag events, and Science
+                            Fairs. </p>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li class="active">
+                                <div class="collapsible-header active">2019 NBA Hackathon</div>
+                                <div class="collapsible-body">
+                                    <br />
+                                    <span>
+                                        One of 14 teams in the United States to qualify for the
+                                        <a target="_blank" href="https://hackathon.nba.com">2019 NBA Hackathon
+                                        </a>
+                                    </span>
+                                    <br />
+                                    <br />
+                                </div>
+                            </li>
                             <li>
                                 <div class="collapsible-header active">TinoHacks</div>
                                 <div class="collapsible-body">
@@ -624,7 +619,8 @@
                                     <span>
                                         Organized Cupertino High School's very first high school 29-hour, 300-person
                                         hackathon. Click
-                                        <a target="_blank" href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c">here
+                                        <a target="_blank"
+                                            href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c">here
                                         </a> to learn more.
                                     </span>
                                     <br />
@@ -638,7 +634,8 @@
                                     <span>Attended my very first Capture the Flag event at Palo Alto Networks. Won 9th
                                         place out
                                         of 20 teams. Check out my
-                                        <a target="_blank" href="https://medium.com/@sguduguntla11/the-hidden-world-of-information-security-8ccc7449093e">medium
+                                        <a target="_blank"
+                                            href="https://medium.com/@sguduguntla11/the-hidden-world-of-information-security-8ccc7449093e">medium
                                             blog</a> for more info! </span>
                                     <br />
                                     <br />
@@ -695,197 +692,166 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 style=";
-    font-weight: 100;" class="section-heading">Current Events</h2>
-                    <i class="fa fa-newspaper-o fa-lg"></i>
+                    <h2 class="section-heading">Current Events</h2>
+                    <i class="fas fa-newspaper fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
         </div>
-
-        <div>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-
-                <div style="max-height: 70vh;" class="carousel-inner">
-
-                    <div style="max-height: 70vh;" class="item active">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img style="width: 100%; margin: 0 auto;" src="img/news/pennapps-banner.JPG" />
-                                <div class="carousel-caption">
-                                    <h3>PennApps XIV 2018</h3>
-                                    <p>Attended first PennApps Hackathon on January 19-21, 2018 at UPenn! Built Sara AI
-                                        Productivity
-                                        Desktop App.</p>
-                                    <div class="btn-toolbar">
-                                        <a style="color: black;" target="_blank" href="https://devpost.com/software/sara-bic897"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-globe"></i>&nbsp; More on Devpost</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="max-height: 70vh;" class="item">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img style="width: 100%; margin: 0 auto;" src="img/news/tinohacks-team.jpg" />
-                                <div class="carousel-caption">
-                                    <h3>TinoHacks 2017</h3>
-                                    <p>Technology/Operations Director and Webmaster of Cupertino's first-ever
-                                        full-fledged 29-hour,
-                                        300 person high school hackathon</p>
-                                    <div class="btn-toolbar">
-                                        <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-medium"></i>&nbsp; Read More</a>
-                                        <a style="color: black;" target="_blank" href="http://tinohacks.tech" class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-globe"></i>&nbsp; Visit Site</a>
-                                        <a style="color: black;" target="_blank" href="https://www.youtube.com/watch?v=MYdoP88Bv6Y"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-youtube"></i>&nbsp; Closing Speech</a>
-                                        <a style="color: black;" target="_blank" href="https://www.flickr.com/photos/150174093@N05/albums/72157683241181075"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-picture-o"></i>&nbsp; Pictures</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="max-height: 70vh;" class="item">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/news/palo-alto-networks-banner.JPG" />
-                                <div class="carousel-caption">
-                                    <h3>Palo Alto Networks CTF Event</h3>
-                                    <p>Won 9th place out of 20 teams at the Palo Alto Network's Info Security team's
-                                        very first
-                                        Capture the Flag event
-                                    </p>
-                                    <div class="btn-toolbar">
-                                        <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/the-hidden-world-of-information-security-8ccc7449093e"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-medium"></i>&nbsp; Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="max-height: 70vh;" class="item">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/news/js-bootcamp.jpg" />
-                                <div class="carousel-caption">
-                                    <h3>Beginner JavaScript Bootcamp</h3>
-                                    <p>Held my first ever 8-day JavaScript Bootcamp for elementary and middle school
-                                        children.
-                                    </p>
-                                    <div class="btn-toolbar">
-                                        <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/javascript-bootcamp-for-schoolchildren-e9f5ff1f85b4"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-medium"></i>&nbsp; Read More</a>
-                                        <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/jsbootcamp/"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-globe"></i>&nbsp; Visit Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="max-height: 70vh;" class="item">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/projectpics/easyloop-simplebanner-920x680.jpg" />
-                                <div class="carousel-caption">
-                                    <h3>Easy Loop for Schoolloop</h3>
-                                    <p>Developed a simple Schoolloop Chrome extension for high school students, Over
-                                        10000 daily
-                                        users and 60 5-star reviews</p>
-                                    <div class="btn-toolbar">
-                                        <a style="color: black;" target="_blank" href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-medium"></i>&nbsp; Read More</a>
-                                        <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/easyloop/"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-globe"></i>&nbsp; Visit Site</a>
-                                        <a style="color: black;" target="_blank" href="https://cupertino.schoolloop.com/groups/news_item?d=x&id=1471332429553&group_id=1123558358016&return_url=1473068061914"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-newspaper-o"></i>&nbsp; School News</a>
-                                        <a style="color: black;" target="_blank" href="https://www.facebook.com/schoolloopeasyloop/"
-                                            class="waves-effect waves-dark btn white page-scroll animated pulse">
-                                            <i class="fa fa-facebook"></i>&nbsp; Facebook Page</a>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img style="width: 100%; margin: 0 auto;" src="img/news/pennapps-banner.JPG" />
+                        <div class="carousel-caption">
+                            <h3>PennApps XIV 2018</h3>
+                            <h5>Attended first PennApps Hackathon on January 19-21, 2018 at UPenn! Built Sara AI
+                                Productivity
+                                Desktop App.</h5>
+                            <a style="color: black;" target="_blank" href="https://devpost.com/software/sara-bic897"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fas fa-globe"></i>&nbsp; More on Devpost</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img style="width: 100%; margin: 0 auto;" src="img/news/tinohacks-team.jpg" />
+                        <div class="carousel-caption">
+                            <h3>TinoHacks 2017</h3>
+                            <h5>Technology/Operations Director and Webmaster of Cupertino's first-ever
+                                full-fledged 29-hour,
+                                300 person high school hackathon</h5>
+                            <a style="color: black;" target="_blank"
+                                href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c"
+                                class="waves-effect waves-dark btn white page-scroll">
+                                <i class="fab fa-medium"></i>&nbsp; Read More</a>
+                            <a style="color: black;" target="_blank" href="http://tinohacks.tech"
+                                class="waves-effect waves-dark btn white page-scroll">
+                                <i class="fas fa-globe"></i>&nbsp; Visit Site</a>
+                            <a style="color: black;" target="_blank" href="https://www.youtube.com/watch?v=MYdoP88Bv6Y"
+                                class="waves-effect waves-dark btn white page-scroll">
+                                <i class="fab fa-youtube"></i>&nbsp; Closing Speech</a>
+                            <a style="color: black;" target="_blank"
+                                href="https://www.flickr.com/photos/150174093@N05/albums/72157683241181075"
+                                class="waves-effect waves-dark btn white page-scroll">
+                                <i class="fab fa-flickr"></i>&nbsp; Pictures</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img style="z-index: -1; width: 100%; margin: 0 auto;"
+                            src="img/news/palo-alto-networks-banner.JPG" />
+                        <div class="carousel-caption">
+                            <h3>Palo Alto Networks CTF Event</h3>
+                            <h5>Won 9th place out of 20 teams at the Palo Alto Network's Info Security team's
+                                very first
+                                Capture the Flag event
+                            </h5>
+                            <a style="color: black;" target="_blank"
+                                href="https://medium.com/@sguduguntla11/the-hidden-world-of-information-security-8ccc7449093e"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fab fa-medium"></i>&nbsp; Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img style="z-index: -1; width: 100%; margin: 0 auto;" src="img/news/js-bootcamp.jpg" />
+                        <div class="carousel-caption">
+                            <h3>Beginner JavaScript Bootcamp</h3>
+                            <h5>Held my first ever 8-day JavaScript Bootcamp for elementary and middle school
+                                children.
+                            </h5>
+                            <a style="color: black;" target="_blank"
+                                href="https://medium.com/@sguduguntla11/javascript-bootcamp-for-schoolchildren-e9f5ff1f85b4"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fab fa-medium"></i>&nbsp; Read More</a>
+                            <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/jsbootcamp/"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fas fa-globe"></i>&nbsp; Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img style="z-index: -1; width: 100%; margin: 0 auto;"
+                            src="img/projectpics/easyloop-simplebanner-920x680.jpg" />
+                        <div class="carousel-caption">
+                            <h3>Easy Loop for Schoolloop</h3>
+                            <h5>Developed a simple Schoolloop Chrome extension for high school students, Over
+                                16000 daily
+                                users and 60 5-star reviews</h5>
+                            <a style="color: black;" target="_blank"
+                                href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fab fa-medium"></i>&nbsp; Read More</a>
+                            <a style="color: black;" target="_blank" href="http://sriharshaguduguntla.com/easyloop/"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fas fa-globe"></i>&nbsp; Visit Site</a>
+                            <a style="color: black;" target="_blank"
+                                href="https://cupertino.schoolloop.com/groups/news_item?d=x&id=1471332429553&group_id=1123558358016&return_url=1473068061914"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fas fa-newspaper"></i>&nbsp; School News</a>
+                            <a style="color: black;" target="_blank" href="https://www.facebook.com/schoolloopeasyloop/"
+                                class="waves-effect waves-dark btn white page-scroll ">
+                                <i class="fab fa-facebook"></i>&nbsp; Facebook Page</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-------------------------------------------------------------------------------------------------------->
-    <!--Individual Projects Section-->
+    <!--Projects Section-->
     <section class="no-padding " id="portfolio">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style="margin-top: 100px;;
-    font-weight: 100;">Individual Projects</h2>
-                    <i class="fa fa-suitcase fa-lg"></i>
+                <div class="col-md-12 text-center">
+                    <h2>Projects</h2>
+                    <i class="fas fa-suitcase-rolling fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
             <div style="font-weight: 300;" class="row">
                 <!--Evexia-->
-                <div class="col s12 m4">
-                    <div class="card">
+                <div class="col-md-4">
+                    <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: 100%;" class="activator" src="img/projectpics/evexia-banner.jpg">
+                                <img style="width: 100%; height: 100%;" class="activator"
+                                    src="img/projectpics/evexia-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Evexia Posture Monitoring
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="http://www.sriharshaguduguntla.com/evexia" target="_blank">Website
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.sriharshaguduguntla.com/evexia" target="_blank">Website</a>
+                            <a href="https://github.com/sguduguntla/Evexia-Posture-Monitoring" target="_blank">Github
 
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Evexia-Posture-Monitoring" target="_blank">Github
-
-                                </a> -
-                                <a href="https://www.youtube.com/watch?v=gchk8AzGgaQ" target="_blank">Youtube
-                                </a>
-
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=gchk8AzGgaQ" target="_blank">Youtube
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Evexia Posture Monitoring
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Improving Body Posture through a Light, Flexible Back-Strap System with Real-Time
                                 Smartphone
@@ -938,7 +904,8 @@
                                 as
                                 their desktop. With the help of personalized graphs and reports, and a doctor and user
                                 profile
-                                (to share information with their doctor), the user was able to use the app effectively.</p>
+                                (to share information with their doctor), the user was able to use the app effectively.
+                            </p>
                             <h5>Conclusion/Discussion</h5> All our goals were met however there are many ways to
                             improve this
                             product. A major improvement could be to create a small, detachable vest/frame in order to
@@ -960,33 +927,34 @@
                     </div>
                 </div>
                 <!--Easy Loop Extension-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px; width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/easyloop-simplebanner-920x680.jpg">
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator"
+                                    src="img/projectpics/easyloop-simplebanner-920x680.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Easy Loop
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="https://chrome.google.com/webstore/detail/school-loop-easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj"
-                                    target="_blank">Website
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Easy-Loop-Extension" target="_blank">Github
-                                </a> -
-                                <a href="https://www.facebook.com/schoolloopeasyloop" target="_blank">Facebook
-                                </a> -
-                                <a href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286"
-                                    target="_blank">Medium
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://chrome.google.com/webstore/detail/school-loop-easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj"
+                                target="_blank">Website
+                            </a>
+                            <a href="https://github.com/sguduguntla/Easy-Loop-Extension" target="_blank">Github
+                            </a>
+                            <a href="https://www.facebook.com/schoolloopeasyloop" target="_blank">Facebook
+                            </a>
+                            <a href="https://medium.com/@sguduguntla11/developing-easy-loop-for-schoolloop-5bbad568d286"
+                                target="_blank">Medium
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Easy Loop
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Easy Loop is a simple Schoolloop Chrome extension that adds the ability to calculate
                                 grades with
@@ -1025,10 +993,12 @@
                                 or report any issues at:
                                 <br />
                                 <br /> Visit Easy Loop at
-                                <a href="http://sriharshaguduguntla.com/easyloop">http://sriharshaguduguntla.com/easyloop</a>
+                                <a
+                                    href="http://sriharshaguduguntla.com/easyloop">http://sriharshaguduguntla.com/easyloop</a>
                                 <br />
                                 <br /> Download here:
-                                <a href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj</a>
+                                <a
+                                    href="https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj">https://chrome.google.com/webstore/detail/easy-loop/kkhpoabcjhecnadcnkgldgpfbncbjfjj</a>
                                 <br />
                                 <br /> Report any issues
                                 <a href="https://github.com/sguduguntla/Easy-Loop-Extension/issues">here</a>
@@ -1049,32 +1019,34 @@
                     </div>
                 </div>
                 <!--TinoHacks-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/tinohacks-banner.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/tinohacks-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">TinoHacks Website
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="http://tinohacks.tech" target="_blank">Website
-                                </a> -
-                                <a href="https://github.com/OfficialTinoHacks/officialtinohacks.github.io" target="_blank">Github
-                                </a> -
-                                <a href="https://www.youtube.com/watch?v=MYdoP88Bv6Y" target="_blank">Youtube
-                                </a> -
-                                <a href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c"
-                                    target="_blank">Medium
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://tinohacks.tech" target="_blank">Website
+                            </a>
+                            <a href="https://github.com/OfficialTinoHacks/officialtinohacks.github.io"
+                                target="_blank">Github
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=MYdoP88Bv6Y" target="_blank">Youtube
+                            </a>
+                            <a href="https://medium.com/@sguduguntla11/organizing-tinohacks-300-people-29-hours-42-silicon-valley-b2ce86d9853c"
+                                target="_blank">Medium
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">TinoHacks Website
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>TinoHacks is a two day long, 350 person hackathon hosted by Cupertino High School
                                 students where
@@ -1089,29 +1061,31 @@
                     </div>
                 </div>
                 <!--AoCMM-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/aocmm-banner.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/aocmm-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">AoCMM Website
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="http://aocmm.net" target="_blank">Website
-                                </a> -
-                                <a href="https://github.com/sguduguntla/sguduguntla.github.io/tree/master/aocmm" target="_blank">Github
-                                </a> -
-                                <a href="https://www.facebook.com/aocmm" target="_blank">Facebook
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://sriharshaguduguntla.com/aocmm" target="_blank">Website
+                            </a>
+                            <a href="https://github.com/sguduguntla/sguduguntla.github.io/tree/master/aocmm"
+                                target="_blank">Github
+                            </a>
+                            <a href="https://www.facebook.com/aocmm" target="_blank">Facebook
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">AoCMM Website
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Association of Computational Mathematical Modeling</p>
                             <p>AoCMM is a non-profit organization that, in short, strives to educate determined
@@ -1145,21 +1119,22 @@
                     </div>
                 </div>
                 <!---Tino Octagon Website-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/octagonlogo.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/octagonlogo.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Tino Octagon Website
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="https://github.com/sguduguntla/Tino-Octagon-Website" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/sguduguntla/Tino-Octagon-Website" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Tino Octagon Website
@@ -1171,59 +1146,64 @@
                     </div>
                 </div>
                 <!--Sai Code Player-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/codeplayerpic.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/codeplayerpic.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Code Player
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="http://www.sriharshaguduguntla.com/saicodeplayer/codeplayer.html" target="_blank">Website
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Sai-Code-Player" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.sriharshaguduguntla.com/saicodeplayer/codeplayer.html"
+                                target="_blank">Website
+                            </a>
+                            <a href="https://github.com/sguduguntla/Sai-Code-Player" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Code Player
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>A html, css, and js editor with a simple UI and easy UX! Visit
-                                <a href="http://www.sriharshaguduguntla.com/saicodeplayer/codeplayer.html" target="_blank">here</a>.
+                                <a href="http://www.sriharshaguduguntla.com/saicodeplayer/codeplayer.html"
+                                    target="_blank">here</a>.
                             </p>
                         </div>
                     </div>
                 </div>
                 <!--Java Scientific Calculator-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/scientificcalcpic.jpg">
+                                <img style="width: 100%; height: 100%; overflow: hidden;" class="activator"
+                                    src="img/projectpics/scientificcalcpic.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Java Scientific Calculator
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
-                            <p>
-                                <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Java Scientific Calculator
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>The Java program provides an interactive scientific calculator that requires a login.
                                 Very useful
                                 if you want to use a scientific calculator on the computer. For more info, click
-                                <a href="https://github.com/sguduguntla/Java-Scientific-Calculator" target="_blank">here</a>.</p>
+                                <a href="https://github.com/sguduguntla/Java-Scientific-Calculator"
+                                    target="_blank">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -1234,38 +1214,37 @@
     <section class="no-padding ">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style="margin-top: 100px;;
-    font-weight: 100;">Hackathon Projects</h2>
-                    <i class="fa fa-suitcase fa-lg"></i>
+                <div class="col-md-12 text-center">
+                    <h2>Hackathon Projects</h2>
+                    <i class="fas fa-suitcase-rolling fa-lg"></i>
                     <hr class="primary">
                 </div>
             </div>
-            <div style=";
-    font-weight: 300;" class="row">
+            <div class="row">
                 <!--Sara-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/sara-banner.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/sara-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Sara AI Productivity App
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>PennApps XIV 2018</p>
                             </span>
-                            <p>
-                                <a href="https://devpost.com/software/sara-bic897" target="_blank">Devpost
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://devpost.com/software/sara-bic897" target="_blank">Devpost
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Sara AI Productivity App
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Made at PennApps XIV 2018 with the help of Kiran Kunigiri.</p>
                             <h5>Inspiration</h5>
@@ -1347,30 +1326,31 @@
                     </div>
                 </div>
                 <!--Erudite-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/erudite-banner.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/erudite-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Erudite Research Engine
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>Los Altos Hacks II 2017</p>
                             </span>
-                            <p>
-                                <a href="https://github.com/sguduguntla/LAHacks2" target="_blank">Github
-                                </a> -
-                                <a href="https://devpost.com/software/lahacks2" target="_blank">Devpost
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/sguduguntla/LAHacks2" target="_blank">Github
+                            </a>
+                            <a href="https://devpost.com/software/lahacks2" target="_blank">Devpost
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Erudite Research Engine
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Made at Los Altos Hacks II 2017 with the help of Jai Sankar and David Hong.</p>
                             <p>A common problem for young entrepreneurs who have an idea is that they simply do not
@@ -1409,28 +1389,29 @@
                     </div>
                 </div>
                 <!--Snapchat Dog Filter Clone-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/snapchat-banner.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/snapchat-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Snapchat Dog Filter Clone
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>Berkeley Eta Kappa Nu BearHacks 2016</p>
                             </span>
-                            <p>
-                                <a href="https://github.com/sguduguntla/OpenCV-Snapchat-DogFilter" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/sguduguntla/OpenCV-Snapchat-DogFilter" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Snapchat Dog Filter Clone
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Made at BearHacks 2016</p>
                             <p>Mini OpenCV Project cloning the Snapchat Dog Filter. </p>
@@ -1438,32 +1419,33 @@
                     </div>
                 </div>
                 <!--Finance Tracker-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px; overflow: hidden;'>
-                                <img style="max-width: 100%; max-height: 150%; overflow: hidden;" class="activator" src="img/projectpics/financetrack.jpg">
+                                <img style="max-width: 100%; max-height: 150%; overflow: hidden;" class="activator"
+                                    src="img/projectpics/financetrack.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Finance Tracker
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>GunnHacks 2.0 2016</p>
                             </span>
-                            <p>
-                                <a href="http://www.sriharshaguduguntla.com/finance-tracker" target="_blank">Website
-                                </a> -
-                                <a href="http://devpost.com/software/finance-tracker" target="_blank">Devpost
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.sriharshaguduguntla.com/finance-tracker" target="_blank">Website
+                            </a> -
+                            <a href="http://devpost.com/software/finance-tracker" target="_blank">Devpost
+                            </a> -
+                            <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Finance Tracker
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>Often times, people are afraid of the stock market because it seems intimidating and
                                 like too
@@ -1476,7 +1458,8 @@
                                 on which stocks are best to buy next, based on things like market cap, trends, and the
                                 affordability.
                                 Built at Gunn Hacks 2.0 2016 with the help of Laikh Tewari. Visit the Github
-                                <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks" target="_blank">here</a>
+                                <a href="https://github.com/sguduguntla/Finance-Tracker-GunnHacks"
+                                    target="_blank">here</a>
                                 and visit the website
                                 <a href="http://www.sriharshaguduguntla.com/finance-tracker" target="_blank">here</a>
                             </p>
@@ -1484,32 +1467,33 @@
                     </div>
                 </div>
                 <!--Commutaire-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px; width: 100%;overflow: hidden;'>
-                                <img style="max-width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/commute-logo.jpg">
+                                <img style="max-width: 100%; height: 100%; overflow: hidden;" class="activator"
+                                    src="img/projectpics/commute-logo.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Commutaire
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>SV Hacks 2016</p>
                             </span>
-                            <p>
-                                <a href="http://www.sriharshaguduguntla.com/commutaire/main/html/" target="_blank">Website
-                                </a> -
-                                <a href="http://devpost.com/software/commute-3vcy0d" target="_blank">Devpost
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Commutaire-SVHacks" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.sriharshaguduguntla.com/commutaire/main/html/" target="_blank">Website
+                            </a>
+                            <a href="http://devpost.com/software/commute-3vcy0d" target="_blank">Devpost
+                            </a>
+                            <a href="https://github.com/sguduguntla/Commutaire-SVHacks" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Commutaire
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>In our community we lacked a lot of connection to each other, so we decided to develop
                                 Commutaire
@@ -1536,38 +1520,40 @@
                                 Malaviya. Visit the Github
                                 <a href="https://github.com/sguduguntla/Commutaire-SVHacks" target="_blank">here</a>
                                 and visit the website
-                                <a href="http://www.sriharshaguduguntla.com/commutaire/main/html" target="_blank">here</a>
+                                <a href="http://www.sriharshaguduguntla.com/commutaire/main/html"
+                                    target="_blank">here</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <!--Mercari-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px; width: 100%;overflow: hidden;'>
-                                <img style="max-width: 100%; max-height: 150%; overflow: hidden;" class="activator" src="img/projectpics/mercari-banner.jpg">
+                                <img style="max-width: 100%; max-height: 150%; overflow: hidden;" class="activator"
+                                    src="img/projectpics/mercari-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Mercari
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>Los Altos Hacks 2016</p>
                             </span>
-                            <p>
-                                <a href="http://www.sriharshaguduguntla.com/mercari/html" target="_blank">Website
-                                </a> -
-                                <a href="http://devpost.com/software/mercari" target="_blank">Devpost
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Mercari-LAHacks" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.sriharshaguduguntla.com/mercari/html" target="_blank">Website
+                            </a>
+                            <a href="http://devpost.com/software/mercari" target="_blank">Devpost
+                            </a>
+                            <a href="https://github.com/sguduguntla/Mercari-LAHacks" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Mercari
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>As high–schoolers, we haven't had the opportunity to work with many companies or
                                 startups; however,
@@ -1588,34 +1574,35 @@
                     </div>
                 </div>
                 <!--QuikBux-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/quikbux-banner.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/quikbux-banner.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">QuikBux
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>MakeHacks Fall 2015</p>
                             </span>
-                            <p>
-                                <a href="http://quikbux.github.io" target="_blank">Website
-                                </a> -
-                                <a href="http://devpost.com/software/quikbux-github-io" target="_blank">Devpost
-                                </a> -
-                                <a href="https://github.com/QuikBux" target="_blank">Github
-                                </a> -
-                                <a href="https://www.youtube.com/watch?v=vk26-MyJtgw" target="_blank">Youtube
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://quikbux.github.io" target="_blank">Website
+                            </a>
+                            <a href="http://devpost.com/software/quikbux-github-io" target="_blank">Devpost
+                            </a>
+                            <a href="https://github.com/QuikBux" target="_blank">Github
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=vk26-MyJtgw" target="_blank">Youtube
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">QuikBux
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>We made a simple Web and iOS app called QuikBux that allows people to hire others for
                                 small jobs
@@ -1651,32 +1638,33 @@
                     </div>
                 </div>
                 <!--Durim Fitness-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative; height:300px;width: 100%;overflow: hidden;'>
-                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator" src="img/projectpics/durimlogo.jpg">
+                                <img style="width: 100%; height: auto; overflow: hidden;" class="activator"
+                                    src="img/projectpics/durimlogo.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Durim
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>HackingEDU 2015</p>
                             </span>
-                            <p>
-                                <a href="http://www.sriharshaguduguntla.com/durim" target="_blank">Website
-                                </a> -
-                                <a href="http://devpost.com/software/durim" target="_blank">Devpost
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Durim-Fitness-App" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.sriharshaguduguntla.com/durim" target="_blank">Website
+                            </a>
+                            <a href="http://devpost.com/software/durim" target="_blank">Devpost
+                            </a>
+                            <a href="https://github.com/sguduguntla/Durim-Fitness-App" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Durim Fitness App
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>We have built a simple Pebble and Web app that allows users to track their fitness data
                                 over
@@ -1701,31 +1689,32 @@
                     </div>
                 </div>
                 <!--Molar Mass Calculator-->
-                <div class="col s12 m4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div style='position: relative;height:300px;width: 100%;overflow: hidden;'>
-                                <img style="max-width: 100%; height: 100%; overflow: hidden;" class="activator" src="img/projectpics/molarmasscalcpic.jpg">
+                                <img style="max-width: 100%; height: 100%; overflow: hidden;" class="activator"
+                                    src="img/projectpics/molarmasscalcpic.jpg">
                             </div>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Molar Mass Calculator
-                                <i class="right fa fa-info-circle"></i>
+                                <i class="right fas fa-info-circle"></i>
                             </span>
                             <span>
                                 <p>Teen Hackathon 2015</p>
                             </span>
-                            <p>
-                                <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">Website</a> -
-                                <a href="http://devpost.com/software/molar-mass-calculator" target="_blank">Devpost
-                                </a> -
-                                <a href="https://github.com/sguduguntla/Java-Molar-Mass-Calculator" target="_blank">Github
-                                </a>
-                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://tinyurl.com/sjcrvmolarmasscalc" target="_blank">Website</a>
+                            <a href="http://devpost.com/software/molar-mass-calculator" target="_blank">Devpost
+                            </a>
+                            <a href="https://github.com/sguduguntla/Java-Molar-Mass-Calculator" target="_blank">Github
+                            </a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-2">Molar Mass Calculator
-                                <i class="right fa fa-arrow-circle-down"></i>
+                                <i class="right fas fa-arrow-circle-down"></i>
                             </span>
                             <p>The simple java program provides a GUI of the periodic table of elements. Use the
                                 periodic table
@@ -1747,16 +1736,14 @@
                 <div class="col l6 s12">
                     <h5>Let's Grab Coffee!</h5>
                     <p>
-                        <span class="fa fa-envelope white-text"></span>
+                        <span class="fas fa-envelope white-text"></span>
                         <a class="grey-text text-lighten-2" href="mailto:sguduguntla@berkeley.edu">
-                            &nbsp;&nbsp;sguduguntla@berkeley.edu</a> or <a class="grey-text text-lighten-2" href="mailto:sguduguntla11@gmail.com">
+                            &nbsp;&nbsp;sguduguntla@berkeley.edu</a> or <br><a class="grey-text text-lighten-2"
+                            href="mailto:sguduguntla11@gmail.com">
                             sguduguntla11@gmail.com</a>
                     </p>
-                    <p class="grey-text text-lighten-2">
-                        <span class="fa fa-phone white-text"></span> &nbsp;&nbsp;1(408)-816-4779</p>
-                    <p>
-                        <span class="fa fa-file white-text"></span>
-                        <a target="_blank" href="resume.pdf" class="grey-text text-lighten-2"> &nbsp;&nbsp;Resumé</a>
+                    <span class="fas fa-file white-text"></span>
+                    <a target="_blank" href="resume.pdf" class="grey-text text-lighten-2"> &nbsp;&nbsp;Resumé</a>
                     </p>
 
                     <p class="grey-text text-lighten-2">Feel free to shoot me an email anytime.</p>
@@ -1766,23 +1753,22 @@
                     <ul>
                         <li>
                             <a target="_blank" href="https://github.com/sguduguntla" class="grey-text text-lighten-2">
-                                <span class="fa fa-github"></span> &nbsp;&nbsp;@sguduguntla</a>
+                                <span class="fab fa-github"></span> &nbsp;&nbsp;@sguduguntla</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/sriharsha-guduguntla-b1a34a145/" class="grey-text text-lighten-2">
-                                <span class="fa fa-linkedin"></span> &nbsp;&nbsp;Linkedin</a>
+                            <a target="_blank" href="https://www.linkedin.com/in/sriharsha-guduguntla-b1a34a145/"
+                                class="grey-text text-lighten-2">
+                                <span class="fab fa-linkedin"></span> &nbsp;&nbsp;Linkedin</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://medium.com/@sguduguntla11" class="grey-text text-lighten-2">
-                                <span class="fa fa-medium"></span> &nbsp;&nbsp;@sguduguntla11</a>
+                            <a target="_blank" href="https://medium.com/@sguduguntla11"
+                                class="grey-text text-lighten-2">
+                                <span class="fab fa-medium"></span> &nbsp;&nbsp;@sguduguntla11</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://devpost.com/sguduguntla" class="grey-text text-lighten-2">
-                                <span class="fa fa-globe"></span> &nbsp;&nbsp;Devpost</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com/sguduguntla11" class="grey-text text-lighten-2">
-                                <span class="fa fa-twitter"></span> &nbsp;&nbsp;@sguduguntla11</a>
+                            <a target="_blank" href="https://twitter.com/sguduguntla11"
+                                class="grey-text text-lighten-2">
+                                <span class="fab fa-twitter"></span> &nbsp;&nbsp;@sguduguntla11</a>
                         </li>
                     </ul>
                 </div>
@@ -1796,20 +1782,15 @@
     </footer>
     <!-------------------------------------------------------------------------------------------------------->
     <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <!-- Plugin JavaScript -->
-    <script src="js/wow.min.js" type="text/javascript"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/91e2aa584f.js"></script>
     <!--MaterializeCSS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="js/materialize.min.js"></script>
 
     <script>
-        // Initialize WOW.js Scrolling Animations
-        new WOW().init();
-
         //Google Analytics
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -1825,18 +1806,63 @@
 
 
         //Tooltips are activated
-        $('.tooltipped').tooltip({
-            delay: 50
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
         });
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex',
+                                    '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
 
         /*************************/
 
         //Side-nav comes out from the right
-        $(".button-collapse").sideNav({
-            edge: 'right'
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
         });
 
-        $('.collapsible').collapsible();
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
     </script>
 </body>
 
