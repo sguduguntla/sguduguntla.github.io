@@ -1,0 +1,22 @@
+cluster package
+===============
+
+Submodules
+----------
+
+cluster.cluster module
+----------------------
+
+.. automodule:: cluster.cluster
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cluster
+   :members:
+   :undoc-members:
+   :show-inheritance:

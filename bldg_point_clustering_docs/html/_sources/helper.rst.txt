@@ -1,0 +1,22 @@
+helper package
+==============
+
+Submodules
+----------
+
+helper.helper module
+--------------------
+
+.. automodule:: helper.helper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: helper
+   :members:
+   :undoc-members:
+   :show-inheritance:

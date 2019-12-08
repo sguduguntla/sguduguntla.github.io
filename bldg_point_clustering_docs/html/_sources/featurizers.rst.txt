@@ -1,0 +1,22 @@
+featurizers package
+===================
+
+Submodules
+----------
+
+featurizers.featurizer module
+-----------------------------
+
+.. automodule:: featurizers.featurizer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: featurizers
+   :members:
+   :undoc-members:
+   :show-inheritance:
