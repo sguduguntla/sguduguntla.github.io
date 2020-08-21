@@ -20,7 +20,7 @@
     1: {
       type: "text",
       question:
-        "What is the correct spelling of the only four letter word that I spelled incorrectly in the letter?",
+        "What is the correct spelling of the only four letter word that I spelled incorrectly in the letter I wrote?",
       hints: [
         "It's just an every day word, nothing special.",
         "Put the text in Word and Google docs and use spell checker",
@@ -186,7 +186,7 @@
       ul += "</ul>";
       html += ul + "</div>";
       if (qNum + 2 === password.length) {
-        html += `<button type="button" class="btn btn-primary scrollBtn">Scroll Up</button>`
+        html += `<button type="button" class="btn btn-primary scrollBtn">Scroll Up</button>`;
         $("#phonePic").removeClass('d-none');
       }
       parentDiv.after(html);
