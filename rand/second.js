@@ -27,6 +27,7 @@
         hints: [
           "Go to 1 hour 7 mins in the video",
           "Try searching up the lyrics?",
+          "Use Siri and ask it to hear the song",
           "Female singer is Megan Trainor!",
         ],
       },
@@ -54,6 +55,16 @@
           "Count them!!",
           "Go to 50 mins 03 secs in the video where it starts",
           "In case I counted wrong by accident, just try entering numbers near your number haha",
+        ],
+      },
+      6: {
+        type: "text",
+        question:
+          "Who has a better jawline? Type 'me' if it's you or 'you' if it's me",
+        hints: [
+          "There's only one right answer!",
+          "Come on, you know who it is!",
+          "Seriously!",
         ],
       },
     };
