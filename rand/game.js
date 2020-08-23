@@ -12,7 +12,7 @@ $(document).ready(function () {
       $("button").html("Guess");
       $("#tryNum").text(5);
       $("input").val("");
-      randNum = Math.floor(Math.random() * 100) + 1;
+      randNum = Math.floor(Math.random() * 50) + 1;
       guesses = [];
       return false;
     }
