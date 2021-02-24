@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("../fonts/gilroy/Gilroy-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CeraPro-Black";
+  src: url("../fonts/cera/CeraPro-Black.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy-Bold";
+}
+
+p {
+  font-family: "Gilroy-Medium";
+}
+
+#name {
+  color: #950000;
+}
+
+#major {
+  color: #767676;
+}
+
+#links {
+  background-color: #343434;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+#links > a {
+  color: white;
+  font-size: 30px;
+  margin-left: 8px;
+  margin-right: 8px;
+  outline: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+#university {
+  background-color: #2c4096;
+}
+
+#salesforce {
+  background-color: #00a2e6;
+}
+
+#octet {
+  background-color: #d0b13e;
+}
+
+#calypso {
+  background-color: #201a04;
+}
+
+#youtube {
+  background-color: #c41725;
+}
+
+#research {
+  background-color: #00c502;
+}
+
+#tinohacks {
+  background-image: linear-gradient(
+    -86deg,
+    #429aae 0%,
+    #2fa6c1 20%,
+    #5e8df1 52%,
+    #b260c1 96%
+  );
+}
+
+#edcast {
+  background-color: #56e7ce;
+  color: #404041;
+}
+
+#terminal {
+  background-color: #263238;
+}
+
+#terminal p {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.terminal-path {
+  color: #a7fceb;
+}
+
+.terminal-cmd {
+  color: #69f0ae;
+}
+
+.fa-long-arrow-alt-right {
+  color: #b8f5c9;
+}
+
+/* PROJECTS */
+
+.project {
+  border-radius: 5px;
+}
+
+#easyloop {
+  background-color: #299edf;
+}
+
+#point-label-sharing {
+  background-color: #9f63ff;
+}
