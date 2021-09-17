@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GROUP 7 RESTAURANT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <main>
+
+        <section class="py-5 text-center container-fluid">
+            <div class="row py-lg-5">
+                <div class="col-lg-8 col-md-6 mx-auto">
+                    <h1 class="fw-light">Welcome to Group 7 Restaurant</h1>
+                    <p class="lead text-muted">Choose what food you would like to order.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Cheese Pizza Modal -->
+        <div class="modal fade" id="cheeseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cheese Pizza</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cheese Pizza Modal -->
+        <div class="modal fade" id="pepperoniModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pepperoni Pizza</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div id="images" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/Cheese_Pizza.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h3 class="card-text lead fw-bold">Cheese Pizza</h3>
+                                <h5>Price: <strong>$5</strong></h5>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#cheeseModal">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/Pizza.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h3 class="card-text lead fw-bold">Pepperoni Pizza</h3>
+                                <h5>Price: <strong>$5</strong></h5>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#pepperoniModal">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/orig_cathedral.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-text lead fw-bold">cathedral.jpg, BEFORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/cathedral.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-text lead fw-bold">cathedral.jpg, AFTER,
+                                    <code>PyramidSearch(lowest_scale=0.0625)</code>
+                                </h3>
+                                <hr />
+                                <p class="card-text lead fw-bold"><span class="text-danger">Red (R)
+                                        Offsets:</span> (7, 1)
+                                </p>
+                                <p class="card-text lead fw-bold"><span class="text-primary">Blue (B)
+                                        Offsets:</span>
+                                    (-5, -2) </p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/bootstrap.min.js" async defer></script>
+    <script src="js/index.js" async defer></script>
+</body>
+
+</html>
