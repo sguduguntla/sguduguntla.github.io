@@ -52,27 +52,43 @@ p {
 #links {
   background-color: #343434;
   border-radius: 20px;
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #links > a {
   color: white;
-  font-size: 30px;
-  margin-left: 8px;
-  margin-right: 8px;
-  outline: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 25px;
+  width: 80px;
+  /* outline: 0; */
+  background-color: #4f5155;
+  border-left: 1px solid #3d3d3d;
+}
+
+#links > a:nth-child(1) {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#links > a:nth-child(7) {
+  border-radius: 0px 10px 10px 0px;
+}
+
+#links > a:hover {
+  background-color: #606268;
 }
 
 .container {
+  max-width: 1100px;
+}
+/* .container {
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
-}
+} */
 
 .card {
   border-radius: 20px;
