@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0e1117;
+  color: #d3d6d8;
+}
+
+.container {
+  max-width: 660px;
+  min-height: 100%;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Black.ttf");
+  font-weight: 900;
+}
+
+.nav-item {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-style: dashed;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-item:hover {
+  color: #cccccc;
+}
+
+.selected {
+  color: #b3b3b3;
+}
+
+.hyperlink {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-style: dotted;
+  color: #61aff6;
+  transition: all 0.15s ease-in-out;
+}
+
+.hyperlink:hover {
+  color: #fa5aa4;
+}
+
+.linkedin-btn:hover {
+  color: #0276b8;
+}
+
+.youtube-btn:hover {
+  color: #ff0000;
+}
+
+.twitter-btn:hover {
+  color: #1c9bef;
+}
+
+/* Tooltip container */
+
+/* setup tooltips */
+.tooltip {
+  position: relative;
+  z-index: 40;
+}
+.tooltip:before,
+.tooltip:after {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.tooltip:after {
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid transparent;
+  content: "";
+  height: 0;
+  top: 40px;
+  left: 13px;
+  width: 0;
+  z-index: 40;
+}
+
+.tooltip:before {
+  background: #fff;
+  border-radius: 2px;
+  color: #000;
+  font-weight: 700;
+  content: attr(data-title);
+  font-size: 14px;
+  padding: 4px 10px;
+  top: 45px;
+  white-space: nowrap;
+  border-radius: 5px;
+  z-index: 40;
+}
+
+/* the animations */
+/* fade */
+.tooltip.fade:after,
+.tooltip.fade:before {
+  transform: translate3d(0, -10px, 0);
+  transition: all 0.15s ease-in-out;
+}
+.tooltip.fade:hover:after,
+.tooltip.fade:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
